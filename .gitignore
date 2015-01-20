@@ -1,0 +1,7 @@
+
+# Entwicklungsumgebung
+/.idea
+
+# Joomla
+/.htaccess
+/configuration.php
