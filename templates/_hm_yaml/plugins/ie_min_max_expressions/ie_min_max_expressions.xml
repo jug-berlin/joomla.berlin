@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Internet Explorer min/max width Fix with JS-Expressions
+ * (de) Internet Explorer min/max width Fix mit JS-Expressions
+ *
+ * @version         $Id: ie_min_max_expressions.xml 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+-->
+<jyaml_plugin>
+
+  <name>IE min/max Expressions</name>
+  <author>Reinhard Hiebl</author>
+  <creationDate>November 2007</creationDate>
+  <copyright>(C) Reinhard Hiebl</copyright>
+  <license>http://www.jyaml.de</license>
+  <authorEmail>service@hieblmedia.de</authorEmail>
+  <authorUrl>www.hieblmedia.de</authorUrl>
+  <version>1.1</version>
+  <description>YAML IE_JS_MIN_MAX DESC</description>
+  
+  <params>
+    <param name="published" type="radio" default="0" label="Enabled" description="Enabled">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    
+    <param name="selector" type="text" default="#page_margins" label="YAML IE_JS_MIN_MAX LABEL SELECTOR" description="YAML IE_JS_MIN_MAX DESC SELECTOR" />
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    
+    <param name="width_fallback" type="text" default="" label="YAML IE_JS_MIN_MAX LABEL WIDTHFALLBACK" description="YAML IE_JS_MIN_MAX DESC WIDTHFALLBACK" />    
+    <param name="min_width" type="text" default="" label="YAML IE_JS_MIN_MAX LABEL MINWIDTH" description="YAML IE_JS_MIN_MAX DESC MINWIDTH" />
+    <param name="max_width" type="text" default="" label="YAML IE_JS_MIN_MAX LABEL MAXWIDTH" description="YAML IE_JS_MIN_MAX DESC MAXWIDTH" />
+  </params>
+  
+</jyaml_plugin>

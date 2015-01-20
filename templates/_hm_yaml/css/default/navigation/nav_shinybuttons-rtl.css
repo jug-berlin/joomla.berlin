@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Horizontal list navigation "Shiny Buttons"
+ * (de) Horizontale Navigationsliste "Shiny Buttons"
+ *
+ * @version         $Id: nav_shinybuttons-rtl.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+
+/* Import basic YAML stylesheet | Importiere Basis YAML Stylesheet */
+@import url(../../../yaml/navigation/nav_shinybuttons-rtl.css);
+
+@media screen, projection
+{
+  /**
+   * (en) Modifying "shiny buttons" navigation
+   * (de) Anpassung der "Shiny Buttons" Navigation
+   */
+  #nav_main ul { margin-right: 10px }
+}

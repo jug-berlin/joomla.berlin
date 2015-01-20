@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <extension version="2.5" type="file" method="upgrade">
+      <name>RSForm!Pro German Language Pack</name>
+      <version>1.0.0</version>
+      <creationDate>14 Feb 2014</creationDate>
+      <author>RSJoomla!</author>
+      <authorEmail></authorEmail>
+      <authorUrl></authorUrl>
+      <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+      <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+      <description>RSForm!Pro German Language Pack by RSJoomla!</description>
+      <fileset>
+          <!-- Admin component language folder for Joomla! 2.5-->
+       <files folder="admin25" target="administrator/language/de-DE">
+         <filename>de-DE.com_rsform.ini</filename>
+         <filename>de-DE.com_rsform.sys.ini</filename>
+         <filename>de-DE.plg_content_rsform.ini</filename>
+         <filename>de-DE.plg_content_rsform.sys.ini</filename>
+         <filename>de-DE.plg_system_rsform.ini</filename>
+         <filename>de-DE.plg_system_rsform.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpakismet.ini</filename>
+		 <filename>de-DE.plg_system_rsfpakismet.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpconstantcontact.ini</filename>
+         <filename>de-DE.plg_system_rsfpconstantcontact.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpgoogle.ini</filename>
+         <filename>de-DE.plg_system_rsfpgoogle.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpmailchimp.ini</filename>
+         <filename>de-DE.plg_system_rsfpmailchimp.sys.ini</filename>
+		 <filename>de-DE.plg_system_rsfpofflinepayment.ini</filename>
+         <filename>de-DE.plg_system_rsfpofflinepayment.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfppayment.ini</filename>
+         <filename>de-DE.plg_system_rsfppayment.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfppaypal.ini</filename>
+         <filename>de-DE.plg_system_rsfppaypal.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfppdf.ini</filename>
+		 <filename>de-DE.plg_system_rsfppdf.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfprecaptcha.ini</filename>
+         <filename>de-DE.plg_system_rsfprecaptcha.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpregistration.ini</filename>
+         <filename>de-DE.plg_system_rsfpregistration.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfprseventspro.ini</filename>
+         <filename>de-DE.plg_system_rsfprseventspro.sys.ini</filename>
+		 <filename>de-DE.plg_system_rsfprsmail.ini</filename>
+         <filename>de-DE.plg_system_rsfprsmail.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpsalesforce.ini</filename>
+         <filename>de-DE.plg_system_rsfpsalesforce.sys.ini</filename>
+         <filename>de-DE.plg_system_rsfpvtiger.ini</filename>
+         <filename>de-DE.plg_system_rsfpvtiger.sys.ini</filename>
+      </files>
+          <!-- Site component language folder  for Joomla! 2.5-->
+      <files folder="site25" target="language/de-DE">         
+         <filename>de-DE.com_rsform.ini</filename>
+		 <filename>de-DE.mod_rsform.ini</filename>
+         <filename>de-DE.mod_rsform.sys.ini</filename>
+         <filename>de-DE.mod_rsform_feedback.ini</filename>
+         <filename>de-DE.mod_rsform_feedback.sys.ini</filename>
+         <filename>de-DE.mod_rsform_list.ini</filename>
+         <filename>de-DE.mod_rsform_list.sys.ini</filename>
+       </files>
+      </fileset>
+  </extension>

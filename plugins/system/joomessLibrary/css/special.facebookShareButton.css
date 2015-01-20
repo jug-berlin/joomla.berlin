@@ -1,0 +1,20 @@
+/**
+ * @package Joomess.de Library for the extensions of Johannes Meßmer
+ * @projectsite www.joomess.de
+ * @author Johannes Meßmer
+ * @copyright (C) 2012 Johannes Meßmer
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+
+.joomess-fbShBu {
+	display: inline-block !important;
+	border: 1px solid #BAB9BF !important;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #3B5998 !important;
+    float: none !important;
+    font: 11px 'Lucida Grande',sans-serif !important;
+    margin: 0 6px 0 0 !important;
+    padding: 2px 4px 2px 21px !important;
+    line-height: 14px !important;
+    background: url("../images/icon-fb-share.gif") no-repeat scroll 5px center #EBEBE9 !important;
+}

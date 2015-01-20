@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Adjustments in Editor Mode
+ * (de) Anpassungen im Editor Modus
+ *
+ * @version         $Id: editor_view.css 454 2008-07-21 17:02:08Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 454 $
+ * @lastmodified    $Date: 2008-07-21 19:02:08 +0200 (Mo, 21. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  /* using jquery tabs theme /jquery.ui/theme.css */
+  form#editor_view fieldset { border:0; padding:0; margin-bottom:0; }
+  form#editor_view fieldset legend { font-size:1.2em; font-weight:bold; padding:0 .5em; } 
+  /*
+  form#editor_view fieldset { border:1px dotted #666; padding:1em; margin-bottom:1em; }
+  form#editor_view fieldset legend { font-size:1.2em; font-weight:bold; padding:0 .5em; } 
+
+  ul.editor_view_tabs { width:50%; overflow:hidden; list-style:none; padding:0; margin:0 0 0 1em; }
+  ul.editor_view_tabs li { margin:0 1em 0 0; padding:0; float:left; list-style:none; }
+  ul.editor_view_tabs li a { display:block; padding:3px 6px; margin:0 0 3px 0; border:1px dotted #666; font-size:1.2em; cursor:pointer; }
+  ul.editor_view_tabs li a.active { border-bottom:0; padding-bottom:9px; margin:0; font-weight:bold; background:#f4f4f4; }
+  */
+  
+  #editor-xtd-buttons { overflow:hidden; width:100%; }
+  #editor-xtd-buttons a { display:block; float:left; border:1px solid #ccc; padding:2px 4px; margin:.5em .5em 0 0; }
+}

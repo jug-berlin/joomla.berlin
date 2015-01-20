@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Horizontal list navigation based on "Sliding Door II" from von "A List Apart"
+ * (de) Horizontale Navigationsliste basierend auf "Sliding Door II" von "A List Apart"
+ *
+ * @version         $Id: nav_slidingdoor.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+
+/* Import basic YAML stylesheet | Importiere Basis YAML Stylesheet */
+@import url(../../../yaml/navigation/nav_slidingdoor.css);
+
+@media screen, projection
+{
+  /**
+   * (en) Modifying "slidingdoor buttons" navigation
+   * (de) Anpassung der "slidingdoor Buttons" Navigation
+   */
+  #nav_main li {
+    background: #fdc54b url("../../../images/default/navigation/slidingdoor/left.gif") no-repeat top left;
+  }
+  
+  #nav_main a,
+  #nav_main span.separator {
+    background: transparent url("../../../images/default/navigation/slidingdoor/right.gif") no-repeat top right;
+    color: #667;
+    display: block;
+    font-weight: normal;
+    padding: 5px 11px 3px 8px;
+    text-decoration: none;
+    text-transform: none;
+
+    width: auto; /* only IE 5.x */
+    width/**/:/**/ .1em; /* only IE 6.0 */
+  }
+  
+  #nav_main > ul a,
+  #nav_main > ul span.separator { width: auto; }  /* for other browsers */
+  
+  #nav_main #current {
+    background: #fff url("../../../images/default/navigation/slidingdoor/left_on.gif") no-repeat top left;
+  }
+  
+  #nav_main #current a,
+  #nav_main #current span.separator {
+    background: transparent url("../../../images/default/navigation/slidingdoor/right_on.gif") no-repeat top right;
+  }
+
+}

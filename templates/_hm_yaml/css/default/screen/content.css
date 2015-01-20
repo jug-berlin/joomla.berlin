@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Uniform design of standard content elements
+ * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
+ *
+ * @version         $Id: content.css 454 2008-07-21 17:02:08Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 454 $
+ * @lastmodified    $Date: 2008-07-21 19:02:08 +0200 (Mo, 21. Jul 2008) $
+*/
+
+@media all
+{
+  /**
+  * Fonts
+  * (en) font-family and font-size selection for headings and standard text elements
+  * (de) Zeichensatz und Schriftgrößen für Überschriften und übliche Text-Elemente
+  *
+  * @section content-fonts
+  */
+
+  /* (en) reset font size for all elements to standard (16 Pixel) */
+  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* html * { font-size: 100.01% } */
+
+  /* (en) base layout gets standard font size 12px */
+  /* (de) Basis-Layout erhält Standardschriftgröße von 12 Pixeln */
+  body {
+    font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 75.00%; 
+    color: #444;  
+  }
+
+  h1,h2,h3,h4,h5,h6,
+  .componentheading, .contentheading
+  { 
+    font-family:"times new roman",times,serif; 
+    font-weight:bold; 
+    color:#666;
+    margin: 0 0 0.25em 0; 
+  }
+
+  h1, .componentheading { font-size: 200% }                        /* 24px */
+  h2, .contentheading   { font-size: 166.57%; color:#182E7A}       /* 20px */
+  h3 { font-size: 150% }                        /* 18px */
+  h4 { font-size: 133.33% }                     /* 16px */
+  h5 { font-size: 116.67% }                     /* 14px */
+  h6 { font-size: 116.67%; font-style:italic }  /* 14px */
+
+  #header h1 {
+    font-size:2.5em;
+    letter-spacing:-2px;
+    line-height:65%;
+    color:#000;
+  }
+
+  #header {
+    color:#999;
+  }
+
+  p { line-height: 1.5em; margin: 0 0 1em 0; }
+  
+  fieldset { border:1px solid #ccc; padding:.5em; margin-bottom:1em; }
+  fieldset legend { padding:0 .5em; font-weight:bold; font-size:1.2em; }
+
+  /* ### Lists | Listen  #### */
+
+  ul, ol, dl { line-height: 1.5em; margin: 0 0 1em 1em }
+  li { margin-left: 1.5em; line-height: 1.5em }
+
+  dt { font-weight: bold }
+  dd { margin: 0 0 1em 2em }
+
+  /* ### text formatting | Textauszeichnung ### */
+
+  cite, blockquote { font-style:italic }
+  blockquote { margin: 0 0 1em 1.5em }
+
+  strong,b { font-weight: bold }
+  em,i { font-style:italic }
+
+  pre, code { font-family: monospace; font-size: 1.1em; }
+
+  acronym, abbr {
+    letter-spacing: .07em;
+    border-bottom: .1em dashed #c00;
+    cursor: help;
+  }
+  
+  small, .small, .mosimage_caption, .createdate, .modifydate, .createdby, a.readon, .img_caption {
+    font-size: 92%;
+  }
+  
+  /* ### form elements | Formular Elemente ### */
+  
+  label, input[type=checkbox], input[type=radio], select, button, .button {
+    cursor: pointer;
+  }
+  input, .inputbox, label, select, button {
+    padding: 1px 2px;
+  }
+  input, .inputbox, button, .button {
+    background:#efefef;
+    border:1px solid #ccc;
+  }
+  input:hover, .inputbox:hover, button:hover, .button:hover,
+  input:focus, .inputbox:focus, button:focus, .button:focus {
+    background:#f5f5f5;
+    border:1px solid #aaa;
+  }
+
+  /**
+  * Generic Content Classes
+  * (en) standard classes for positioning and highlighting
+  * (de) Standardklassen zur Positionierung und Hervorhebung
+  *
+  * @section content-generic-classes
+  */
+
+  .note {background: #dfd; padding: 1em; border-bottom: 1px #bdb dotted; border-bottom: 1px #dbb dotted;}
+  .important {background: #ffd; padding: 1em; border-bottom: 1px #ddb dotted; border-bottom: 1px #dbb dotted;}
+  .warning {background: #fdd; padding: 1em; border-bottom: 1px #dbb dotted; border-bottom: 1px #dbb dotted;}
+
+  .float_left, .left, .image_left { float: left; display:inline; margin-right: 1em; margin-bottom: 0.15em;  }
+  .float_right, .right, .image_right { float: right; display:inline; margin-left: 1em; margin-bottom: 0.15em;  }
+  .center { text-align:center; margin: 0.5em auto }
+  
+  .text-to-rtl {
+    direction: rtl;
+    text-align: right;
+  }
+
+  /**
+  * Links
+  *
+  * (en) Formatting of hyperlinks
+  * (de) Gestaltung von Hyperlinks
+  *
+  */
+
+  a {color: #4D87C7; text-decoration:none;}
+  a:focus,
+  a:hover,
+  a:active {color:#182E7A; text-decoration:underline;}
+  
+  #header #topnav a { color: #999; font-weight: normal; background:transparent; text-decoration:none; }
+  #header #topnav a:focus, 
+  #header #topnav a:hover,
+  #header #topnav a:active { text-decoration:underline; background-color: transparent;}
+  
+  #footer a { color: #999; background:transparent; font-weight: bold;}
+  #footer a:focus, 
+  #footer a:hover,
+  #footer a:active {color: #4D87C7; background-color: transparent; text-decoration:underline;}
+  
+  .readon { background:url(../../../images/default/M_images/arrow.png) no-repeat left center; padding-left:15px; }
+  .readon:hover, .readon:active, .readon:focus { }
+
+  /**
+  * (en) Emphasizing external Hyperlinks via CSS
+  * (de) Hervorhebung externer Hyperlinks mit CSS
+  *
+  * @section             content-external-links
+  * @app-yaml-default    disabled
+  */
+
+  /*
+  #main a[href^="http://www.my-domain.com"],
+  #main a[href^="https://www.my-domain.com"]
+  {
+    padding-left: 12px;
+    background-image: url('your_image.gif');
+    background-repeat: no-repeat;
+    background-position: 0 0.45em;
+  }
+  */
+
+  /**
+  * Tables | Tabellen
+  * (en) Generic classes for table-width and design definition
+  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  *
+  * @section content-tables
+  */
+
+  table { width: auto; border-collapse:collapse; margin-bottom: 0.5em; }
+  table.full { width: 100%; }
+  table.fixed { table-layout:fixed }
+
+  th,td { padding: 0.5em; }
+  thead th { background: #444; color: #fff }
+  tbody th { background: #ccc; color: #333 }
+  tbody th.sub { background: #ddd; color: #333 }
+  
+  table.contentpaneopen, table.contentpane, table.blog, table.category {
+    width: 100%;
+  }
+  
+  /**
+  * Miscellaneous | Sonstiges
+  *
+  * @section content-misc
+  */
+
+  hr {
+    color: #fff;
+    background:transparent;
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0.5em 0;
+    border:0;
+    border-bottom: 1px #eee solid;
+  }
+  
+  /**
+  * (en) Formatting of Joomla! sezific elements
+  * (de) Gestaltung von Joomla! Spezifischen Elementen
+  */
+  .pageinfo, .iteminfo { color:#aaa; }
+  
+  .img_caption { background:#f1f1f1; padding:3px; border:1px solid #ddd; }
+  .img_caption p { 
+    background:#f1f1f1; 
+    padding:1px 3px; 
+    margin:0;
+  }
+  
+  /* pagination_ListElements.php (/html/) */
+  ul.pagination { list-style:none; list-style-type:none; margin:0; padding:0; float:left; overflow:hidden; width:100%; border-top:1px solid #efefef; border-bottom:1px solid #efefef; }
+  ul.pagination li { float:left; margin:0 1em 0 0; padding:0; }
+  /* ------------------------------------ */
+  
+  div.pagination { position:relative; border-top:1px solid #ccc; padding-top:.25em; }
+  div.pagination .page_start,
+  div.pagination .page_prev { float:left; margin-right:.5em; background:url(../../../images/default/pagination/start.gif) no-repeat left; padding-left:18px; }
+  div.pagination .page_prev { background:url(../../../images/default/pagination/prev.gif) no-repeat left; padding-left:13px; }
+  div.pagination .page_next,
+  div.pagination .page_end { float:right; margin-left:.5em; background:url(../../../images/default/pagination/end.gif) no-repeat right; padding-right:18px;}
+  div.pagination .page_next { background:url(../../../images/default/pagination/next.gif) no-repeat right; padding-right:13px; }
+  div.pagination .page_numbers { display:block; text-align:center;}
+  
+  .contenttoc { border:1px solid #efefef; margin:0 0 1em 1em; float:right; }
+  .pagenavcounter { font-weight:bold; font-style:italic; margin-bottom:1em; }
+  
+  .counter { text-align:center; }
+  
+  .pagenavbar { text-align:center; } 
+  
+  table.pagenav { background:transparent; width:100%; border-top:1px solid #ccc; border-bottom:1px solid #ccc; margin:1em 0; }
+  table.pagenav th { background:transparent;}
+  table.pagenav th.pagenav_prev { text-align:left; }
+  table.pagenav th.pagenav_next { text-align:right; }
+    
+  .sectiontableheader { }
+  .sectiontableentry1 { background:#efefef;}
+  .sectiontableentry2, .sectiontableentry0 { background:#e5e5e5; }
+  
+  .tool-tip { background:#efefef; border:3px solid #aaa; z-index:10000; }
+  .tool-tip .tool-title { font-weight:bold; border-bottom:2px solid #aaa; padding:5px; }
+  .tool-tip .tool-text { padding:5px; text-align:left; }
+  
+  .iteminfo { overflow:hidden; display:block; clear:both; width:100%; }
+  
+  .createdby {
+    padding: 3px 3px 3px 15px;
+    background: url(../../../images/default/user.png) no-repeat 0 5px;
+  }
+  
+  .createdate, .modifydate {
+    padding: 3px 3px 3px 15px;
+    background: url(../../../images/default/calendar.png) no-repeat 0 5px;
+  }  
+  .modifydate { display:block; }
+  
+  .buttonheading {
+    float: right;
+    width: 70px;
+  }
+  
+  .buttonheading img {
+    margin: 0 0 0 5px;
+    border: 0;
+    float: right;
+  }
+  
+  .mod_login_submitbutton { margin-bottom:1em; }
+  
+  .syndicate span { display:none; }
+  
+  table.pollstableborder { width:100%; }
+  table.pollstableborder .question { font-weight:bold; }
+  
+  .content_rating { position:relative; }
+  .content_vote { display:block; margin-bottom:1em; }
+  
+  .filter {}
+  
+  .dispaly {}
+
+  .blog { }
+  
+  .searchintro { }
+  
+  .adminform { }
+  
+  .blog_more { }
+  
+  .category { }
+  
+  .contentdescription { overflow:hidden; width:100%; margin-bottom:1em; }
+  
+  a.contentpagetitle {}
+
+}

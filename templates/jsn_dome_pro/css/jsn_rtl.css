@@ -1,0 +1,817 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+pre {
+	border-left: none;
+	border-right: 5px solid #404040;
+}
+blockquote {
+	padding-left: 0;
+	padding-right: 55px;
+	background: url(../images/icons/icon-text-blockquote-rtl.png) no-repeat top right;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+	margin-right: 1.6em;
+	margin-left: 0;
+}
+ol li {
+	margin-right: 2em;
+	margin-left: 0;
+}
+/* ============================== LAYOUT ============================== */
+#jsn-page {
+	text-align: right;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-logo {
+	float: right;
+}
+ul.menu-topmenu li.last {
+	margin: 0 6px 0 0;
+}
+#jsn-headerright #jsn-pos-top {
+	float: left;
+}
+#jsn-pos-top div.jsn-modulecontainer {
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-pos-mainmenu {
+	float: right;
+	direction: ltr;
+}
+#jsn-pos-toolbar {
+	float: left;
+}
+#jsn-pos-toolbar div.jsn-modulecontainer {
+	float: left;
+	margin-right: 10px;
+	margin-left: 0;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content {
+	direction: ltr;
+}
+#jsn-leftsidecontent_inner,
+#jsn-rightsidecontent_inner,
+#jsn-pos-innerleft_inner,
+#jsn-centercol_inner,
+#jsn-pos-innerright_inner {
+	direction: rtl;
+}
+.breadcrumb span.divider {
+    background: url("../images/icons/icon-arrow-black-rtl.png") no-repeat scroll center center;
+}
+/* =============== LAYOUT - FOOTER AREA =============== */
+#jsn-pos-bottom {
+	text-align: left;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - CONTENT COLUMMNS =============== */
+div.grid-layout div.grid-col div.grid-col_inner {
+	margin-right: 0;
+	margin-left: 10px;
+}
+div.grid-layout div.grid-lastcol div.grid-col_inner {
+	margin-left: 0;
+}
+/* =============== TYPOGRAPHY - TEXT STYLES =============== */
+.text-dropcap p:first-child:first-letter,
+p.text-dropcap:first-child:first-letter {
+	float: right;
+	float: none\0/;
+}
+.text-tip,
+.text-info,
+.text-alert,
+.text-audio,
+.text-video,
+.text-comment,
+.text-download,
+.text-attachment {
+	padding-left: 1em;
+	padding-right: 5em;
+	background-position: right center;
+	display: inline-block;
+}
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- ICON LINK ----- */
+.link-icon {
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 28px;
+}
+/* ----- EXTENDED LINK ----- */
+.link-icon-ext {
+	padding-right: 0;
+	padding-left: 20px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-aim,
+.link-icon-ext.jsn-icon-ext-aim {
+	background-position: left 0;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-archive,
+.link-icon-ext.jsn-icon-ext-archive {
+	background-position: left -86px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-mobile,
+.link-icon-ext.jsn-icon-ext-mobile {
+	background-position: left -172px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-css,
+.link-icon-ext.jsn-icon-ext-css {
+	background-position: left -258px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-application,
+.link-icon-ext.jsn-icon-ext-application {
+	background-position: left -344px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-doc,
+.link-icon-ext.jsn-icon-ext-doc {
+	background-position: left -430px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-feed,
+.link-icon-ext.jsn-icon-ext-feed {
+	background-position: left -516px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-movie,
+.link-icon-ext.jsn-icon-ext-movie {
+	background-position: left -602px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-flash,
+.link-icon-ext.jsn-icon-ext-flash {
+	background-position: left -688px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-calendar,
+.link-icon-ext.jsn-icon-ext-calendar {
+	background-position: left -774px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-mail,
+.link-icon-ext.jsn-icon-ext-mail {
+	background-position: left -860px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-quicktime,
+.link-icon-ext.jsn-icon-ext-quicktime {
+	background-position: left -946px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-msn,
+.link-icon-ext.jsn-icon-ext-msn {
+	background-position: left -1032px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-music,
+.link-icon-ext.jsn-icon-ext-music {
+	background-position: left -1118px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-pdf,
+.link-icon-ext.jsn-icon-ext-pdf {
+	background-position: left -1204px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-powerpoint,
+.link-icon-ext.jsn-icon-ext-powerpoint {
+	background-position: left -1290px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-skype,
+.link-icon-ext.jsn-icon-ext-skype {
+	background-position: left -1376px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-torrent,
+.link-icon-ext.jsn-icon-ext-torrent {
+	background-position: left -1462px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-font,
+.link-icon-ext.jsn-icon-ext-font {
+	background-position: left -1548px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-text,
+.link-icon-ext.jsn-icon-ext-text {
+	background-position: left -1634px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-vcard,
+.link-icon-ext.jsn-icon-ext-vcard {
+	background-position: left -1720px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-windowsmedia,
+.link-icon-ext.jsn-icon-ext-windowsmedia {
+	background-position: left -1806px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-xls,
+.link-icon-ext.jsn-icon-ext-xls {
+	background-position: left -1892px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-yahoo,
+.link-icon-ext.jsn-icon-ext-yahoo {
+	background-position: left -1978px;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+table.table-style th,
+table.table-style td,
+table.table-style tbody th,
+table.table-style tbody td {
+	text-align: right;
+}
+table.table-style tfoot td {
+	text-align: left;
+}
+/* =============== TYPOGRAPHY - LIST STYLES =============== */
+/* ----- ARROW LIST ----- */
+ul.list-arrow li {
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 16px;
+}
+ul.list-arrow li:after {
+	left: auto;
+	right: 2px;
+}
+ul.list-arrow.arrow-red li:after {
+	border-right-color: #AE0000;
+	border-left: 0.34em solid transparent;
+}
+ul.list-arrow.arrow-blue li:after {
+	border-right-color: #0060BF;
+	border-left: 0.34em solid transparent;
+}
+ul.list-arrow.arrow-green li:after {
+	border-right-color: #3AA655;
+	border-left: 0.34em solid transparent;
+}
+ul.list-arrow.arrow-red li:after {
+	border-left-color: #AE0000\0/;
+	border-right: 0.34em solid transparent\0/;
+}
+ul.list-arrow.arrow-blue li:after {
+	border-left-color: #0060BF\0/;
+	border-right: 0.34em solid transparent\0/;
+}
+ul.list-arrow.arrow-green li:after {
+	border-left-color: #3AA655\0/;
+	border-right: 0.34em solid transparent\0/;
+}
+/* ----- ICON LIST ----- */
+ul.list-icon li {
+	padding-left: 0;
+	padding-right: 26px;
+}
+ul.list-icon li .jsn-listbullet {
+	left: auto;
+	right: 0;
+}
+/* ----- BULLET NUMBER LIST ----- */
+ul.list-number-bullet li,
+ul.list-number-digit li {
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 36px;
+}
+ul.list-number-bullet li span.jsn-listbullet,
+ul.list-number-digit li span.jsn-listbullet {
+	left: auto;
+	right: 0;
+}
+/* ----- DIGIT NUMBER LIST ----- */
+ul.list-number-digit li {
+	padding-left: 0;
+	padding-right: 42px;
+}
+ul.list-number-digit li span.jsn-listbullet {
+	text-align: left;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu {
+	direction: rtl;
+}
+div.jsn-modulecontainer ul.menu-mainmenu li {
+	float: right;
+}
+div.jsn-modulecontainer ul.menu-mainmenu > li {
+	margin-right: 0;
+	margin-left: 5px;
+}
+/* ----- PARENT ITEMS / ADD ARROW TO ITEMS HAVE SUBLEVEL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul li.parent > a {
+	padding-right: 10px;
+	padding-left: 16px;
+	background-position: 2% center;
+	background-image: url(../images/icons/icon-arrow-white-rtl.png);
+	background-repeat: no-repeat;
+}
+/* =============== MENU - MAIN MENU ICONS =============== */
+.menu-iconmenu li[class*="icon-"] > a > span,
+.menu-iconmenu li[class*="jsn-icon-"] > a > span {
+	padding-left: 0;
+	padding-right: 28px;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+ul.menu-treemenu li > a > span {
+	padding-left: 0;
+	padding-right: 16px;
+	background-position: right -341px;
+}
+/* ----- ICON MENU STYLE ----- */
+/* ---------- 1st LEVEL ---------- */
+div.jsn-modulecontainer ul.menu-treemenu ul li a {
+	padding-left: 16px;
+	padding-right: 25px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul li a {
+	padding-left: 16px;
+	padding-right: 40px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul ul li a {
+	padding-left: 18px;
+	padding-right: 55px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul ul ul li a {
+	padding-left: 18px;
+	padding-right: 70px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul ul ul ul li a {
+	padding-left: 18px;
+	padding-right: 85px;
+}
+/* =============== MENU - DIV MENU =============== */
+ul.menu-divmenu {
+	float: none;
+}
+ul.menu-divmenu li {
+	float: right;
+}
+ul.menu-divmenu li.first {
+	border-right-width: 0;
+	padding-right: 0;
+	padding-left: 0.8em;
+}
+ul.menu-divmenu li.last {
+	border-right-width: 1px;
+}
+/* =============== MENU - SIDE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-sidemenu {
+	direction: ltr;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li {
+	direction: rtl;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li:hover > ul {
+	right: 0;
+	right: -1px\0/;
+}
+ul.menu-sidemenu > li > a > span {
+	padding-left: 0;
+	padding-right: 16px;
+	background-position: right center;
+}
+/* ---------- 1st LEVEL ---------- */
+div.jsn-modulecontainer ul.menu-sidemenu ul li a span {
+	padding-right: 0;
+	background: none;
+}
+/* ----- PARENT ITEMS / ADD ARROW TO ITEMS HAVE SUBLEVEL ----- */
+/* 1st LEVEL */
+div.jsn-modulecontainer ul.menu-sidemenu li.parent > a {
+	padding-right: 10px;
+	padding-left: 16px;
+	background-image: url(../images/icons/icon-arrow-white-rtl.png);
+	background-position: 2% center;
+	background-repeat: no-repeat;
+}
+div.jsn-modulecontainer ul.menu-sidemenu > li.parent > a {
+	padding-right: 8px;
+}
+/* ----- ICON MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-sidemenu.menu-iconmenu > li.parent > a {
+	padding-right: 6px;
+}
+/* ============================== MOBILE TOOLS ============================== */
+#jsn-headerright #jsn-desktopswitch {
+	float: left;
+}
+#jsn-desktopswitch {
+	right: auto;
+	left: 40px;
+}
+#jsn-desktopswitch ul li {
+	float: right;
+}
+#jsn-desktopswitch ul li a span {
+	padding-left: 0;
+	padding-right: 22px;
+}
+#jsn-desktopswitch #jsn-mobileswitcher span {
+	background-position: right -172px;
+}
+body.jsn-mobile #jsn-desktopswitch #jsn-desktopswitcher span {
+	background-position: right -86px;
+}
+body.jsn-mobile #jsn-desktopswitch #jsn-menujump span {
+	background-position: right 0;
+}
+/* ============================== SITE TOOLS ============================== */
+/* =============== SITE TOOLS - GENERAL PRESENTATION =============== */
+#jsn-sitetoolspanel {
+	float: left;
+}
+ul#jsn-sitetools-menu li ul {
+	left: 8px;
+	right: auto;
+}
+ul#jsn-sitetools-inline > li > a {
+	display: none;
+}
+/* ----- DROP DOWN ----- */
+ul#jsn-sitetools-menu {
+	direction: ltr;
+}
+/* ============================== MODULE STYLES ============================== */
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+/* ----- MODULE SOLID BOX ----- */
+div[class*="solid-"].jsn-modulecontainer h3.jsn-moduletitle {
+	padding-left: 0;
+	padding-right: 3px;
+}
+/* ----- MODULE PUREBOX ----- */
+div.purebox h3.jsn-moduletitle {
+	padding-left: 0;
+	padding-right: 3px;
+}
+/* =============== MODULE STYLES - MODULE ICONS =============== */
+div[class*="icon-"] h3.jsn-moduletitle span.jsn-moduleicon,
+div[class*="jsn-icon-"] h3.jsn-moduletitle span.jsn-moduleicon {
+	padding-left: 0;
+	padding-right: 28px;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- ARTICLE TOOLBAR ----- */
+#article-index {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+.article-info {
+	float: right;
+}
+.jsn-article-toolbar .btn-group.pull-right {
+	float: left;
+}
+.jsn-article-toolbar .pull-right > .dropdown-menu {
+	left: 0;
+	right: auto;
+}
+/* ----- ARTICLE INFO ----- */
+.author,
+.createdate,
+.publishdate {
+	padding-right: 20px;
+	padding-left: 0;
+}
+.author {
+	background-position: right 0;
+}
+.createdate,
+.publishdate {
+	background-position: right -86px;
+}
+.modifydate {
+	text-align: left;
+}
+/* ----- 3 BUTTON PDF, PRINT, EMAIL CONTAINER ----- */
+ul.jsn-article-tools {
+	float: left;
+}
+ul.jsn-article-tools li {
+	margin-left: 0;
+	margin-right: 10px;
+}
+/* ----- TABLE OF CONTENT ----- */
+table.contenttoc {
+	margin-left: 0;
+	margin-right: 1em;
+	float: left;
+}
+/* ----- CATEGORY LIST LAYOUT ----- */
+/* TABLE FILTER */
+.jsn-infofilter {
+	text-align: left;
+}
+.jsn-titlefilter {
+	float: right;
+}
+.archived-article-list .jsn-infofilter {
+	text-align: right;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_SEARCH =============== */
+div.com-search #searchForm .search-phrase {
+	margin-left: 0;
+	margin-right: 95px;
+}
+div.com-search #searchForm .search-range input,
+div.com-search #searchForm .search-phrase input {
+	margin-left: 0;
+	margin-right: 5px;
+}
+div.com-search #searchForm .search-range label,
+div.com-search #searchForm .search-phrase label,
+div.com-search #searchForm .search-keyword label,
+div.com-search #searchForm .search-ordering label,
+div.com-search #searchForm .search-field-title {
+	text-align: right;
+	padding-right: 0;
+	padding-left: 3px;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_USER =============== */
+div.reset .jsn-formRow-lable,
+div.com-user .jsn-formRow-lable,
+div.com-user #com-form-login label {
+	float: right;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_CONTACT =============== */
+div.com-contact .jsn-contact-image {
+	float: left;
+	margin: 10px 0 0 5px;
+}
+div.com-contact .jicons-icons {
+	float: right;
+	margin-left: 5px;
+}
+/* =============== JOOMLA! EXTENSIONS - SYSTEM MESSAGES =============== */
+/* ----- SYSTEM STANDARD MESSAGES ----- */
+#system-message dd.message ul {
+	padding-left: 0;
+	padding-right: 40px;
+	background-position: 98% center;
+}
+#system-message ul li {
+	margin-right: 0;
+}
+/* ----- SYSTEM ERROR MESSAGES ----- */
+#system-message dd.error ul {
+	background-position: 98% center;
+}
+/* ----- SYSTEM NOTICE MESSAGES ----- */
+#system-message dd.notice ul {
+	background-position: 98% center;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_USER =============== */
+/* ----- REGISTER FORM ----- */
+.registration .form-horizontal .control-label {
+	text-align: right;
+	float: right;
+}
+form#login-form .icon-arrow-right {
+	background-position: -433px -72px;
+	float: none;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs a,
+span.breadcrumbs span {
+	float: right;
+	padding-right: 0;
+	padding-left: 18px;
+	background: url(../images/icons/icon-arrow-black-rtl.png) left center no-repeat;
+}
+/* =============== JOOMLA! EXTENSIONS - MODULE SEARCH =============== */
+#jsn-pos-top div.search {
+	float: left;
+}
+#jsn-pos-top div.search input#mod_search_searchword {
+	padding-left: 0;
+	padding-right: 25px;
+	background-position: 98% -170px;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_STATISTICS =============== */
+dl.stats-module dt {
+    float: right;
+}
+/* ============================== MISC ============================== */
+/* =============== GENERAL ICON ASSIGNMENT =============== */
+.jsn-joomla-25 .link-icon.icon-article,
+.jsn-joomla-25 .menu-iconmenu .icon-article > a > span,
+.jsn-joomla-25 .list-icon.icon-article li .jsn-listbullet,
+.jsn-joomla-25 .icon-article h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-article,
+.menu-iconmenu .jsn-icon-article > a > span,
+.list-icon.jsn-icon-article li .jsn-listbullet,
+.jsn-icon-article h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right 0;
+}
+.jsn-joomla-25 .link-icon.icon-calendar,
+.jsn-joomla-25 .menu-iconmenu .icon-calendar > a > span,
+.jsn-joomla-25 .list-icon.icon-calendar li .jsn-listbullet,
+.jsn-joomla-25 .icon-calendar h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-calendar,
+.menu-iconmenu .jsn-icon-calendar > a > span,
+.list-icon.jsn-icon-calendar li .jsn-listbullet,
+.jsn-icon-calendar h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -94px;
+}
+.jsn-joomla-25 .link-icon.icon-cart,
+.jsn-joomla-25 .menu-iconmenu .icon-cart > a > span,
+.jsn-joomla-25 .list-icon.icon-cart li .jsn-listbullet,
+.jsn-joomla-25 .icon-cart h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-cart,
+.menu-iconmenu .jsn-icon-cart > a > span,
+.list-icon.jsn-icon-cart li .jsn-listbullet,
+.jsn-icon-cart h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -188px;
+}
+.jsn-joomla-25 .link-icon.icon-comment,
+.jsn-joomla-25 .menu-iconmenu .icon-comment > a > span,
+.jsn-joomla-25 .list-icon.icon-comment li .jsn-listbullet,
+.jsn-joomla-25 .icon-comment h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-comment,
+.menu-iconmenu .jsn-icon-comment > a > span,
+.list-icon.jsn-icon-comment li .jsn-listbullet,
+.jsn-icon-comment h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -282px;
+}
+.jsn-joomla-25 .link-icon.icon-display,
+.jsn-joomla-25 .menu-iconmenu .icon-display > a > span,
+.jsn-joomla-25 .list-icon.icon-display li .jsn-listbullet,
+.jsn-joomla-25 .icon-display h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-display,
+.menu-iconmenu .jsn-icon-display > a > span,
+.list-icon.jsn-icon-display li .jsn-listbullet,
+.jsn-icon-display h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -376px;
+}
+.jsn-joomla-25 .link-icon.icon-download,
+.jsn-joomla-25 .menu-iconmenu .icon-download > a > span,
+.jsn-joomla-25 .list-icon.icon-download li .jsn-listbullet,
+.jsn-joomla-25 .icon-download h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-download,
+.menu-iconmenu .jsn-icon-download > a > span,
+.list-icon.jsn-icon-download li .jsn-listbullet,
+.jsn-icon-download h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -470px;
+}
+.jsn-joomla-25 .link-icon.icon-folder,
+.jsn-joomla-25 .menu-iconmenu .icon-folder > a > span,
+.jsn-joomla-25 .list-icon.icon-folder li .jsn-listbullet,
+.jsn-joomla-25 .icon-folder h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-folder,
+.menu-iconmenu .jsn-icon-folder > a > span,
+.list-icon.jsn-icon-folder li .jsn-listbullet,
+.jsn-icon-folder h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -564px;
+}
+.jsn-joomla-25 .link-icon.icon-help,
+.jsn-joomla-25 .menu-iconmenu .icon-help > a > span,
+.jsn-joomla-25 .list-icon.icon-help li .jsn-listbullet,
+.jsn-joomla-25 .icon-help h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-help,
+.menu-iconmenu .jsn-icon-help > a > span,
+.list-icon.jsn-icon-help li .jsn-listbullet,
+.jsn-icon-help h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -658px;
+}
+.jsn-joomla-25 .link-icon.icon-home,
+.jsn-joomla-25 .menu-iconmenu .icon-home > a > span,
+.jsn-joomla-25 .list-icon.icon-home li .jsn-listbullet,
+.jsn-joomla-25 .icon-home h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-home,
+.menu-iconmenu .jsn-icon-home > a > span,
+.list-icon.jsn-icon-home li .jsn-listbullet,
+.jsn-icon-home h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -752px;
+}
+.jsn-joomla-25 .link-icon.icon-image,
+.jsn-joomla-25 .menu-iconmenu .icon-image > a > span,
+.jsn-joomla-25 .list-icon.icon-image li .jsn-listbullet,
+.jsn-joomla-25 .icon-image h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-image,
+.menu-iconmenu .jsn-icon-image > a > span,
+.list-icon.jsn-icon-image li .jsn-listbullet,
+.jsn-icon-image h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -846px;
+}
+.jsn-joomla-25 .link-icon.icon-info,
+.jsn-joomla-25 .menu-iconmenu .icon-info > a > span,
+.jsn-joomla-25 .list-icon.icon-info li .jsn-listbullet,
+.jsn-joomla-25 .icon-info h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-info,
+.menu-iconmenu .jsn-icon-info > a > span,
+.list-icon.jsn-icon-info li .jsn-listbullet,
+.jsn-icon-info h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -940px;
+}
+.jsn-joomla-25 .link-icon.icon-mail,
+.jsn-joomla-25 .menu-iconmenu .icon-mail > a > span,
+.jsn-joomla-25 .list-icon.icon-mail li .jsn-listbullet,
+.jsn-joomla-25 .icon-mail h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-mail,
+.menu-iconmenu .jsn-icon-mail > a > span,
+.list-icon.jsn-icon-mail li .jsn-listbullet,
+.jsn-icon-mail h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1034px;
+}
+.jsn-joomla-25 .link-icon.icon-online,
+.jsn-joomla-25 .menu-iconmenu .icon-online > a > span,
+.jsn-joomla-25 .list-icon.icon-online li .jsn-listbullet,
+.jsn-joomla-25 .icon-online h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-online,
+.menu-iconmenu .jsn-icon-online > a > span,
+.list-icon.jsn-icon-online li .jsn-listbullet,
+.jsn-icon-online h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1128px;
+}
+.jsn-joomla-25 .link-icon.icon-rss,
+.jsn-joomla-25 .menu-iconmenu .icon-rss > a > span,
+.jsn-joomla-25 .list-icon.icon-rss li .jsn-listbullet,
+.jsn-joomla-25 .icon-rss h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-rss,
+.menu-iconmenu .jsn-icon-rss > a > span,
+.list-icon.jsn-icon-rss li .jsn-listbullet,
+.jsn-icon-rss h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1222px;
+}
+.jsn-joomla-25 .link-icon.icon-search,
+.jsn-joomla-25 .menu-iconmenu .icon-search > a > span,
+.jsn-joomla-25 .list-icon.icon-search li .jsn-listbullet,
+.jsn-joomla-25 .icon-search h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-search,
+.menu-iconmenu .jsn-icon-search > a > span,
+.list-icon.jsn-icon-search li .jsn-listbullet,
+.jsn-icon-search h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1316px;
+}
+.jsn-joomla-25 .link-icon.icon-selection,
+.jsn-joomla-25 .menu-iconmenu .icon-selection > a > span,
+.jsn-joomla-25 .list-icon.icon-selection li .jsn-listbullet,
+.jsn-joomla-25 .icon-selection h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-selection,
+.menu-iconmenu .jsn-icon-selection > a > span,
+.list-icon.jsn-icon-selection li .jsn-listbullet,
+.jsn-icon-selection h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1410px;
+}
+.jsn-joomla-25 .link-icon.icon-settings,
+.jsn-joomla-25 .menu-iconmenu .icon-settings > a > span,
+.jsn-joomla-25 .list-icon.icon-settings li .jsn-listbullet,
+.jsn-joomla-25 .icon-settings h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-settings,
+.menu-iconmenu .jsn-icon-settings > a > span,
+.list-icon.jsn-icon-settings li .jsn-listbullet,
+.jsn-icon-settings h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1504px;
+}
+.jsn-joomla-25 .link-icon.icon-star,
+.jsn-joomla-25 .menu-iconmenu .icon-star > a > span,
+.jsn-joomla-25 .list-icon.icon-star li .jsn-listbullet,
+.jsn-joomla-25 .icon-star h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-star,
+.menu-iconmenu .jsn-icon-star > a > span,
+.list-icon.jsn-icon-star li .jsn-listbullet,
+.jsn-icon-star h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1598px;
+}
+.jsn-joomla-25 .link-icon.icon-statistics,
+.jsn-joomla-25 .menu-iconmenu .icon-statistics > a > span,
+.jsn-joomla-25 .list-icon.icon-statistics li .jsn-listbullet,
+.jsn-joomla-25 .icon-statistics h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-statistics,
+.menu-iconmenu .jsn-icon-statistics > a > span,
+.list-icon.jsn-icon-statistics li .jsn-listbullet,
+.jsn-icon-statistics h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1692px;
+}
+.jsn-joomla-25 .link-icon.icon-user,
+.jsn-joomla-25 .menu-iconmenu .icon-user > a > span,
+.jsn-joomla-25 .list-icon.icon-user li .jsn-listbullet,
+.jsn-joomla-25 .icon-user h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-user,
+.menu-iconmenu .jsn-icon-user > a > span,
+.list-icon.jsn-icon-user li .jsn-listbullet,
+.jsn-icon-user h3.jsn-moduletitle span.jsn-moduleicon {
+	background-position: right -1786px;
+}
+/* ---------- OVERRIDE ----------- */
+.form-search .radio input[type="radio"],
+.form-search .checkbox input[type="checkbox"],
+.form-inline .radio input[type="radio"],
+.form-inline .checkbox input[type="checkbox"] {
+	float: right;
+	margin-left: 3px;
+	margin-right: auto;
+}
+.nav-tabs > li,
+.nav-pills > li {
+	float: none;
+}
+.jsn-joomla-30 .dropdown-menu li {
+	margin: 0;
+}

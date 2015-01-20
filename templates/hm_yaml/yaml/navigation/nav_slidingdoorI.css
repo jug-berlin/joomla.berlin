@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+* "Yet Another Multicolum Layout" - (X)HTML/CSS Framework
+*
+* (en) Horizontal list navigation based on "Sliding Door I" from "A List Apart"
+* (de) Horizontale Navigationsliste basierend auf "Sliding Door I" von "A List Apart"
+*
+* @copyright       Copyright 2005-2007, Reinhard Hiebl
+* @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+*                  YAML-C (http://www.yaml.de/en/licence/commercial/)
+* @link            http://www.yaml.de
+* @package         yaml
+* @version         3.0
+* @revision        $Revision: 112 $
+* @lastmodified    $Date: 2007-11-09 18:54:04 +0100 (Fr, 09 Nov 2007) $
+*/
+
+@media all
+{
+
+#nav_main {
+  width:100%;
+  float:left;
+  color: #fff;
+  background: #1f1e2e url("images/sliding_doorI/nav_rund/bg.gif") repeat-x bottom;
+}
+
+#nav_main ul {
+  white-space: nowrap;
+  line-height: 1em;
+  margin:0;
+  padding:0 0 0 50px;
+  list-style:none;
+}
+  
+#nav_main li {
+  float:left;
+  background: #8f8cad url("images/sliding_doorI/nav_rund/left.gif") no-repeat top left;
+  padding: 0 0 0 3px;
+  margin: 0;
+  border-bottom:1px solid #000;
+}
+
+#nav_main a,
+#nav_main strong {
+  display:block;
+  color:#334;
+  background: transparent;
+  background: url("images/sliding_doorI/nav_rund/right.gif") no-repeat top right;
+  padding:5px 11px 3px 8px;
+  text-transform: none;
+  text-decoration:none;
+  font-weight:normal;
+}
+
+#nav_main a:focus,
+#nav_main a:hover,
+#nav_main a:active  { 
+  color:#fff;
+  background-color: transparent;
+  background: url("images/sliding_doorI/nav_rund/right.gif") no-repeat top right;
+}
+
+#nav_main #current {
+  background-image: url("images/sliding_doorI/nav_rund/left_on.gif");
+  border-bottom:0px solid #f00;
+}
+
+#nav_main #current a,
+#nav_main #current strong {
+  color:#334;
+  background-image: url("images/sliding_doorI/nav_rund/right_on.gif");
+  font-weight:bold;
+  padding-bottom:4px;
+  padding-top:5px;
+}
+
+}

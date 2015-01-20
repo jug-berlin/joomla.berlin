@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Central stylesheet (col1=1, col2=1, col3=1)
+ * (de) Zentrales Stylesheet (col1=1, col2=1, col3=1)
+ *
+ * @version         $Id: layout_3col_231.css 433 2008-07-05 13:47:20Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 433 $
+ * @lastmodified    $Date: 2008-07-05 15:47:20 +0200 (Sa, 05. Jul 2008) $
+*/
+
+/* import core styles | Basis-Stylesheets einbinden*/
+@import url(../../yaml/core/base.css);
+
+/* import screen layout | Screen-Layout einbinden */
+@import url(screen/basemod.css);
+@import url(screen/basemod_3col_231.css);
+@import url(screen/content.css);
+
+/* import print layout | Druck-Layout einbinden */
+@import url(print/print_003.css);

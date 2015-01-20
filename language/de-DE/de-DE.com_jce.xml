@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="2.0" type="language" core="1">
+	<name>Deutsch</name>
+	<tag>de-DE</tag>
+	<version>2.3.2.4</version>
+	<creationDate>27. März 2013</creationDate>
+	<author>Hartmut Steuerwald</author>
+	<authorEmail>info@h-steuerwald.de</authorEmail>
+	<authorUrl>www.hst-pc.de</authorUrl>
+	<copyright>Copyright (C) 2006 - 2012 Ryan Demmer. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>Deutsches Sprachpaket für den JCE 2.3.2.4 komplett mit Mediabox 116 und Subscription-Plugins übersetzt von H. Steuerwald</description>
+	<site folder="language/de-DE">		
+		<file>de-DE.com_jce.ini</file>
+		<file>de-DE.com_jce_caption.ini</file> 
+		<file>de-DE.com_jce_emotions.ini</file>
+		<file>de-DE.com_jce_filemanager.ini</file>
+		<file>de-DE.com_jce_fullpage.ini</file>
+		<file>de-DE.com_jce_iframe.ini</file>
+		<file>de-DE.com_jce_imgmanager_ext.ini</file>
+		<file>de-DE.com_jce_mediamanager.ini</file>
+		<file>de-DE.com_jce_templatemanager.ini</file>		
+	</site>
+	<tinymce folder="components/com_jce/editor/tiny_mce">
+		
+		<file>themes/advanced/langs/de.js</file>
+		
+	</tinymce>
+	<administration folder="administrator/language/de-DE">
+		<file>de-DE.com_jce.ini</file>
+		<file>de-DE.com_jce.menu.ini</file>
+		<file>de-DE.com_jce.sys.ini</file>
+		<file>de-DE.plg_editors_jce.ini</file>
+		<file>de-DE.plg_editors_jce.sys.ini</file>
+		<file>de-DE.plg_system_jcemediabox.ini</file>
+		<file>de-DE.plg_system_jcemediabox.sys.ini</file>
+		<file>de-DE.plg_quickicon_jcefilebrowser.ini</file>
+		<file>de-DE.plg_quickicon_jcefilebrowser.sys.ini</file>		
+	</administration>
+</install>

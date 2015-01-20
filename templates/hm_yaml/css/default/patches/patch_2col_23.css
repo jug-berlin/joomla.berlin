@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) IE-Patch stylesheet for "2col_right_31" layout
+ * (de) IE-Korrektur-Stylesheet für das Layout "2col_right_31"
+ *
+ * @version         $Id: patch_2col_23.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+/* Layout-independent adjustments | Layout-unabhängige Anpassungen ----------------------------------- */
+@import url(../../../yaml/core/iehacks.css);
+
+/* Layout-dependent adjustments | Layout-abhängige Anpassungen --------------------------------------- */
+@media screen, projection
+{
+  /*-----------------------------------------------------------------------------------------------------*/
+  /**
+   * (en) Simulate min-width / max-width for IE by using JS-Expressions
+   * (de) Über JS-Expressions können die Eigenschaften min-width / max-width im IE simuliert werden
+   *
+   * @workaround
+   * @affected   IE 5.x/Win, IE6
+   * @css-for    IE 5.x/Win, IE6
+   * @valid      no
+   */
+
+  /* Outsourced in the JYAML IE min/max Expressions Plugin - configurable in configuration */
+  
+  /*-----------------------------------------------------------------------------------------------------*/
+}

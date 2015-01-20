@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yaml>
+  <name>default.xml</name>
+  <description>Design Template Settings</description>
+
+  <lastModification>Freitag, 25 Juli 2008 18:38</lastModification>
+
+  <config>
+    <html_file>index_gfxborder</html_file>
+
+    <layout_1col>1col_3</layout_1col>
+    <layout_2col_1>2col_13</layout_2col_1>
+    <layout_2col_2>2col_32</layout_2col_2>
+    <layout_3col>3col_132</layout_3col>
+
+    <col1_content type="module-position" style="jyaml">col1</col1_content>
+    <col1_content type="module-position" style="jyaml" advanced='headerLevel="3"'>left</col1_content>
+
+    <col2_content type="module-position" style="jyaml">col2</col2_content>
+    <col2_content type="module-position" style="jyaml" advanced='headerLevel="3"'>right</col2_content>
+
+    <col3_content type="message" />
+    <col3_content type="module-position" style="jyaml">col3</col3_content>
+    <col3_content type="component" />
+
+    <addStylesheet source="design" type="text/css" media="all">navigation/nav_vlist.css</addStylesheet>
+    <addStylesheet source="design" browser="msie" type="text/css" media="all">patches/patch_vlist.css</addStylesheet>
+    <addStylesheet source="design" type="text/css" media="all">navigation/nav_shinybuttons.css</addStylesheet>
+    <addStylesheet source="design" type="text/css" media="all">screen/basemod_gfxborder.css</addStylesheet>
+
+    <ownvar_example>1</ownvar_example>
+
+    <custom>
+      <xmlconfig parts="option=com_fireboard" desc="Component: Fireboard Forum" subitems="0" force="0">force_1column_col3</xmlconfig>
+      <xmlconfig parts="option=com_joomlaboard" desc="Component: Joomlaboard Forum" subitems="0" force="0">force_1column_col3</xmlconfig>
+      <xmlconfig parts="tmpl=contentPreview" desc="For JYAML Content Preview Plugin" subitems="0" force="1">force_1column_col3</xmlconfig>
+      <xmlconfig parts="option=com_content,task=edit" desc="Editor View (edit)" subitems="0" force="1">editor_view_col3</xmlconfig>
+      <xmlconfig parts="option=com_content,task=new" desc="Editor View (new)" subitems="0" force="1">editor_view_col3</xmlconfig>
+    </custom>
+  </config>
+</yaml>

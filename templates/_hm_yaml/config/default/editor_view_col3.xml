@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yaml>
+  <name>default.xml</name>
+  <description>Design Template Settings</description>
+
+  <lastModification>Mittwoch, 23 April 2008 20:56</lastModification>
+
+  <config>
+    <col1_content clear="__all__" />
+    <col2_content clear="__all__" />
+    <addStylesheet source="design" type="text/css" media="all">extensions/editor_view.css</addStylesheet>
+
+
+  </config>
+</yaml>

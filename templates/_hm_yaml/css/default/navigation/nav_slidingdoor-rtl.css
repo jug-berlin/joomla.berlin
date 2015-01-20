@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Horizontal list navigation based on "Sliding Door II" from von "A List Apart"
+ * (de) Horizontale Navigationsliste basierend auf "Sliding Door II" von "A List Apart"
+ *
+ * @version         $Id: nav_slidingdoor-rtl.css 454 2008-07-21 17:02:08Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 454 $
+ * @lastmodified    $Date: 2008-07-21 19:02:08 +0200 (Mo, 21. Jul 2008) $
+*/
+
+
+/* Import basic YAML stylesheet | Importiere Basis YAML Stylesheet */
+@import url(../../../yaml/navigation/nav_slidingdoor-rtl.css);
+
+@media screen, projection
+{
+  /**
+   * (en) Modifying "slidingdoor buttons" navigation
+   * (de) Anpassung der "slidingdoor Buttons" Navigation
+   */
+   
+   /* no adjustements necessary */
+
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Vertical list navigation "vlist" (modified for Joomla! mod_mainmenu)
+ * (de) Vertikale Navigationsliste "vlist" (modified for Joomla! mod_mainmenu)
+ *
+ * @version         $Id: nav_vlist.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  #main .menu {
+    width: 100%;
+    overflow: hidden;
+    margin:0;
+    list-style-type: none;
+    border-top: 2px #ddd solid;
+    border-bottom: 2px #ddd solid;
+  }
+
+  #main .menu ul { list-style-type: none; margin:0; padding: 0; }
+  #main .menu li { float:left; width: 100%; margin:0; padding: 0 }
+  
+  /* Menu Title */
+  /**
+   * Dynamic menutitles with linktype seperator
+   * @doc     http://www.jyaml.de/index.php?option=com_content&task=view&id=122&Itemid=629
+   * @default disabled
+  **/    
+  /*
+  #main .menu li.menutitle {
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    font-weight: bold;
+    color: #444;
+    background-color: #fff;
+    border-bottom: 4px #888 solid;
+  }
+  */
+  
+  #main .menu a,
+  #main .menu span.separator {
+    display:block;
+    width: 90%;
+    padding:3px 0 3px 10%;
+    text-decoration: none;
+    background-color:#fff;
+    color: #444;
+    border-bottom: 1px #eee solid;
+  }
+
+  #main .menu li#current a.active_link {
+    font-weight: bold;
+    color: #fff;
+    background-color:#aab;
+    border-bottom: 1px #eee solid;
+    cursor:default;
+  }
+
+  /* Level 1 */
+  #main .menu li a, 
+  #main .menu li span.separator { width: 90%; padding-left: 10%; background-color:#fff; color: #444; }
+  
+  #main .menu li a:focus,
+  #main .menu li a:hover,
+  #main .menu li a:active { background-color:#f63; color: #fff; }
+
+  /* Level 2 */
+  #main .menu li ul li a,
+  #main .menu li ul li span.separator { width: 80%; padding-left: 20%; }
+
+  #main .menu li ul li a { background-color:#f8f8f8; color: #666; }
+  #main .menu li ul li a:focus,
+  #main .menu li ul li a:hover,
+  #main .menu li ul li a:active { background-color:#f63; color: #fff; }
+
+  /* Level 3 */
+  #main .menu li ul li ul li a,
+  #main .menu li ul li ul li span.separator { width: 70%; padding-left: 30%; }
+
+  #main .menu li ul li ul li a { background-color:#fcfcfc; color: #888; }
+  #main .menu li ul li ul li a:focus,
+  #main .menu li ul li ul li a:hover,
+  #main .menu li ul li ul li a:active { background-color:#f63; color: #fff; }
+
+  /* Level 4 */
+  #main .menu li ul li ul li ul li a,
+  #main .menu li ul li ul li ul li span.separator { width: 60%; padding-left: 40%; }
+
+  #main .menu li ul li ul li ul li a { background-color:#ffffff; color: #aaa; }
+  #main .menu li ul li ul li ul li a:focus,
+  #main .menu li ul li ul li ul li a:hover,
+  #main .menu li ul li ul li ul li a:active { background-color:#f63; color: #fff; }
+}

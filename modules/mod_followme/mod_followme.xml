@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.2" method="upgrade">
+	<name>Follow Me</name>
+	<creationDate>12 April 2009</creationDate>
+	<copyright>Copyright (C) 2008,2011 HerdBoy Web Design</copyright>
+	<author>Mustaq Sheikh</author>
+	<license>GPL</license>
+	<copyright>http://www.herdboy.com</copyright>
+	<authorEmail>no-reply@herdboy.com</authorEmail>
+	<authorUrl>http://www.herdboy.com</authorUrl>
+	<version>1.6.2</version>
+	<description>Forget Newsletters and other Campaigns for now and harness the power of Twitter to drive traffic to your site and promote your site with Follow Me. This Twitter Followme module was inspired by the many Tweetme modules and plugins for the more popular CMS out there. You are sure to catch your visitors attention with the Pagepeel effect icons.  What makes Followme different is that its lightweight and valid Html and CSS. Keeping this in mind there are only two included images that can be selected in the parameters and you can also select your own by entering the Full path to the icon you want to use. Coming up in the next version will be some slick css styling. The bird icons used here were created by Gopal Raju of www.productivedreams.com</description>
+	<files>
+		<filename module="mod_followme">mod_followme.php</filename>
+		<filename module="mod_followme">style.css</filename>
+		<filename module="mod_followme">index.html</filename>
+		<filename module="mod_followme">tmpl/index.html</filename>
+		<filename module="mod_followme">tmpl/default.php</filename>
+		<filename module="mod_followme">elements/index.html</filename>
+		<filename module="mod_followme">elements/Followme.php</filename>
+		<filename module="mod_followme">images/index.html</filename>
+		<filename module="mod_followme">images/followme_right.png</filename>
+		<filename module="mod_followme">images/followme_left.png</filename>
+	</files>
+	<config>
+	  <fields name="params" addpath="/modules/mod_followme/elements">
+	   <fieldset name="basic">
+		      <field name="moduleclass_sfx" type="hidden" default="_twittericon" />
+		      <field name="imgtoshow" type="hidden" default="1" label="Image To Show" description="">
+			     <option value="1">From Drop Down List Below, or</option>
+			     <option value="0">Defined Image URL</option>
+		      </field>
+		      <field name="timg" type="hidden" default="followme_right.png" label="Left or Right aligned image" />
+		      <field name="img" type="hidden" default="http://yoursite.com/images/image.png" label="Full URL to your own image" description="Eg: http://yoursite.com/images/image.png" />
+		      <field name="title" type="text" default="Follow Us On Twitter" label="Hover/Title Text" description="You can add a special message for use on Hover" />
+          <field name="link" type="text" default="herdboy" label="Twitter Name" description="Enter your Twitter Name, eg: herdboy" />
+		      <field name="position" type="list" default="bottomright" label="Position" description="">
+			     <option value="topleft">Top Left</option>
+			     <option value="topright">Top Right</option>
+			     <option value="bottomleft">Bottom Left</option>
+			     <option value="bottomright">Bottom Right</option>
+		      </field>
+		      <field name="fixscroll" type="list" default="fixed" label="Static or Scrolling Image" description="">
+			     <option value="fixed">Scrolling Image</option>
+			     <option value="absolute">Static Image</option>
+		      </field>		      
+		      <field name="paddingtop" type="text" default="10" label="Padding Top" description="" />
+		      <field name="paddingbottom" type="text" default="10" label="Padding Bottom" description="" />
+		      <field name="paddingleft" type="text" default="10" label="Padding Left" description="" />
+		      <field name="paddingright" type="text" default="10" label="Padding Right" description="" />
+		      <field name="z-index" type="text" default="999" label="z-index" description="" />
+	    </fieldset>
+	  </fields>
+	</config>
+</install>

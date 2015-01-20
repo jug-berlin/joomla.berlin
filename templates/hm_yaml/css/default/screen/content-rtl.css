@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Uniform design of standard content elements additional for RTL direction
+ * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente zusätzlich für RTL Leserichtung
+ *
+ * @version         $Id: content-rtl.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media all
+{
+
+
+  /* ### Lists | Listen  #### */
+
+  ul, ol, dl { margin: 0 1em 1em 0; }
+  li { margin-left:0; margin-right: 1.5em; }
+
+  dd { margin: 0 2em 1em 0; }
+  
+  /* ### text formatting | Textauszeichnung ### */
+
+  cite, blockquote { font-style:normal; }
+  blockquote { margin: 0 1.5em 1em 0; }
+  
+  /**
+   * Generic Content Classes
+   * (en) standard classes for positioning and highlighting
+   * (de) Standardklassen zur Positionierung und Hervorhebung
+   *
+   * @section content-generic-classes
+  */
+
+  /**
+   * (en) Uncomment following when float_right and float_left for RTL can not be swapped
+   * (de) Unkommentiere folgende, wenn float_right und float_left für RTL nicht getauscht werden können
+  **/
+  /* .float_left { float: right; margin-right:0; margin-left: 1em; } */
+  /* .float_right { float: left;  margin-right:1em; margin-left:0; } */
+
+  /**
+   * (en) Emphasizing external Hyperlinks via CSS
+   * (de) Hervorhebung externer Hyperlinks mit CSS
+   *
+   * @section             content-external-links
+   * @app-yaml-default    disabled
+  */
+
+  /*
+  #main a[href^="http://www.my-domain.com"],
+  #main a[href^="https://www.my-domain.com"]
+  {
+    padding-left:0;
+    padding-right: 12px;
+  }
+  */
+
+  .text-to-ltr {
+    direction: ltr;
+    text-align: left;
+  }
+}
+

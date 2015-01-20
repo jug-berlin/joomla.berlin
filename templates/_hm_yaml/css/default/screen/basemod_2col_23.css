@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Basic screen layout (col1=0, col2=1, col3=1)
+ * (de) Basis Bildschirmlayout (col1=0, col2=1, col3=1)
+ *
+ * @version         $Id: basemod_2col_23.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  /**
+   * (en) Repositioning content container
+   * (de) Neupositionierung der Content Container
+   *
+   * |-------------------------------|
+   * | #header                       |
+   * |-------------------------------|
+   * | #col2 | #col3                 |
+   * | 75%   | flexible              |
+   * |-------------------------------|
+   * | #footer                       |
+   * |-------------------------------|
+   */
+   
+  #col1, #col1_content { display:none; }
+
+  #col2 { width: 75%; float:left;}
+  #col2_content { padding-left: 20px; padding-right: 10px; }
+
+  #col3 { margin-left: 75%; margin-right: 0; border-right:0; }
+  #col3_content { padding-left: 10px; padding-right: 20px; }
+}

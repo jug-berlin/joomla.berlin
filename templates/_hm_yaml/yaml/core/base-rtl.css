@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de  
+ *
+ * (en) JYAML stylesheet to set for RTL direction
+ * (de) JYAML Stylesheet zum setzten für die RTL Leserichtung
+ *
+ * @version         $Id: base-rtl.css 467 2008-07-27 16:52:23Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 467 $
+ * @lastmodified    $Date: 2008-07-27 18:52:23 +0200 (So, 27. Jul 2008) $
+*/
+
+/* RTL Basic Stylesheets from
+ * @copyright       Copyright 2006-2008, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+*/
+
+@media all
+{
+ /*------------------------------------------------------------------------------------------------------*/
+  
+  /* (en) Set direction in Right-to-Left. */
+  /* (de) Setze Leserichtung nach Rechts-zu-Links. */  
+  * { direction: rtl; }
+
+  /* (en) Correction: margin/padding reset caused too small select boxes. */
+  /* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
+  option {
+    padding-left: 0;
+    padding-right: 0.4em;
+  }
+
+  body {
+    /* (en) Standard values for text alignment */
+    /* (de) Vorgabe der Textausrichtung */
+    text-align: right;
+  }
+
+  /* (en) New standard values for lists, blockquote and cite */
+  /* (de) Neue Standardwerte für Listen & Zitate */
+  ul, ol, dl { margin: 0 1em 1em 0; }
+  li { 
+    margin-left:auto;
+    margin-right: 1.5em;
+  }
+
+  dd { margin: 0 2em 1em 0; }
+
+  blockquote, cite { 
+    font-style: normal;  /* FF corrupts italic text with RTL fonts */
+    margin: 0 1.5em 1em 0; 
+  }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section base layout | Basis Layout
+  * @see     http://www.yaml.de/en/documentation/css-components/base-stylesheet.html
+  */
+
+  #topnav {
+    right:auto;
+    left: 10px;
+
+    /* (en) Essential for correct right alignment of absolute positioned element in IE ! */
+    /* (de) Erforderlich, damit im IE das absolut positionierte Element wirklich rechts plaziert ! */
+    right: auto;
+
+    /* (en) essential for correct right alignment in Opera 6 ! */
+    /* (de) Erforderlich, damit im Opera 6 wirklich right plaziert ! */
+    text-align: right;
+  }
+
+}

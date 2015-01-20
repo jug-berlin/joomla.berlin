@@ -1,0 +1,2941 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+html, body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-height:101%; /*Scrollbar immer anzeigen*/
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address, table {
+  padding: 0;
+  margin: 10px 0;
+}
+p:first-child,
+blockquote:first-child,
+form:first-child,
+dl:first-child,
+ul:first-child,
+ol:first-child,
+fieldset:first-child,
+address:first-child,
+table:first-child {
+  margin-top: 5px;
+}
+p:last-child,
+blockquote:last-child,
+form:last-child,
+dl:last-child,
+ul:last-child,
+ol:last-child,
+fieldset:last-child,
+address:last-child,
+table:last-child {
+  margin-bottom: 5px;
+}
+fieldset {
+  padding: 10px;
+}
+.jsn-joomla-30 fieldset {
+  padding: 0;
+  margin: 0;
+}
+small {
+  font-size: .85em;
+}
+sup {
+  bottom: 0.3em;
+  font-size: .8em;
+  position: relative;
+  vertical-align: baseline;
+}
+sup em {
+  color: red;
+}
+acronym, abbr {
+  cursor: help;
+  letter-spacing: 1px;
+  border-bottom: 1px dashed;
+}
+pre {
+  padding: 1em;
+  background: #FFFFD5;
+  border-left: 5px solid #404040;
+  font-family: "Courier New",Courier,monospace;
+}
+blockquote {
+  color: #404040;
+  min-height: 45px;
+  font-style: italic;
+  padding-left: 60px;
+  background: url(../images/icons/icon-text-blockquote.png) no-repeat top left;
+}
+blockquote p {
+  font-size: 1em;
+  line-height: inherit;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1 {
+  color: #000000;
+  font-size: 1.6em;
+}
+h2 {
+  color: #000000;
+  font-size: 1.5em;
+}
+h3 {
+  color: #CC3333;
+  font-size: 1.4em;
+}
+h4 {
+  color: #CC8033;
+  font-size: 1.3em;
+}
+h5, h6 {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+  font-weight: normal;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+  padding: 0;
+  margin: 0.3em 0 0.3em 1.6em;
+}
+ol li {
+  padding: 0;
+  margin: 0.3em 0 0.3em 2em;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.clearafter:after {
+  height: 0;
+  clear: both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+}
+.clearbreak {
+  clear: both;
+}
+div.jsn-modulecontainer {
+  margin-top: 20px;
+}
+div.jsn-modulecontainer:first-child,
+div.jsn-horizontallayout div.jsn-modulecontainer {
+  margin-top: 0;
+}
+div.jsn-modulecontainer.display-desktop {
+  display: block;
+}
+div.jsn-modulecontainer.display-mobile {
+  display: none;
+}
+div.jsn-modulescontainer {
+  padding: 5px
+}
+div.jsn-modulescontainer div.jsn-modulecontainer_inner {
+  margin: 10px;
+}
+div.jsn-modulescontainer2.jsn-horizontallayout div.jsn-modulecontainer {
+  float: left;
+  width: 49.95%;
+}
+div.jsn-modulescontainer3.jsn-horizontallayout div.jsn-modulecontainer {
+  float: left;
+  width: 33.3%;
+}
+div.jsn-modulescontainer4.jsn-horizontallayout div.jsn-modulecontainer {
+  float: left;
+  width: 24.975%;
+}
+div.jsn-modulescontainer5.jsn-horizontallayout div.jsn-modulecontainer {
+  float: left;
+  width: 19.98%;
+}
+div.jsn-modulescontainer6.jsn-horizontallayout div.jsn-modulecontainer {
+  float: left;
+  width: 16.65%;
+}
+div.jsn-modulescontainer2 #jsn-pos-user1,
+div.jsn-modulescontainer2 #jsn-pos-user2,
+div.jsn-modulescontainer2 #jsn-pos-user3,
+div.jsn-modulescontainer2 #jsn-pos-user4,
+div.jsn-modulescontainer2 #jsn-pos-user5,
+div.jsn-modulescontainer2 #jsn-pos-user6,
+div.jsn-modulescontainer2 #jsn-pos-user7,
+div.jsn-modulescontainer2 #jsn-pos-footer,
+div.jsn-modulescontainer2 #jsn-pos-bottom {
+  float: left;
+  width: 49.95%;
+}
+div.jsn-modulescontainer3 #jsn-pos-user5,
+div.jsn-modulescontainer3 #jsn-pos-user6,
+div.jsn-modulescontainer3 #jsn-pos-user7 {
+  float: left;
+  width: 33.3%;
+}
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master {
+  text-align: center;
+  background: repeat-x fixed left top;
+}
+#jsn-page {
+  color: #666;
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* ----- STICKLEFT / STICKRIGHT ----- */
+div[id*=jsn-pos-stick-] {
+  position: fixed;
+  z-index: 888888;
+}
+div[id*=jsn-pos-stick-left] {
+  left: 0;
+}
+div[id*=jsn-pos-stick-right] {
+  right: 0;
+}
+#jsn-pos-stick-leftmiddle,
+#jsn-pos-stick-rightmiddle {
+  visibility: hidden;
+}
+#jsn-pos-stick-leftbottom,
+#jsn-pos-stick-rightbottom {
+  bottom: 0;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-logo {
+  float: left;
+}
+#jsn-logo a {
+  line-height: 100%;
+  display: inline-block;
+}
+#jsn-logo #jsn-logo-mobile {
+  display: none;
+}
+#jsn-logo .jsn-topheading {
+  display: none;
+}
+#jsn-headerright {
+  padding: 20px 0;
+}
+#jsn-headerright #jsn-pos-top {
+  float: right;
+}
+#jsn-pos-top form {
+  margin: 0;
+}
+#jsn-pos-top div.jsn-modulecontainer {
+  float: left;
+  margin: 0 0 0 20px;
+}
+#jsn-pos-top div.jsn-modulecontainer:first-child {
+  margin-left: 0;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu {
+  z-index: 89;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #DADADA;
+  background-color: #fff;
+}
+#jsn-pos-mainmenu {
+  float: left;
+}
+#jsn-pos-toolbar {
+  float: right;
+}
+#jsn-pos-toolbar div.jsn-modulecontainer {
+  float: right;
+  margin-left: 10px;
+}
+#jsn-pos-toolbar form {
+  margin: 0;
+}
+/* =============== LAYOUT - CONTENT TOP AREA =============== */
+#jsn-content-top {
+  z-index: 88;
+  color: #fff;
+  padding: 8px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #DADADA;
+}
+#jsn-content-top h3.jsn-moduletitle {
+  color: #fff;
+}
+#jsn-content-top a {
+  color: #FFF;
+}
+#jsn-content-top #jsn-promo,
+#jsn-promo #jsn-pos-promo,
+#jsn-promo #jsn-pos-promo-left,
+#jsn-promo #jsn-pos-promo-right {
+  position: relative;
+}
+#jsn-content-top h3.jsn-moduletitle {
+  color: #fff;
+}
+#jsn-content-top a {
+  color: #FFF;
+}
+#jsn-pos-promo-left_inner,
+#jsn-pos-promo-right_inner {
+  padding: 20px 10px 10px;
+}
+#jsn-pos-content-top {
+  padding: 4px;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content,
+#jsn-maincontent_inner,
+#jsn-maincontent_inner1,
+#jsn-maincontent_inner2,
+#jsn-maincontent_inner3,
+#jsn-maincontent_inner4,
+#jsn-maincontent,
+#jsn-centercol,
+#jsn-pos-innerleft,
+#jsn-pos-innerright,
+#jsn-leftsidecontent,
+#jsn-rightsidecontent {
+  position: relative;
+}
+#jsn-content {
+  z-index: 88;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+div.jsn-hasleft #jsn-maincontent_inner {
+  margin-left: 10px;
+}
+div.jsn-hasright #jsn-maincontent_inner {
+  margin-right: 10px;
+}
+div.jsn-hasinnerleft #jsn-maincontent_inner1 {
+  border-right: 1px solid #dedede;
+}
+div.jsn-hasinnerright #jsn-maincontent_inner3 {
+  border-left: 1px solid #dedede;
+}
+#jsn-leftsidecontent,
+#jsn-rightsidecontent {
+  z-index: 87;
+}
+#jsn-maincontent_inner {
+  border: 1px solid #DADADA;
+  background: #fff;
+}
+#jsn-pos-innerleft_inner,
+#jsn-pos-innerright_inner {
+  padding: 15px;
+}
+#jsn-mainbody {
+  padding: 15px;
+}
+#jsn-pos-breadcrumbs {
+  margin: 0;
+  padding: 10px 15px;
+}
+.jsn-joomla-30 #jsn-pos-breadcrumbs {
+  padding: 5px 15px;
+}
+#jsn-pos-breadcrumbs,
+#jsn-pos-user-top,
+#jsn-usermodules1,
+#jsn-pos-mainbody-top {
+  background: url(../images/dot.png) left bottom repeat-x;
+}
+#jsn-pos-user-bottom,
+#jsn-pos-banner,
+#jsn-usermodules2,
+#jsn-pos-mainbody-bottom {
+  background: url(../images/dot.png) left top repeat-x;
+}
+#jsn-usermodules1_inner_grid2,
+#jsn-usermodules2_inner_grid2 {
+  width: 100%;
+}
+#jsn-pos-banner {
+  margin: 0 auto;
+  padding: 13px 15px 20px;
+  text-align: center;
+}
+#jsn-gotoplink {
+  color: #999;
+  z-index: 88;
+  padding: 5px 15px;
+  display: inline-block;
+  background-color: #FFF;
+  border: 1px solid #DADADA;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+}
+#jsn-gotoplink:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: #F2f2f2;
+}
+/* =============== LAYOUT - CONTENT BOTTOM AREA =============== */
+#jsn-content-bottom {
+  z-index: 88;
+  background: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #DADADA;
+}
+/* =============== LAYOUT - FOOTER AREA =============== */
+#jsn-footer {
+  color: #999;
+  font-size: 0.9em;
+  border: 1px solid #DADADA;
+  padding-top: 5px;
+  background: #fff url(../images/dot.png) left top repeat-x;
+  margin-bottom: 10px;
+}
+#jsn-footer a {
+  text-decoration: none;
+}
+#jsn-footer a:hover {
+  text-decoration: underline;
+}
+#jsn-pos-bottom {
+  text-align: right;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - GENERAL TYPOGRAPHY =============== */
+.hd {
+  display: none;
+}
+/* ----- PREDEFINED CONTENT ALIGN ----- */
+.align-left {
+  float: left;
+}
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-right {
+  float: right;
+}
+.margin-left {
+  margin-left: 1em;
+  margin-right: 0;
+}
+.margin-right {
+  margin-left: 0;
+  margin-right: 1em;
+}
+.content-left {
+  text-align: left;
+}
+.content-center {
+  text-align: center;
+}
+.content-right {
+  text-align: right;  
+}
+/* =============== TYPOGRAPHY - CONTENT COLUMMNS =============== */
+div.grid-layout2 div.grid-col {
+  float: left;
+  width: 49.95%;
+}
+div.grid-layout3 div.grid-col {
+  float: left;
+  width: 33.3%;
+}
+div.grid-layout4 div.grid-col {
+  float: left;
+  width: 24.96%;
+}
+div.grid-layout5 div.grid-col {
+  float: left;
+  width: 19.98%;
+}
+div.grid-layout6 div.grid-col {
+  float: left;
+  width: 16.65%;
+}
+div.grid-layout div.grid-col div.grid-col_inner {
+  margin-right: 10px;
+}
+div.grid-layout div.grid-lastcol div.grid-col_inner {
+  margin-right: 0;
+}
+/* =============== TYPOGRAPHY - TEXT STYLES =============== */
+.text-box {
+  padding: .8em;
+  border: 1px solid #e5e5e5;
+}
+.text-box-highlight {
+  padding: .8em;
+  border: 1px solid transparent;
+}
+.text-box-highlight:hover {
+  border-color: #d9d9d9;
+  background-color: #f2f2f2;
+}
+.text-highlight {
+  padding: .2em .5em;
+  background: #FFFFAA;
+}
+.text-highlight.highlight-green {
+  color: #fff;
+  background: #48691b;
+}
+.text-highlight.highlight-light {
+  color: #000;
+  background: #e5e5e5;
+}
+.text-highlight.highlight-dark {
+  color: #fff;
+  background: #595959;
+}
+.text-dropcap p:first-child:first-letter,
+p.text-dropcap:first-child:first-letter {
+  color: #404040;
+  font: 4em/.8em "Times New Roman", Times, serif;
+  float: left;
+}
+.text-alert {
+  border-top: 2px solid #FEABAB;
+  border-bottom: 2px solid #FEABAB;
+  background: #FFDFDF url(../images/icons/icon-text-alert.png) no-repeat;
+}
+.text-info {
+  border-top: 2px solid #B7D2F2;
+  border-bottom: 2px solid #B7D2F2;
+  background: #DBE7F8 url(../images/icons/icon-text-info.png) no-repeat;
+}
+.text-download {
+  border-top: 2px solid #DDEDBC;
+  border-bottom: 2px solid #DDEDBC;
+  background: #F2F9E5 url(../images/icons/icon-text-download.png) no-repeat;
+}
+.text-comment {
+  border-top: 2px solid #FEEBAB;
+  border-bottom: 2px solid #FEEBAB;
+  background: #FEF8E1 url(../images/icons/icon-text-comment.png) no-repeat;
+}
+.text-tip {
+  border-top: 2px solid #FEEBAB;
+  border-bottom: 2px solid #FEEBAB;
+  background: #FFFFD5 url(../images/icons/icon-text-tip.png) no-repeat;
+}
+.text-attachment {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  background: #f2f2f2 url(../images/icons/icon-text-attachment.png) no-repeat;
+}
+.text-video {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  background: #f2f2f2 url(../images/icons/icon-text-video.png) no-repeat;
+}
+.text-audio {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  background: #f2f2f2 url(../images/icons/icon-text-audio.png) no-repeat;
+}
+.text-tip,
+.text-info,
+.text-alert,
+.text-audio,
+.text-video,
+.text-comment,
+.text-download,
+.text-attachment {
+  background-position: left center;
+  padding: 0.8em 0.8em 0.8em 5em;
+  min-height: 28px;
+}
+.text-size-small {
+  font-size: 0.9em;
+}
+.text-size-medium {
+  font-size: 1em;
+}
+.text-size-large {
+  font-size: 1.1em;
+}
+.text-size-xlarge {
+  font-size: 1.2em;
+}
+.text-size-xxlarge {
+  font-size: 1.3em;
+}
+hr.line-dots {
+  border: none;
+  padding: 0.5em 0;
+  background: url(../images/dot.png) left center repeat-x;
+}
+hr.line-solid {}
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- BUTTON LINK ----- */
+.link-button {
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 5px 15px;
+  border: 1px solid;
+  display: inline-block;
+  border-color: #ccc;
+  text-decoration: none;
+}
+.link-button:hover {
+  border-color: #000;
+}
+a.link-button:hover,
+.link-button a:hover {
+  text-decoration: none;
+}
+a.link-button,
+.link-button a {
+  font-weight: bold;
+  color: #fff !important;
+}
+.link-button.button-light,
+.link-button.button-light a {
+  color: #333 !important;
+}
+.link-button .link-icon {
+  line-height: 100%;
+  margin: 0;
+}
+/* ----- ICON LINK ----- */
+.link-icon {
+  display: inline-block;
+  padding: 4px 0 4px 28px;
+}
+/* ----- EXTENDED LINK ----- */
+.link-icon-ext {
+  display: inline-block;
+  padding-right: 22px;
+  background: url(../images/icons/icons-ext.png) no-repeat right 0;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-aim,
+.link-icon-ext.jsn-icon-ext-aim {
+  background-position: right 0;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-archive,
+.link-icon-ext.jsn-icon-ext-archive {
+  background-position: right -86px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-mobile,
+.link-icon-ext.jsn-icon-ext-mobile {
+  background-position: right -172px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-css,
+.link-icon-ext.jsn-icon-ext-css {
+  background-position: right -258px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-application,
+.link-icon-ext.jsn-icon-ext-application {
+  background-position: right -344px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-doc,
+.link-icon-ext.jsn-icon-ext-doc {
+  background-position: right -430px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-feed,
+.link-icon-ext.jsn-icon-ext-feed {
+  background-position: right -516px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-movie,
+.link-icon-ext.jsn-icon-ext-movie {
+  background-position: right -602px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-flash,
+.link-icon-ext.jsn-icon-ext-flash {
+  background-position: right -688px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-calendar,
+.link-icon-ext.jsn-icon-ext-calendar {
+  background-position: right -774px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-mail,
+.link-icon-ext.jsn-icon-ext-mail {
+  background-position: right -860px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-quicktime,
+.link-icon-ext.jsn-icon-ext-quicktime {
+  background-position: right -946px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-msn,
+.link-icon-ext.jsn-icon-ext-msn {
+  background-position: right -1032px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-music,
+.link-icon-ext.jsn-icon-ext-music {
+  background-position: right -1118px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-pdf,
+.link-icon-ext.jsn-icon-ext-pdf {
+  background-position: right -1204px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-powerpoint,
+.link-icon-ext.jsn-icon-ext-powerpoint {
+  background-position: right -1290px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-skype,
+.link-icon-ext.jsn-icon-ext-skype {
+  background-position: right -1376px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-torrent,
+.link-icon-ext.jsn-icon-ext-torrent {
+  background-position: right -1462px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-font,
+.link-icon-ext.jsn-icon-ext-font {
+  background-position: right -1548px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-text,
+.link-icon-ext.jsn-icon-ext-text {
+  background-position: right -1634px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-vcard,
+.link-icon-ext.jsn-icon-ext-vcard {
+  background-position: right -1720px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-windowsmedia,
+.link-icon-ext.jsn-icon-ext-windowsmedia {
+  background-position: right -1806px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-xls,
+.link-icon-ext.jsn-icon-ext-xls {
+  background-position: right -1892px;
+}
+.jsn-joomla-25 .link-icon-ext.icon-ext-yahoo,
+.link-icon-ext.jsn-icon-ext-yahoo {
+  background-position: right -1978px;
+}
+/* ----- ACTION LINK ----- */
+.link-action {
+  font-weight: bold;
+  padding: 1px 2px;
+  text-decoration: none;
+}
+.link-action:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+#jsn-content-top .link-action,
+div[class*="richbox-"] .link-action {
+  border-bottom: 1px solid #FFF;
+}
+#jsn-content-top .link-action:hover,
+div[class*="richbox-"] .link-action:hover {
+  background-color: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+/* ----- HIGHLIGHT LINK ----- */
+.link-highlight {
+  color: #595959;
+  font-weight: bold;
+  display: block;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+.link-highlight:hover {
+  color: #000;
+  border-color: #d9d9d9;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+/* ----- TOOLTIPS LINK ----- */
+a.link-tooltip {
+  position: relative;
+}
+a.link-tooltip:hover {
+  z-index: 25;
+}
+a.link-tooltip span {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+a.link-tooltip:hover span {
+  display: block;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+table.table-style {
+  background: #ffffff;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #404040;
+}
+table.table-style caption {
+  padding: 6px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+table.table-style td,
+table.table-style th {
+  padding: 10px;
+  border-bottom: 1px solid #DEDEDE;
+}
+table.table-style th {
+  text-align: left;
+}
+table.table-style .highlight {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+table.table-style thead th {
+  font-size: 1.1em;
+  border-top: 6px solid #fff;
+  color: #ffffff;
+}
+table.table-style thead th.highlight {
+  border-top: none;
+}
+table.table-style tbody th,
+table.table-style tbody td {
+  vertical-align: top;
+  text-align: left;
+  border-right: 1px solid #DEDEDE;
+  border-left: 1px solid #DEDEDE;
+}
+table.table-style tbody .highlight {
+  background-color: #999;
+}
+table.table-style tbody tr.odd {
+  background: #f2f2f2;
+}
+table.table-style tbody tr.odd .highlight {
+  background-color: #7E7E7E;
+}
+table.table-style tbody tr:hover th,
+table.table-style tbody tr:hover td {
+  background: #E4E4E4;
+}
+table.table-style tbody tr:hover .highlight {
+  background: #737373;
+}
+table.table-style tfoot {
+  border: 1px solid #DEDEDE;
+}
+table.table-style tfoot th,
+table.table-style tfoot td {
+  border: none;
+  padding: 4px 10px;
+  background-color: #d9d9d9;
+}
+table.table-style tfoot td {
+  text-align: right;
+}
+/* ----- COLOR HEADER TABLE ----- */
+table.style-colorheader thead th.highlight {
+  background-color: #484848;
+}
+/* ----- COLOR STRIPES TABLE ----- */
+table.style-colorstripes {
+  color: #fff;
+}
+table.style-colorstripes thead,
+table.style-colorstripes tfoot {
+  border: none;
+}
+table.style-colorstripes tbody .highlight {
+  color: #333;
+  border-bottom: none;
+  border-top: 1px solid #fff;
+}
+/* ----- GREY STRIPES TABLE ----- */
+table.style-greystripes thead th {
+  background: #404040;
+  border-right: 1px groove #999999;
+}
+/* =============== TYPOGRAPHY - LIST STYLES =============== */
+/* ----- ARROW LIST ----- */
+ul.list-arrow {
+  list-style: none;
+}
+ul.list-arrow li {
+  margin-left: 0;
+  padding-left: 16px;
+  position: relative;
+  display: block;
+}
+ul.list-arrow li:after {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 0.34em solid transparent;
+  left: 5px;
+  top: 4px;
+}
+ul.list-arrow.arrow-red li:after {
+  border-left-color: #AE0000;
+}
+ul.list-arrow.arrow-blue li:after {
+  border-left-color:#0060BF;
+}
+ul.list-arrow.arrow-green li:after {
+  border-left-color: #3AA655;
+}
+/* ----- ICON LIST ----- */
+ul.list-icon {
+  list-style-type: none;
+}
+ul.list-icon li {
+  margin: 5px 0;
+  position: relative;
+  padding: 2px 0 0 26px;
+}
+ul.list-icon li .jsn-listbullet {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+/* ----- BULLET NUMBER LIST ----- */
+ul.list-number-bullet {
+  list-style: none;
+}
+ul.list-number-bullet li {
+  margin-left: 0;
+  position: relative;
+  padding: 6px 0 6px 36px;
+}
+ul.list-number-bullet li .jsn-listbullet {
+  left: 0;
+  top: -2px;
+  width: 24px;
+  display: block;
+  font-weight: bold;
+  position: absolute;
+}
+ul.list-number-bullet li .jsn-listbullet {
+  color: #fff;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 4px;
+}
+/* ----- DIGIT NUMBER LIST ----- */
+ul.list-number-digit {
+  list-style: none;
+}
+ul.list-number-digit li {
+  margin-left: 0;
+  position: relative;
+  padding: 8px 0 8px 42px;
+}
+ul.list-number-digit li .jsn-listbullet {
+  top: 0;
+  left: 0;
+  width: 32px;
+  display: block;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: right;
+  font-weight: bold;
+  position: absolute;
+}
+ul.list-number-digit.digit-blue li .jsn-listbullet {
+  color: #009aca;
+}
+ul.list-number-digit.digit-green li .jsn-listbullet {
+  color: #429e00;
+}
+ul.list-number-digit.digit-grey li .jsn-listbullet {
+  color: #999999;
+}
+ul.list-number-digit.digit-orange li .jsn-listbullet {
+  color: #e66000;
+}
+ul.list-number-digit.digit-red li .jsn-listbullet {
+  color: #bf0000;
+}
+ul.list-number-digit.digit-violet li .jsn-listbullet {
+  color: #9e0084;
+}
+/* ----- HORIZONTAL LIST ----- */
+ul.list-horizontal {
+  margin: 0;
+  list-style: none;
+}
+ul.list-horizontal li {
+  display: inline;
+  margin: 0 .5em;
+}
+/* ----- NOBULLET LIST ----- */
+ul.list-nobullet {
+  margin: 0;
+  list-style: none;
+}
+ul.list-nobullet li {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* =============== TYPOGRAPHY - IMAGES STYLES =============== */
+img.image-left {
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+img.image-right {
+  float: right;
+  margin: 0.5em 0.5em 0.5em 1em;
+}
+img.image-border {
+  padding: 3px;
+  border: 1px solid #e5e5e5;
+}
+img.image-margin {
+  margin: .5em;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - GENERAL =============== */
+/* ----- RICH MENU STYLE ----- */
+.jsn-menutitle,
+.jsn-menudescription {
+  display: block;
+}
+.jsn-menudescription {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+/* ----- ICONS MENU STYLE ----- */
+.menu-iconmenu li[class*="icon-"] > a > span,
+.menu-iconmenu li[class*="jsn-icon-"] > a > span {
+  padding-left: 30px;
+}
+.jsn-menu-toggle {
+  display: none;
+}
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+div.jsn-modulecontainer ul.menu-mainmenu li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  list-style-type: none;
+}
+div.jsn-modulecontainer ul.menu-mainmenu > li {
+  margin-right: 5px;
+}
+div.jsn-modulecontainer ul.menu-mainmenu li a {
+  color: #FFF;
+  display: block;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+div.jsn-modulecontainer ul.menu-mainmenu > li {
+  margin-right: 5px;
+}
+div.jsn-modulecontainer ul.menu-mainmenu > li > a {
+  color: #666;
+  font-size: 1.1em;
+}
+div.jsn-modulecontainer ul.menu-mainmenu li > a > span {
+  display: block;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul {
+  visibility: hidden;
+  visibility: visible\9;
+  display: none\9;
+}
+div.jsn-modulecontainer ul.menu-mainmenu li:hover > ul {
+  visibility: visible;
+  display: block\9;
+}
+ul.menu-mainmenu.jsn-desktop-on-mobile ul {
+  display: none;
+}
+ul.menu-mainmenu.jsn-desktop-on-mobile li:hover > ul {
+  display: block;
+}
+/* ----- ICON MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu.menu-iconmenu > li > a > span {
+  line-height: 24px;
+}
+/* ----- RICH MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li a span.jsn-menudescription {
+  display: none;
+}
+div.jsn-modulecontainer ul.menu-mainmenu.menu-richmenu li a span.jsn-menudescription {
+  display: block;
+}
+div.jsn-modulecontainer ul.menu-mainmenu.menu-richmenu.menu-iconmenu > li > a span {
+  line-height: 1.5;
+}
+/* ----- 1st LEVEL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+  font-size: 1em;
+  padding: 8px 10px;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+  top: 0;
+}
+/* ----- PARENT ITEMS / ADD ARROW TO ITEMS HAVE SUBLEVEL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul li.parent > a {
+  padding-right: 16px;
+  background: url(../images/icons/icon-arrow-white.png) 98% center no-repeat;
+}
+/* ----- HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li.active > a {
+  color: #fff;
+}
+div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+  background: url(../images/mainmenu-active-arrow.png) center bottom no-repeat;
+}
+/* ----- ROLLOVER STATE / DISPLAY SUB-MENU OF SELECTED MENU ITEM ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li:hover > ul {
+  left: auto;
+  right: auto;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-treemenu,
+div.jsn-modulecontainer ul.menu-treemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div.jsn-modulecontainer ul.menu-treemenu {
+  border-top: 1px dotted #CCC;
+}
+div.jsn-modulecontainer ul.menu-treemenu li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+div.jsn-modulecontainer ul.menu-treemenu > li {
+  border-bottom: 1px dotted #CCC;
+}
+div.jsn-modulecontainer ul.menu-treemenu > li.last {
+  border-bottom: none;
+}
+div.jsn-modulecontainer ul.menu-treemenu li a {
+  padding: 6px;
+  display: block;
+  color: #404040;
+  cursor: pointer;
+  text-decoration: none;
+}
+div.jsn-modulecontainer ul.menu-treemenu > li > a {
+  padding: 10px;
+}
+div[class*="richbox-"] ul.menu-treemenu li a {
+  color: #F2F2F2;
+}
+ul.menu-treemenu li a span {
+  display: block;
+}
+ul.menu-treemenu li > a > span {
+  padding-left: 16px;
+  background: url(../images/icons/icons-base.png) left -341px no-repeat;
+}
+/* ----- CUSTOM MODULE STYLE ----- */
+div[class*="richbox-"] .jsn-modulecontent ul.menu-treemenu,
+div[class*="lightbox-"] .jsn-modulecontent ul.menu-treemenu {
+  margin: -10px;
+  border: none;
+}
+div[class*="solid-"] .jsn-modulecontent ul.menu-treemenu {
+  margin: 0 -8px;
+}
+/* ----- ICON MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-treemenu.menu-iconmenu > li > a {
+  padding: 10px;
+}
+div.jsn-modulecontainer ul.menu-treemenu.menu-iconmenu > li > a > span {
+  line-height: 24px;
+}
+/* ----- RICH MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li a span.jsn-menudescription {
+  display: none;
+  font-size: 0.9em;
+}
+div.jsn-modulecontainer ul.menu-treemenu.menu-richmenu li a span.jsn-menudescription {
+  display: block;
+}
+div.jsn-modulecontainer ul.menu-treemenu.menu-richmenu.menu-iconmenu > li > a span {
+  line-height: 1.5;
+}
+/* ---------- 1st LEVEL ---------- */
+div.jsn-modulecontainer ul.menu-treemenu ul li {
+  margin: 0;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul li a {
+  padding-left: 25px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul li a {
+  padding-left: 40px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul ul li a {
+  padding-left: 55px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul ul ul li a {
+  padding-left: 70px;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul ul ul ul ul li a {
+  padding-left: 85px;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li.active > a {
+  font-weight: bold;
+}
+/* ----- CURRENT / HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li a:hover,
+div.jsn-modulecontainer ul.menu-treemenu li a.current {
+  background-color: #EFEFEF;
+}
+/* =============== MENU - DIV MENU =============== */
+ul.menu-divmenu {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+ul.menu-divmenu:after {
+  height: 0;
+  clear: both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+}
+ul.menu-divmenu li {
+  margin: 0;
+  padding: 0 0.8em;
+  float: left;
+  display: inline;
+  border-right: 1px solid #B3B3B3;
+}
+ul.menu-divmenu li.first {
+  padding-left: 0;
+}
+ul.menu-divmenu li.last {
+  border-right-width: 0;
+}
+/* =============== MENU - SIDE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-sidemenu,
+div.jsn-modulecontainer ul.menu-sidemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+div.jsn-modulecontainer ul.menu-sidemenu {
+  border-top: 1px dotted #CCC;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li ul {
+  position: absolute;
+  top: 0;
+}
+div.jsn-modulecontainer ul.menu-sidemenu > li {
+  border-bottom: 1px dotted #CCC;
+}
+div.jsn-modulecontainer ul.menu-sidemenu > li.last {
+  border-bottom: none;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li a {
+  display: block;
+  color: #666;
+  cursor: pointer;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+div[class*="richbox-"] ul.menu-sidemenu li a {
+  color: #FFF;
+}
+div.jsn-modulecontainer ul.menu-sidemenu > li > a {
+  padding: 10px;
+}
+ul.menu-sidemenu li > a > span {
+  display: block;
+}
+ul.menu-sidemenu > li > a > span {
+  padding-left: 16px;
+  background: url(../images/icons/icons-base.png) left -341px no-repeat;
+}
+div.jsn-modulecontainer ul.menu-sidemenu ul {
+  visibility: hidden;
+  visibility: visible\9;
+  display: none\9;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li:hover > ul {
+  visibility: visible;
+  display: block\9;
+}
+/* ----- CUSTOM MODULE STYLE ----- */
+div[class*="richbox-"] .jsn-modulecontent  ul.menu-sidemenu,
+div[class*="lightbox-"] .jsn-modulecontent ul.menu-sidemenu {
+  margin: -10px;
+  border: none;
+}
+div[class*="solid-"] .jsn-modulecontent ul.menu-sidemenu {
+  margin: 0 -10px;
+}
+/* ----- ICON MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-sidemenu.menu-iconmenu > li > a {
+  padding: 10px;
+}
+div.jsn-modulecontainer ul.menu-sidemenu.menu-iconmenu > li > a > span {
+  line-height: 24px;
+}
+/* ----- RICH MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-sidemenu li a span.jsn-menudescription {
+  display: none;
+  font-size: 0.9em;
+}
+div.jsn-modulecontainer ul.menu-sidemenu.menu-richmenu li a span.jsn-menudescription {
+  display: block;
+}
+div.jsn-modulecontainer ul.menu-sidemenu.menu-richmenu.menu-iconmenu > li > a span {
+  line-height: 1.5;
+}
+/* ---------- 1st LEVEL ---------- */
+div.jsn-modulecontainer ul.menu-sidemenu ul {
+  top: 0;
+  position: absolute;
+}
+div.jsn-modulecontainer ul.menu-sidemenu ul li a {
+  color: #FFF;
+  font-size: 1em;
+}
+div.jsn-modulecontainer ul.menu-sidemenu ul ul {
+  top: 0;
+}
+/* ----- PARENT ITEMS / ADD ARROW TO ITEMS HAVE SUBLEVEL ----- */
+/* 1st LEVEL */
+div.jsn-modulecontainer ul.menu-sidemenu li.parent > a {
+  padding-right: 16px;
+  background: url(../images/icons/icon-arrow-white.png) 98% center no-repeat;
+}
+/* ----- HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-sidemenu > li:hover > a {
+  color: #000;
+  background-color: #EFEFEF;
+}
+/* ----- HOVER STATE IN SPECIFIC MODULE BOXES ----- */
+div[class*="richbox-"] ul.menu-sidemenu > li:hover > a {
+  color: #FFF;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-sidemenu li.active > a {
+  font-weight: bold;
+}
+div.jsn-modulecontainer ul.menu-sidemenu > li.active > a {
+  color: #000;
+  background-color: #EFEFEF;
+}
+/* ----- ACTIVE STATE IN SPECIFIC MODULE BOXES ----- */
+div[class*="richbox-"] ul.menu-sidemenu > li.active > a {
+  color: #FFF;
+}
+/* ----- ROLLOVER STATE / DISPLAY SUB-MENU OF SELECTED MENU ITEM ----- */
+div.jsn-modulecontainer ul.menu-sidemenu li:hover > ul {
+  left: auto;
+}
+/* =============== MENU - TOP MENU =============== */
+ul.menu-topmenu {
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+ul.menu-topmenu li {
+  padding: 0;
+  margin: 0 0 0 6px;
+  display: inline-block;
+}
+ul.menu-topmenu li a {
+  padding: 5px 10px;
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+}
+ul.menu-topmenu li a:hover {
+  background: #fff;
+  text-decoration: none;
+}
+ul.menu-topmenu li a span {
+  display: block;
+}
+/* ----- ICON MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-topmenu.menu-iconmenu > li > a {
+  line-height: 24px;
+}
+/* ============================== MOBILE SWITCH ============================== */
+#jsn-mobileswitch {
+  display: none;
+  padding: 8px;
+  float: right;
+}
+#jsn-mobileswitch a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: text-top;
+  background: url("../images/icons/icons-mobile.png") 0 -170px no-repeat;
+}
+#jsn-desktopswitch {
+  display: none;
+  padding: 8px;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+#jsn-desktopswitch a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: text-top;
+  background: url("../images/icons/icons-mobile.png") 0 -86px no-repeat;
+}
+@media only screen and (max-device-width: 960px) {
+  body.jsn-mobile #jsn-desktopswitch {
+    display: block;
+  }
+  body.jsn-desktop #jsn-mobileswitch {
+    display: block;
+  }
+}
+/* ============================== SITE TOOLS ============================== */
+/* =============== SITE TOOLS - GENERAL PRESENTATION =============== */
+#jsn-sitetoolspanel {
+  float: right;
+}
+/* ----- DROP DOWN ----- */
+ul#jsn-sitetools-menu,
+ul#jsn-sitetools-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul#jsn-sitetools-menu li {
+  padding: 0;
+  margin: 0;
+  background: url(../images/icons/icons-uni.png) center -1500px no-repeat;
+}
+ul#jsn-sitetools-menu li a {
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+ul#jsn-sitetools-menu li ul {
+  z-index: 90;
+  right: 8px;
+  position: absolute;
+  visibility: hidden;
+  visibility: visible\9;
+  display: none\9;
+  background: rgb(75, 75, 75);
+}
+ul#jsn-sitetools-menu li:hover ul {
+  visibility: visible;
+  display: block\9;
+}
+ul#jsn-sitetools-menu.sitetool-desktop-on-mobile li ul {
+  display: none;
+}
+ul#jsn-sitetools-menu.sitetool-desktop-on-mobile li:hover ul {
+  display: block;
+}
+ul#jsn-sitetools-menu ul li {
+  padding: 3px 6px;
+  background: none;
+}
+ul#jsn-sitetools-menu ul li a {
+  margin: 2px;
+  float: left;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+}
+/* ----- INLINE ROW ----- */
+ul#jsn-sitetools-inline {
+  margin: 0;
+  float: left;
+  padding: 0;
+  list-style: none;
+}
+ul#jsn-sitetools-inline ul {
+  float: left;
+}
+ul#jsn-sitetools-inline li {
+  margin: 0;
+  float: left;
+  padding: 0;
+  list-style: none;
+}
+ul#jsn-sitetools-inline li a {
+  float: left;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+}
+/* =============== SITE TOOLS - TEXT SIZER =============== */
+#jsn-selector-small {
+  background: url(../images/icons/icons-sitetools-text.png) no-repeat 0 0;
+}
+#jsn-selector-medium {
+  background: url(../images/icons/icons-sitetools-text.png) no-repeat -21px 0;
+}
+#jsn-selector-big {
+  background: url(../images/icons/icons-sitetools-text.png) no-repeat -42px 0;
+}
+#jsn-sitetools-inline #jsn-selector-small,
+#jsn-sitetools-inline #jsn-selector-medium,
+#jsn-sitetools-inline #jsn-selector-big {
+  background-image: url(../images/icons/icons-sitetools-text-inline.png);
+}
+#jsn-selector-small.current,
+#jsn-selector-small:hover {
+  background: url(../images/icons/icons-sitetools-text.png) no-repeat 0 -20px;
+}
+#jsn-selector-medium.current,
+#jsn-selector-medium:hover {
+  background: url(../images/icons/icons-sitetools-text.png) no-repeat -21px -20px;
+}
+#jsn-selector-big.current,
+#jsn-selector-big:hover {
+  background: url(../images/icons/icons-sitetools-text.png) no-repeat -42px -20px;
+}
+#jsn-sitetools-inline #jsn-selector-small.current,
+#jsn-sitetools-inline #jsn-selector-small:hover,
+#jsn-sitetools-inline #jsn-selector-medium.current,
+#jsn-sitetools-inline #jsn-selector-medium:hover,
+#jsn-sitetools-inline #jsn-selector-big.current,
+#jsn-sitetools-inline #jsn-selector-big:hover {
+  background-image: url(../images/icons/icons-sitetools-text-inline.png);
+}
+/* =============== SITE TOOLS - WIDTH SELECTOR =============== */
+#jsn-selector-narrow {
+  background: url(../images/icons/icons-sitetools-width.png) no-repeat 0 0;
+}
+#jsn-selector-wide {
+  background: url(../images/icons/icons-sitetools-width.png) no-repeat -21px 0;
+}
+#jsn-selector-float {
+  background: url(../images/icons/icons-sitetools-width.png) no-repeat -42px 0;
+}
+#jsn-sitetools-inline #jsn-selector-narrow,
+#jsn-sitetools-inline #jsn-selector-wide,
+#jsn-sitetools-inline #jsn-selector-float {
+  background-image: url(../images/icons/icons-sitetools-width-inline.png);
+}
+#jsn-selector-narrow.current,
+#jsn-selector-narrow:hover {
+  background: url(../images/icons/icons-sitetools-width.png) no-repeat 0 -20px;
+}
+#jsn-selector-wide.current,
+#jsn-selector-wide:hover {
+  background: url(../images/icons/icons-sitetools-width.png) no-repeat -21px -20px;
+}
+#jsn-selector-float.current,
+#jsn-selector-float:hover {
+  background: url(../images/icons/icons-sitetools-width.png) no-repeat -42px -20px;
+}
+#jsn-sitetools-inline #jsn-selector-narrow.current,
+#jsn-sitetools-inline #jsn-selector-narrow:hover,
+#jsn-sitetools-inline #jsn-selector-wide.current,
+#jsn-sitetools-inline #jsn-selector-wide:hover,
+#jsn-sitetools-inline #jsn-selector-float.current,
+#jsn-sitetools-inline #jsn-selector-float:hover {
+  background-image: url(../images/icons/icons-sitetools-width-inline.png);
+}
+/* =============== SITE TOOLS - COLOR SELECTOR =============== */
+#jsn-selector-orange {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -20px 0;
+}
+#jsn-selector-red {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -40px 0;
+}
+#jsn-selector-cyan {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -60px 0;
+}
+#jsn-selector-green {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -80px 0;
+}
+#jsn-selector-yellow {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -100px 0;
+}
+#jsn-selector-pink {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -120px 0;
+}
+#jsn-selector-orange.current,
+#jsn-selector-orange:hover {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -20px -20px;
+}
+#jsn-selector-red.current,
+#jsn-selector-red:hover {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -40px -20px;
+}
+#jsn-selector-cyan.current,
+#jsn-selector-cyan:hover {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -60px -20px;
+}
+#jsn-selector-green.current,
+#jsn-selector-green:hover {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -80px -20px;
+}
+#jsn-selector-yellow.current,
+#jsn-selector-yellow:hover {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -100px -20px;
+}
+#jsn-selector-pink.current,
+#jsn-selector-pink:hover {
+  background: url(../images/icons/icons-sitetools-color.png) no-repeat -120px -20px;
+}
+/* ============================== FONT STYLES ============================== */
+/* =============== BUSINESS TEXT =============== */
+/* ----- SPECIAL FONTS ADJUSTMENTS ----- */
+
+/* ----- SPECIAL FONTS ADJUSTMENTS ----- */
+body.jsn-textstyle-business.jsn-specialfont .jsn-moduletitle {
+  font-size: 1.4em;
+}
+body.jsn-textstyle-business.jsn-specialfont ul.menu-mainmenu li a {
+  font-size: 1.3em;
+}
+body.jsn-textstyle-business.jsn-specialfont ul.menu-mainmenu ul li a {
+  font-size: 1.1em;
+}
+body.jsn-textstyle-business.jsn-specialfont .jsn-moduletitle {
+  font-size: 1.3em;
+}
+/* =============== PERSONAL TEXT =============== */
+body.jsn-textstyle-personal .contentheading,
+body.jsn-textstyle-personal .componentheading,
+body.jsn-textstyle-personal .subheading {
+  font-size: 1.8em;
+}
+body.jsn-textstyle-personal .jsn-moduletitle {
+  font-size: 1.3em;
+}
+/* ----- SPECIAL FONTS ADJUSTMENTS ----- */
+body.jsn-textstyle-personal.jsn-specialfont ul.menu-mainmenu > li > a {
+  font-size: 1.7em;
+  line-height: 1em;
+}
+body.jsn-textstyle-personal.jsn-specialfont ul.menu-mainmenu.menu-richmenu > li > a {
+}
+body.jsn-textstyle-personal.jsn-specialfont ul.menu-mainmenu.menu-iconmenu li > a .jsn-menutitle {
+  line-height: 1em;
+}
+body.jsn-textstyle-personal.jsn-specialfont ul.menu-mainmenu > li > a .jsn-menudescription {
+  line-height: 1em;
+}
+body.jsn-textstyle-personal.jsn-specialfont ul.menu-mainmenu ul li a {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+body.jsn-textstyle-personal.jsn-specialfont .jsn-moduletitle {
+  font-size: 1.8em;
+}
+body.jsn-textstyle-personal.jsn-specialfont .contentheading,
+body.jsn-textstyle-personal.jsn-specialfont .componentheading,
+body.jsn-textstyle-personal.jsn-specialfont .subheading {
+  font-size: 2.4em;
+  line-height: 1em;
+}
+body.jsn-textstyle-personal.jsn-specialfont h1 {
+  font-size: 2.4em;
+}
+body.jsn-textstyle-personal.jsn-specialfont h2 {
+  font-size: 2.2em;
+}
+body.jsn-textstyle-personal.jsn-specialfont h3 {
+  font-size: 2em;
+}
+body.jsn-textstyle-personal.jsn-specialfont h4 {
+  font-size: 1.8em;
+}
+body.jsn-textstyle-personal.jsn-specialfont h5,
+body.jsn-textstyle-personal.jsn-specialfont h6 {
+  font-size: 1.8em;
+}
+body.jsn-textstyle-personal.jsn-specialfont h1,
+body.jsn-textstyle-personal.jsn-specialfont h2,
+body.jsn-textstyle-personal.jsn-specialfont h3,
+body.jsn-textstyle-personal.jsn-specialfont h4,
+body.jsn-textstyle-personal.jsn-specialfont h5,
+body.jsn-textstyle-personal.jsn-specialfont h6 {
+  line-height: 1em;
+}
+body.jsn-textstyle-personal.jsn-specialfont #jsn-gotoplink {
+  font-size: 1.4em
+}
+/* =============== NEWS TEXT =============== */
+body.jsn-textstyle-news.jsn-specialfont ul.menu-mainmenu li a {
+  font-size: 1em;
+}
+body.jsn-textstyle-news.jsn-specialfont ul.menu-mainmenu ul li a {
+  font-size: 0.9em;
+}
+body.jsn-textstyle-news.jsn-specialfont .jsn-moduletitle {
+  font-size: 1.1em;
+}
+body.jsn-textstyle-news.jsn-specialfont .contentheading,
+body.jsn-textstyle-news.jsn-specialfont .componentheading,
+body.jsn-textstyle-news.jsn-specialfont .subheading {
+  font-weight: bold;
+}
+/* ============================== MODULE STYLES ============================== */
+h3.jsn-moduletitle {
+  margin: 0;
+  color: #666;
+  font-size: 1.2em;
+}
+h3.jsn-moduletitle > span {
+  display: block;
+}
+h3.jsn-moduletitle span.jsn-moduleicon {
+  line-height: 24px;
+}
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+div.purebox div.jsn-modulecontainer_inner,
+div[class*="solid-"] div.jsn-modulecontainer_inner,
+div[class*="richbox-"] div.jsn-modulecontainer_inner,
+div[class*="lightbox-"] div.jsn-modulecontainer_inner {
+  padding: 8px;
+  background-color: #FFF;
+  border: 1px solid #DADADA;
+}
+div.purebox div.jsn-modulecontainer_inner > div,
+div[class*="solid-"] div.jsn-modulecontainer_inner > div,
+div[class*="richbox-"] div.jsn-modulecontainer_inner > div,
+div[class*="lightbox-"] div.jsn-modulecontainer_inner > div {
+  height: 100%;
+}
+div.purebox h3.jsn-moduletitle,
+div[class*="richbox-"] h3.jsn-moduletitle,
+div[class*="lightbox-"] h3.jsn-moduletitle {
+  padding-bottom: 12px;
+  background: #FFF url(../images/dot.png) left bottom repeat-x;
+}
+div[class*="duohead-"] h3.jsn-moduletitle span.jsn-moduleicon span {
+  color: #666;
+}
+/* ----- MODULE RICHBOX & LIGHTBOX ----- */
+div[class*="richbox-"],
+div[class*="richbox-"] a {
+  color: #FFF;
+}
+div[class*="richbox-"] div.jsn-modulecontent,
+div[class*="lightbox-"] div.jsn-modulecontent {
+  padding: 10px;
+}
+/* ----- MODULE SOLIDBOX & PUREBOX ----- */
+div.purebox h3.jsn-moduletitle,
+div[class*="solid-"] h3.jsn-moduletitle {
+  padding-left: 3px;
+}
+div.purebox div.jsn-modulecontent,
+div[class*="solid-"] div.jsn-modulecontent {
+  padding: 3px;
+}
+/* ----- CUSTOM BOX STYLE IN SPECIFIC POSITION ----- */
+#jsn-content-top div.purebox,
+#jsn-content-top div[class*="solid-"],
+#jsn-content-top div[class*="lightbox-"],
+#jsn-content-top div.purebox h3.jsn-moduletitle,
+#jsn-content-top div[class*="solid-"] h3.jsn-moduletitle,
+#jsn-content-top div[class*="richbox-"] h3.jsn-moduletitle,
+#jsn-content-top div[class*="lightbox-"] h3.jsn-moduletitle {
+  color: #666;
+}
+#jsn-pos-innerleft div.purebox div.jsn-modulecontainer_inner > div,
+#jsn-pos-innerleft div[class*="richbox-"] div.jsn-modulecontainer_inner > div,
+#jsn-pos-innerleft div[class*="lightbox-"] div.jsn-modulecontainer_inner > div,
+#jsn-pos-innerright div.purebox div.jsn-modulecontainer_inner > div,
+#jsn-pos-innerright div[class*="richbox-"] div.jsn-modulecontainer_inner > div,
+#jsn-pos-innerright div[class*="lightbox-"] div.jsn-modulecontainer_inner > div {
+  padding: 0;
+  border: none;
+}
+/* =============== MODULE STYLES - MODULE ICONS =============== */
+div[class*="icon-"] h3.jsn-moduletitle span.jsn-moduleicon,
+div[class*="jsn-icon-"] h3.jsn-moduletitle span.jsn-moduleicon {
+  padding-left: 30px;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== PAGEBREAK - TABS STYLE =============== */
+dl.tabs {
+  float: left;
+  margin-bottom: -1px;
+}
+dl.tabs dt.tabs {
+  float: left;
+  margin-left: 3px;
+  padding: 4px 10px;
+  background-color: #F0F0F0;
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+dl.tabs dt:hover {
+  background-color: #F9F9F9;
+}
+dl.tabs dt.open {
+  background-color: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+dl.tabs dt.tabs h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+dl.tabs dt.tabs h3 a {
+  color: #666;
+  font-weight: normal;
+}
+dl.tabs dt.open h3 a,
+dl.tabs dt.tabs h3 a:hover {
+  color: #000;
+  text-decoration: none;
+}
+dl.tabs dt.open h3 a {
+  font-weight: bold;
+}
+div.current dd.tabs {
+  margin: 0;
+  padding: 10px;
+  clear: both;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+}
+/* =============== PAGEBREAK - SLIDERS STYLE =============== */
+div.panel {
+  border: 1px solid #CCC;
+  margin-bottom: 10px;
+}
+div.panel h3.title {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 8px 10px;
+  border-bottom: 1px solid #CCC;
+}
+div.panel h3.title:hover,
+div.panel h3.pane-toggler-down {
+  background-color: #F0F0F0;
+}
+div.panel h3.title a {
+  color: #666;
+}
+div.panel h3.title a:hover {
+  text-decoration: none;
+}
+div.panel h3.pane-toggler-down {
+  border-bottom: none;
+}
+div.panel h3.pane-toggler-down a {
+  color: #000;
+}
+div.panel div.content > div,
+div.panel div.content > p {
+  margin: 15px;
+}
+/* =============== JOOMLA! EXTENSIONS - GENERAL =============== */
+/* ----- HEADING ----- */
+.contentheading,
+.componentheading,
+.subheading {
+  color: #333;
+  margin-top: 0;
+  font-size: 1.6em;
+}
+table.contentpaneopen {
+  width: 100%;
+}
+/* ----- FORM ----- */
+.jsn-formbuttons {
+  text-align: center;
+  padding-top: .45em;
+}
+table.paramlist td {
+  padding: .3em;
+}
+table.paramlist td.paramlist_key {
+  width: 150px;
+}
+.inputbox {
+  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  padding: 2px 4px;
+  min-height: 22px;
+}
+.inputbox:active, .inputbox:focus {
+  border-color: #b5b5b5;
+  background-color: #f2f2f2;
+}
+select.inputbox {
+  padding: 2px;
+}
+.button {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 10px;
+  margin: 0 0 2px;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  color: #eee;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #999;
+}
+.button:hover, .button:active {
+  background-color: #777;
+  color: #fff;
+}
+/* ----- TOOLTIPS ----- */
+.jsn-joomla-25 .tip {
+  float: left;
+  background: #ffc;
+  border: 1px solid #D4D5AA;
+  padding: 5px;
+  max-width: 200px;
+  z-index: 88;
+  position: relative;
+}
+.jsn-joomla-25 .tip-title {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: bold;
+  margin-top: -15px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background: url(../../system/images/selector-arrow.png) no-repeat;
+}
+.jsn-joomla-25 .tip-text {
+  font-size: 100%;
+  margin: 0;
+}
+/* ----- POP-UP / PRINT WINDOWS ----- */
+body.contentpane {
+  color: #000000;
+  background: #FFFFFF;
+}
+body.contentpane div.com-content {
+  padding: 1em;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- ARTICLE METADATA ----- */
+.jsn-article-metadata {
+  margin-bottom: 15px;
+}
+.jsn-article-metadata > span {
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+}
+.jsn-article-metadata > span:last-child {
+  padding-right: 0;
+  margin-right: 0;
+  border: none;
+}
+/* ----- ARTICLE TOOLBAR ----- */
+.jsn-article-toolbar {
+  margin-bottom: 15px;
+  background-color: #f4f4f4;
+}
+.jsn-article-toolbar .btn-group.pull-right {
+  float: right;
+  padding: 5px;
+}
+.jsn-article-toolbar dl {
+  padding: 5px;
+}
+#article-index {
+    float: right;
+    margin: 0 0 1em 1em;
+    background-color: #F2F2F2;
+    border: 1px solid #D9D9D9;
+}
+#article-index ul {
+  margin: 0;
+  list-style-type: none;
+}
+#article-index ul li {
+  margin: 0;
+  padding: 0.25em 0.6em;
+}
+/* ----- ARTICLE INFO ----- */
+.jsn-article-info {
+  padding: 10px;
+}
+.jsn-article-info p:first-child {
+  margin-top: 0;
+}
+.jsn-article-info p:last-child {
+  margin-bottom: 0;
+}
+.author,
+.createdate,
+.publishdate,
+.hits {
+  margin: 10px 0;
+  color: #595959;
+  font-size: 0.9em;
+}
+.author,
+.createdate,
+.publishdate {
+  padding-left: 22px;
+}
+.author {
+  background: url(../images/icons/icons-base.png) no-repeat 0 0;
+}
+.createdate,
+.publishdate {
+  background: url(../images/icons/icons-base.png) no-repeat 0 -86px;
+}
+.modifydate {
+  margin: 1em 0;
+  text-align: right;
+  color: #999999;
+  font-style: italic;
+}
+/* ----- 2 BUTTON PRINT, EMAIL CONTAINER ----- */
+ul.jsn-article-tools {
+  margin: 10px;
+  float: right;
+  list-style: none;
+}
+ul.jsn-article-tools li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+ul.jsn-article-tools li a {
+  float: left;
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(../images/icons/icons-base.png) left top no-repeat;
+}
+ul.jsn-article-tools li a.no-icon {
+  background: none;
+  width: auto;
+  height: auto;
+}
+ul.jsn-article-tools li.jsn-article-icon-edit a {
+  background: none;
+}
+ul.jsn-article-tools li a.jsn-article-print-button {
+  background-position: 0 -430px;
+}
+ul.jsn-article-tools li a.jsn-article-email-button {
+  background-position: 0 -516px;
+}
+ul.jsn-article-tools li a:hover {
+  text-decoration: none;
+}
+.jsn-article-submit {
+  margin-top: 0.8em;
+}
+.jsn-joomla-25 .item-title-entry .icon-edit,
+.item-title-entry .jsn-icon-edit {
+  display: inline-block;
+}
+/* ----- SUBMIT AN ARTICLE ----- */
+.field-title {
+  width: 120px;
+  float: left;
+}
+.formelm, .formelm-area {
+  margin: 5px 0;
+  clear: both;
+}
+/* ----- READ MORE ----- */
+a.readon {
+  color: #000;
+  cursor: pointer;
+  font-size: 1.0em;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: #999 1px solid;
+  display: inline-block;
+  text-decoration: none;
+}
+a.readon:hover {
+}
+/* ----- TABLE OF CONTENT ----- */
+table.contenttoc {
+  margin: 0 0 1em 1em;
+  border: 1px solid #D9D9D9;
+  background: #f2f2f2;
+  float: right;
+}
+table.contenttoc th {
+  padding: .4em;
+  background: url(../images/dot.png) bottom repeat-x;
+  font-weight: bold;
+  text-align: center;
+}
+table.contenttoc td {
+  padding: .25em .6em;
+}
+/* PAGE LINK IN TOC */
+a.toclink {
+  font-size: .9em;
+}
+/* PAGE NUMBER SHOWING "PAGE 1 OF ..." UNDER TOC */
+div.pagenavcounter {
+  color: #595959;
+  margin: .5em 0;
+  font-size: .9em;
+  font-weight: bold;
+}
+/* PAGE NAVIGATION */
+div.pagenavbar div {
+  color: #999999;
+  font-weight: bold;
+  font-size: .9em;
+}
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* SEPARATOR BETWEEN ARTICLES */
+div.article_separator {
+  height: 1em;
+  clear: both;
+}
+div.row_separator {
+  height: 1em;
+  clear: both;
+}
+/* ARTICLE COLUMN CONTAINER */
+.jsn-articlecols {
+  float: left;
+}
+.jsn-articlecols .jsn-article {
+  padding: 0 5px;
+}
+/* "MORE ARTICLES..." PANEL HEADING TEXT */
+div.blog_more {
+  padding: 10px 15px;
+  margin: 0 0 1em 0;
+  border: 1px solid #e5e5e5;
+  background-color: #F4F4F4;
+}
+/* PAGE PAGINATION */
+ul.pagenav,
+div.pagination ul {
+  list-style-type: none;
+}
+ul.pagenav {
+  text-align: center;
+}
+ul.pagenav li,
+div.pagination ul li {
+  color: #999;
+  margin: 0;
+  display: inline-block;
+  font-weight: bold;
+}
+div.pagination ul li {
+  font-size: 0.9em;
+}
+ul.pagenav li a,
+div.pagination ul li a {
+  margin: 0 15px;
+}
+ul.jsn-pagination {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+ul.jsn-pagination li {
+  display: inline-block !important; /*override compression*/
+  margin: 10px 2px;
+}
+ul.jsn-pagination li a,
+ul.jsn-pagination li span {
+  font-weight: bold;
+  padding: 3px 8px;
+  border: 1px solid #CCC;
+  background-color: #EAEAEA;
+  color: #999;
+}
+ul.jsn-pagination li span {
+  background-color: transparent;
+}
+ul.jsn-pagination li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+ul.jsn-pagination li.navigation-page span {
+  border: none;
+  padding: 4px 9px;
+  color: #fff;
+}
+ul.jsn-pagination,
+p.jsn-pageinfo {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+/* BLOG PAGES NAV LINK */
+a.pagenav {
+  text-transform: uppercase;
+}
+/* ----- CATEGORY LIST LAYOUT ----- */
+/* DESCRIPTION IN CONTENT TABLE AND COMPONENT PAGE */
+.contentdescription {
+}
+/* TABLE IN CATEGORY TABLE PAGE */
+.sectiontableheader {
+  padding: 5px 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #FFFFFF;
+}
+.sectiontableheader img {
+  margin: 0;
+  vertical-align: text-top;
+}
+.sectiontableheader a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.sectiontableheader a:hover {
+  text-decoration: none;
+}
+/* TABLE FILTER */
+.jsn-infofilter {
+  text-align: right;
+}
+.jsn-titlefilter {
+  float: left;
+}
+.archived-article-list .jsn-infofilter {
+  text-align: left;
+}
+/* TABLE'S ROW */
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+tr.sectiontableentry2 td {
+}
+/* ----- SECTION LAYOUT ----- */
+/* LINKS IN SECTION TABLE PAGE */
+a.category {
+  font-weight: bold;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_CONTACT =============== */
+/* ----- STANDARD CONTACT LAYOUT ----- */
+div.com-contact .jsn-contact-image {
+  float: right;
+  margin: 10px 5px 0 0;
+}
+div.com-contact .contact-position {
+  margin: 5px 0 0 0;
+}
+div.com-contact .contact-vcard {
+  margin: 0 0 5px 0;
+}
+div.com-contact .jicons-icons {
+  float: left;
+}
+div.com-contact .contact-address {
+  margin-top: 5px;
+}
+div.com-contact .contact-address p {
+  margin: 0;
+  padding-left: 20px;
+}
+div.com-contact .contact-contactinfo p,
+div.com-contact .contact-miscinfo p {
+  margin: 5px 0;
+}
+div.com-contact .contact-contactinfo .jicons-icons,
+div.com-contact .contact-miscinfo .jicons-icons {
+  margin-right: 4px;
+}
+div.com-contact div.contact-form fieldset {
+  padding: 0 10px;
+}
+div.com-contact div.contact-form dt {
+  margin: 10px 0 5px 0;
+}
+div.com-contact div.contact-form dd {
+  margin-left: 0;
+}
+div.com-contact .form-required {
+  color: #EF593B;
+  font-weight: bold;
+  text-align: right;
+}
+div.contact .dl-horizontal dd {
+  margin-left: 25px;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_SEARCH =============== */
+div.com-search #searchForm .search-phrase {
+  margin-left: 95px;
+}
+div.com-search #searchForm .search-range input,
+div.com-search #searchForm .search-phrase input {
+  margin: 0 0 0 5px;
+  vertical-align: middle;
+}
+div.com-search #searchForm .search-range label,
+div.com-search #searchForm .search-phrase label,
+div.com-search #searchForm .search-keyword label,
+div.com-search #searchForm .search-ordering label,
+div.com-search #searchForm .search-field-title {
+  width: 100px;
+  line-height: 21px;
+  text-align: left;
+  padding-right: 3px;
+  display: inline-block;
+}
+div.com-search #searchForm .search-range label,
+div.com-search #searchForm .search-phrase label {
+  width: auto;
+}
+div.com-search #searchForm .search-ordering select {
+  padding: 2px 0;
+}
+div.com-search #searchForm .search-range label {
+  line-height: 21px;
+}
+.jsn-joomla-30 div.search .inputbox {
+  width: auto;
+  max-width: 100%;
+}
+/* ----- KEYWORD GIGHLIGHT IN SEARCH RESULT ----- */
+span.highlight {
+  padding: .2em;
+  background: #FFFFAA;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_WEBLINK =============== */
+table.jsn-infotable .description p {
+  margin: 0;
+}
+table.jsn-infotable ul.actions {
+  display: inline;
+}
+table.jsn-infotable ul.actions li {
+  display: inline;
+  margin: 0 0 0 5px;
+}
+#editor-xtd-buttons {
+  float: left;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_NEWSFEED =============== */
+div.com-newsfeed td.jsn-table-column-name {
+  font-weight: bold;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_USER =============== */
+/* ----- USER FORM LAYOUT ----- */
+div.com-user div.default-login {
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #F4F4F4;
+  border: 1px solid #E5E5E5;
+}
+/* ----- REGISTER FORM ----- */
+.jsn-formRow {
+  margin: 8px 0;
+}
+.jsn-formRow .jsn-formRow-lable {
+  float: left;
+  width: 170px;
+}
+button#jform_profile_dob_img.btn {
+  height: 30px;
+}
+/* =============== JOOMLA! EXTENSIONS - POPUP COMPONENT =============== */
+#jsn-content-popup .com-content,
+#jsn-content-popup #mailto-window {
+  max-width: 1018px;
+  margin: 1em auto;
+}
+#jsn-content-popup .com-content {
+    padding-top: 0;
+}
+#mailto-window {
+  padding: 15px;
+  position: relative;
+  background: #f5f5f5;
+  border: solid 1px #ddd;
+}
+#mailto-window h2 {
+  padding: 3px 0;
+  margin: 0 0 10px;
+  font: bold 1.2em "Times New Roman", Times, serif;
+}
+#mailto-window label {
+  width: 8em;
+  display: inline-block;
+}
+#mailto-window .mailto-close {
+  right: 0;
+  top: 5px;
+  background: none;
+  position: absolute;
+}
+#mailto-window .mailto-close a {
+  display: block;
+  min-width: 25px;
+  min-height: 25px;
+  overflow: visible;
+  background: url(../images/icons/icon-close.png) 0 0 no-repeat;
+}
+#mailto-window .mailto-close a span {
+  top: -3000px;
+  left: -3000px;
+  display: inline;
+  position: absolute;
+}
+#mailto-window .inputbox {
+  padding: 3px;
+  border: 1px solid #ccc;
+  background: #FFF url(../images/backgrounds/popup-bg.png) repeat-x 0 0;
+}
+#mailto-window p {
+    margin: 20px 0 8px 0;
+}
+#mailto-window button {
+  cursor: pointer;
+  margin:0 5px 0 0;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  font: bold 1em "Times New Roman", Times, serif;
+  background-image:-moz-linear-gradient(50% 0% -90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%); 
+  background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(255,255,255)),color-stop(1, rgb(218,218,218)));
+  background-image:-webkit-linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+  background-image:-o-linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+  background-image:-ms-linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+  background-image:linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffdadada,GradientType=0)";
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffdadada,GradientType=0);
+}
+#mailto-window .formelm,
+#mailto-window .formelm-area {
+    clear: both;
+    margin: 5px 0;
+}
+/* =============== JOOMLA! EXTENSIONS - SYSTEM MESSAGES =============== */
+/* ----- SYSTEM STANDARD MESSAGES ----- */
+#system-message {
+  margin-bottom: 20px;
+}
+#system-message dd.message ul {
+  text-indent: 0;
+  padding-left: 40px;
+  background: #c3d2e5 url(../../../media/system/images/notice-info.png) 4px center no-repeat;
+}
+#system-message ul li {
+  margin-left: 0;
+}
+/* ----- SYSTEM ERROR MESSAGES ----- */
+#system-message dd.error ul {
+  background: #e6c0c0 url(../../../media/system/images/notice-alert.png) 4px center no-repeat;
+}
+/* ----- SYSTEM NOTICE MESSAGES ----- */
+#system-message dd.notice ul {
+  color: #cc0000;
+  border-top: 3px solid #f0dc7e;
+  border-bottom: 3px solid #f0dc7e;
+  background: #efe7b8 url(../../../media/system/images/notice-note.png) 4px center no-repeat;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs {
+  display: block;
+  font-size: 1.1em;
+}
+span.breadcrumbs a,
+span.breadcrumbs span {
+  color: #9F9F9F;
+  padding-right: 18px;
+  text-decoration: none;
+  background: url(../images/icons/icon-arrow-black.png) right center no-repeat;
+}
+span.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+span.breadcrumbs span.current {
+  font-weight: bold;
+  background: none;
+}
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: none;
+}
+.breadcrumb li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-shadow: 0 1px 0 #fff;
+}
+.jsn-joomla-30 .breadcrumb li {
+  margin: 0;
+}
+.breadcrumb li a,
+.breadcrumb li span {
+  color: #404040;
+}
+.breadcrumb li span + span {
+  font-weight: bold;
+}
+.breadcrumb span.divider {
+  padding: 0 10px;
+  background: url("../images/icons/icon-arrow-black.png") no-repeat scroll center center;
+}
+.breadcrumb .active {
+  color: #999;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_LOGIN =============== */
+#form-login fieldset.input {
+  border: none;
+  padding: 0;
+}
+#form-login div.button-wrapper {
+  text-align: center;
+  margin-top: 0.5em;
+}
+#form-login #form-login-username,
+#form-login #form-login-password,
+#form-login #form-login-remember {
+  margin: 0 0 6px 0;
+}
+form#login-form a.btn {
+  height: 20px;
+}
+form#login-form .icon-arrow-right {
+  background-position: -458px -73px;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_SEARCH =============== */
+#jsn-pos-top div.search input#mod-search-searchword {
+  padding: 2px 0 2px 25px;
+  background: #FFF url(../images/icons/icons-base.png) 5px -168px no-repeat;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_NEWSFLASH =============== */
+.jsn-mod-newsflash.jsn-horizontal-container .jsn-article {
+  padding: 0 1em;
+}
+.jsn-mod-newsflash .contentheading {
+  margin: 0 0 0.3em 0;
+}
+.jsn-mod-newsflash .article-separator {
+  display: block;
+    height: 0.5em;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_STATISTICS =============== */
+dl.stats-module dt {
+  float: left;
+  width: 65%;
+}
+dl.stats-module dd {
+  margin: 0;
+}
+/* ============================== MISC ============================== */
+/* =============== GENERAL ICON ASSIGNMENT =============== */
+.jsn-joomla-25 .link-icon[class*="icon-"],
+.jsn-joomla-25 .menu-iconmenu [class*="icon-"] > a > span,
+.jsn-joomla-25 .list-icon[class*="icon-"] li .jsn-listbullet,
+.jsn-joomla-25 [class*="icon-"] h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon[class*="jsn-icon-"],
+.menu-iconmenu [class*="jsn-icon-"] > a > span,
+.list-icon[class*="jsn-icon-"] li .jsn-listbullet,
+[class*="jsn-icon-"] h3.jsn-moduletitle span.jsn-moduleicon {
+  background-image: url(../images/icons/icons-uni.png);
+  background-repeat: no-repeat;
+}
+.jsn-joomla-25 .link-icon.icon-article,
+.jsn-joomla-25 .menu-iconmenu .icon-article > a > span,
+.jsn-joomla-25 .list-icon.icon-article li .jsn-listbullet,
+.jsn-joomla-25 .icon-article h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-article,
+.menu-iconmenu .jsn-icon-article > a > span,
+.list-icon.jsn-icon-article li .jsn-listbullet,
+.jsn-icon-article h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 0;
+}
+.jsn-joomla-25 .link-icon.icon-calendar,
+.jsn-joomla-25 .menu-iconmenu .icon-calendar > a > span,
+.jsn-joomla-25 .list-icon.icon-calendar li .jsn-listbullet,
+.jsn-joomla-25 .icon-calendar h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-calendar,
+.menu-iconmenu .jsn-icon-calendar > a > span,
+.list-icon.jsn-icon-calendar li .jsn-listbullet,
+.jsn-icon-calendar h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -94px;
+}
+.jsn-joomla-25 .link-icon.icon-cart,
+.jsn-joomla-25 .menu-iconmenu .icon-cart > a > span,
+.jsn-joomla-25 .list-icon.icon-cart li .jsn-listbullet,
+.jsn-joomla-25 .icon-cart h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-cart,
+.menu-iconmenu .jsn-icon-cart > a > span,
+.list-icon.jsn-icon-cart li .jsn-listbullet,
+.jsn-icon-cart h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -188px;
+}
+.jsn-joomla-25 .link-icon.icon-comment,
+.jsn-joomla-25 .menu-iconmenu .icon-comment > a > span,
+.jsn-joomla-25 .list-icon.icon-comment li .jsn-listbullet,
+.jsn-joomla-25 .icon-comment h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-comment,
+.menu-iconmenu .jsn-icon-comment > a > span,
+.list-icon.jsn-icon-comment li .jsn-listbullet,
+.jsn-icon-comment h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -282px;
+}
+.jsn-joomla-25 .link-icon.icon-display,
+.jsn-joomla-25 .menu-iconmenu .icon-display > a > span,
+.jsn-joomla-25 .list-icon.icon-display li .jsn-listbullet,
+.jsn-joomla-25 .icon-display h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-display,
+.menu-iconmenu .jsn-icon-display > a > span,
+.list-icon.jsn-icon-display li .jsn-listbullet,
+.jsn-icon-display h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -376px;
+}
+.jsn-joomla-25 .link-icon.icon-download,
+.jsn-joomla-25 .menu-iconmenu .icon-download > a > span,
+.jsn-joomla-25 .list-icon.icon-download li .jsn-listbullet,
+.jsn-joomla-25 .icon-download h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-download,
+.menu-iconmenu .jsn-icon-download > a > span,
+.list-icon.jsn-icon-download li .jsn-listbullet,
+.jsn-icon-download h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -470px;
+}
+.jsn-joomla-25 .link-icon.icon-folder,
+.jsn-joomla-25 .menu-iconmenu .icon-folder > a > span,
+.jsn-joomla-25 .list-icon.icon-folder li .jsn-listbullet,
+.jsn-joomla-25 .icon-folder h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-folder,
+.menu-iconmenu .jsn-icon-folder > a > span,
+.list-icon.jsn-icon-folder li .jsn-listbullet,
+.jsn-icon-folder h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -564px;
+}
+.jsn-joomla-25 .link-icon.icon-help,
+.jsn-joomla-25 .menu-iconmenu .icon-help > a > span,
+.jsn-joomla-25 .list-icon.icon-help li .jsn-listbullet,
+.jsn-joomla-25 .icon-help h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-help,
+.menu-iconmenu .jsn-icon-help > a > span,
+.list-icon.jsn-icon-help li .jsn-listbullet,
+.jsn-icon-help h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -658px;
+}
+.jsn-joomla-25 .link-icon.icon-home,
+.jsn-joomla-25 .menu-iconmenu .icon-home > a > span,
+.jsn-joomla-25 .list-icon.icon-home li .jsn-listbullet,
+.jsn-joomla-25 .icon-home h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-home,
+.menu-iconmenu .jsn-icon-home > a > span,
+.list-icon.jsn-icon-home li .jsn-listbullet,
+.jsn-icon-home h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -752px;
+}
+.jsn-joomla-25 .link-icon.icon-image,
+.jsn-joomla-25 .menu-iconmenu .icon-image > a > span,
+.jsn-joomla-25 .list-icon.icon-image li .jsn-listbullet,
+.jsn-joomla-25 .icon-image h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-image,
+.menu-iconmenu .jsn-icon-image > a > span,
+.list-icon.jsn-icon-image li .jsn-listbullet,
+.jsn-icon-image h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -846px;
+}
+.jsn-joomla-25 .link-icon.icon-info,
+.jsn-joomla-25 .menu-iconmenu .icon-info > a > span,
+.jsn-joomla-25 .list-icon.icon-info li .jsn-listbullet,
+.jsn-joomla-25 .icon-info h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-info,
+.menu-iconmenu .jsn-icon-info > a > span,
+.list-icon.jsn-icon-info li .jsn-listbullet,
+.jsn-icon-info h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -940px;
+}
+.jsn-joomla-25 .link-icon.icon-mail,
+.jsn-joomla-25 .menu-iconmenu .icon-mail > a > span,
+.jsn-joomla-25 .list-icon.icon-mail li .jsn-listbullet,
+.jsn-joomla-25 .icon-mail h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-mail,
+.menu-iconmenu .jsn-icon-mail > a > span,
+.list-icon.jsn-icon-mail li .jsn-listbullet,
+.jsn-icon-mail h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1034px;
+}
+.jsn-joomla-25 .link-icon.icon-online,
+.jsn-joomla-25 .menu-iconmenu .icon-online > a > span,
+.jsn-joomla-25 .list-icon.icon-online li .jsn-listbullet,
+.jsn-joomla-25 .icon-online h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-online,
+.menu-iconmenu .jsn-icon-online > a > span,
+.list-icon.jsn-icon-online li .jsn-listbullet,
+.jsn-icon-online h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1128px;
+}
+.jsn-joomla-25 .link-icon.icon-rss,
+.jsn-joomla-25 .menu-iconmenu .icon-rss > a > span,
+.jsn-joomla-25 .list-icon.icon-rss li .jsn-listbullet,
+.jsn-joomla-25 .icon-rss h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-rss,
+.menu-iconmenu .jsn-icon-rss > a > span,
+.list-icon.jsn-icon-rss li .jsn-listbullet,
+.jsn-icon-rss h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1222px;
+}
+.jsn-joomla-25 .link-icon.icon-search,
+.jsn-joomla-25 .menu-iconmenu .icon-search > a > span,
+.jsn-joomla-25 .list-icon.icon-search li .jsn-listbullet,
+.jsn-joomla-25 .icon-search h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-search,
+.menu-iconmenu .jsn-icon-search > a > span,
+.list-icon.jsn-icon-search li .jsn-listbullet,
+.jsn-icon-search h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1316px;
+}
+.jsn-joomla-25 .link-icon.icon-selection,
+.jsn-joomla-25 .menu-iconmenu .icon-selection > a > span,
+.jsn-joomla-25 .list-icon.icon-selection li .jsn-listbullet,
+.jsn-joomla-25 .icon-selection h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-selection,
+.menu-iconmenu .jsn-icon-selection > a > span,
+.list-icon.jsn-icon-selection li .jsn-listbullet,
+.jsn-icon-selection h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1410px;
+}
+.jsn-joomla-25 .link-icon.icon-settings,
+.jsn-joomla-25 .menu-iconmenu .icon-settings > a > span,
+.jsn-joomla-25 .list-icon.icon-settings li .jsn-listbullet,
+.jsn-joomla-25 .icon-settings h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-settings,
+.menu-iconmenu .jsn-icon-settings > a > span,
+.list-icon.jsn-icon-settings li .jsn-listbullet,
+.jsn-icon-settings h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1504px;
+}
+.jsn-joomla-25 .link-icon.icon-star,
+.jsn-joomla-25 .menu-iconmenu .icon-star > a > span,
+.jsn-joomla-25 .list-icon.icon-star li .jsn-listbullet,
+.jsn-joomla-25 .icon-star h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-star,
+.menu-iconmenu .jsn-icon-star > a > span,
+.list-icon.jsn-icon-star li .jsn-listbullet,
+.jsn-icon-star h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1598px;
+}
+.jsn-joomla-25 .link-icon.icon-statistics,
+.jsn-joomla-25 .menu-iconmenu .icon-statistics > a > span,
+.jsn-joomla-25 .list-icon.icon-statistics li .jsn-listbullet,
+.jsn-joomla-25 .icon-statistics h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-statistics,
+.menu-iconmenu .jsn-icon-statistics > a > span,
+.list-icon.jsn-icon-statistics li .jsn-listbullet,
+.jsn-icon-statistics h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1692px;
+}
+.jsn-joomla-25 .link-icon.icon-user,
+.jsn-joomla-25 .menu-iconmenu .icon-user > a > span,
+.jsn-joomla-25 .list-icon.icon-user li .jsn-listbullet,
+.jsn-joomla-25 .icon-user h3.jsn-moduletitle span.jsn-moduleicon,
+.link-icon.jsn-icon-user,
+.menu-iconmenu .jsn-icon-user > a > span,
+.list-icon.jsn-icon-user li .jsn-listbullet,
+.jsn-icon-user h3.jsn-moduletitle span.jsn-moduleicon {
+  background-position: 0 -1786px;
+}
+/* ============================== JOOMLA 3.0 CORE COMPONENT LAYOUT ============================== */
+.jsn-joomla-30 .blog-featured .items-leading h2 {
+  border-bottom: 1px solid #EEEEEE;
+  padding: 5px 0;
+}
+.article-info {
+  margin: 0;
+  font-size: 0.9em;
+  float: left;
+}
+.article-info-term {
+  display: none;
+}
+.archive .article-info dd,
+.article-info dd {
+  margin: 2px 0 0;
+  line-height: 1.5;
+}
+.categories-list ul {
+  list-style-type: none;
+}
+.cat-children ul dl dt, 
+.cat-children ul dl dd, 
+dl.article-count dt, 
+dl.article-count dd {
+  display: inline;
+}
+.login-fields {
+  margin: 10px 0;
+}
+.login-fields label {
+  width: 9em;
+  float: left;
+}
+.categories-list dl dt,
+.categories-list dl dd {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.img-fulltext-left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.img-intro-left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.img-fulltext-right {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.img-intro-right {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.pull-right.collapsed .icon-minus,
+.pull-right .icon-plus {
+  display: none;
+}
+.pull-right .icon-minus,
+.pull-right.collapsed .icon-plus {
+  display: block;
+}
+/* ---------- OVERRIDE ----------- */
+.jsn-joomla-30 .form-horizontal .control-label {
+  text-align: left;
+}
+.jsn-joomla-30 label,
+.jsn-joomla-30 input,
+.jsn-joomla-30 button,
+.jsn-joomla-30 select,
+.jsn-joomla-30 textarea,
+.jsn-joomla-30 .input-append input,
+.jsn-joomla-30 .input-prepend input,
+.jsn-joomla-30 .input-append select,
+.jsn-joomla-30 .input-prepend select,
+.jsn-joomla-30 .input-append .uneditable-input,
+.jsn-joomla-30 .input-prepend .uneditable-input,
+.jsn-joomla-30 .btn,
+.jsn-joomla-30 select,
+.jsn-joomla-30 textarea,
+.jsn-joomla-30 input[type="text"],
+.jsn-joomla-30 input[type="password"],
+.jsn-joomla-30 input[type="datetime"],
+.jsn-joomla-30 input[type="datetime-local"],
+.jsn-joomla-30 input[type="date"],
+.jsn-joomla-30 input[type="month"],
+.jsn-joomla-30 input[type="time"],
+.jsn-joomla-30 input[type="week"],
+.jsn-joomla-30 input[type="number"],
+.jsn-joomla-30 input[type="email"],
+.jsn-joomla-30 input[type="url"],
+.jsn-joomla-30 input[type="search"],
+.jsn-joomla-30 input[type="tel"],
+.jsn-joomla-30 input[type="color"],
+.jsn-joomla-30 .uneditable-input {
+  font-size: 13px;
+}
+.jsn-joomla-30 .icon-location {
+    background-position: -24px -73px;
+}
+.jsn-joomla-30 div.tooltip {
+  background: none;
+  border: none;
+}
+#form-login-remember .control-label,
+#modlgn-remember {
+  vertical-align: middle;
+}
+.jsn-joomla-30 .dropdown-menu li {
+  margin: 0;
+}
+
+.kars {
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+.componentheading {
+  display:none;
+}
+
+#Kunena .kblock div.kheader {
+	padding-top:1px;
+}
+
+#Kunena .kblock div.kheader h3 {
+	color:#fff;
+}

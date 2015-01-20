@@ -1,0 +1,34 @@
+Aws\S3
+Guzzle
+Symfony
+
+
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Client\AbstractClient;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Client\AwsClientInterface;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Client\ClientBuilder;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Client\ExpiredCredentialsChecker;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Client\UploadBodyListener;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Credentials\CredentialsInterface;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Enum;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Enum\ClientOptions as Options;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Enum\DateFormat;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Enum\Size;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Enum\UaString as Ua;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\InvalidArgumentException;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\LogicException;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\OverflowException;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\Parser\DefaultXmlExceptionParser;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\RuntimeException;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\ServiceResponseException;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Exception\UnexpectedValueException;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Iterator\AwsResourceIterator;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\AbstractTransfer as CommonAbstractTransfer;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\AbstractTransfer;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\AbstractTransferState;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\AbstractUploadBuilder;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\AbstractUploadId;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\AbstractUploadPart;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\TransferInterface;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Model\MultipartUpload\UploadIdInterface;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Signature\SignatureInterface;
+use Akeeba\Engine\Postproc\Connector\Amazon\Aws\Common\Signature\SignatureV4;

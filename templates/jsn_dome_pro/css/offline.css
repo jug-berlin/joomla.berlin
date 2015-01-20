@@ -1,0 +1,372 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+html, body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address {
+	margin: 0.35em 0 0.8em 0;
+	padding: 0;
+}
+fieldset {
+	padding: .5em;
+}
+small {
+	font-size: .85em;
+}
+sup {
+	font-size: .8em;
+	position: relative;
+	bottom: 0.3em;
+	vertical-align: baseline;
+}
+sup em {
+	color: red;
+}
+acronym, abbr {
+	border-bottom: 1px dashed;
+	letter-spacing: 1px;
+	cursor: help;
+}
+hr {
+	height: 1px;
+	border: none;
+	margin: 0.75em 0;
+	background-color: #999;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1 {
+	font-size: 1.4em;
+	color: #000000;
+}
+h2 {
+	font-size: 1.3em;
+	color: #000000;
+}
+h3 {
+	font-size: 1.15em;
+	color: #666;
+}
+h4 {
+	font-size: 1.1em;
+	color: #CC8033;
+}
+h5, h6 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #333333;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.8em 0 0.3em 0;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+	margin: 0.3em 0 0.3em 1.6em;
+	padding: 0;
+}
+ol li {
+	margin: 0.3em 0 0.3em 2em;
+	padding: 0;
+}
+/* =============== DEFAULT HTML - IMAGES STYLES =============== */
+img {
+	border: none;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.clearafter:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+.clearbreak {
+	clear: both;
+}
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master {
+	background-color: #EBE8D9;
+}
+#jsn-page {
+	color: #666;
+	width: 600px;
+	margin: 100px auto;
+	background-color: #fff;
+}
+#jsn-page_inner {
+	border: 1px solid #CCC;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 3px solid #000;
+}
+#jsn-logo a {
+	line-height: 100%;
+	display: inline-block;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-error-heading {
+	float: left;
+	width: 216px;
+	text-align: center;
+}
+#jsn-error-heading img {
+	margin-top: 145px;
+}
+#jsn-error-heading h1 {
+	margin: 18px 0;
+	font-size: 7.5em;
+	line-height: 1em;
+	text-align: center;
+}
+#jsn-error-heading h1 .heading-medium,
+#jsn-error-heading h1 .heading-small {
+	display: block;
+}
+#jsn-error-heading h1 .heading-medium {
+	color: #666;
+	font-size: 0.67em;
+	line-height: 1.05em;
+	margin-bottom: 15px;
+}
+#jsn-error-heading h1 .heading-small {
+	color: #666;
+	font-size: 38px;
+	line-height: 1.4em;
+}
+#jsn-error-content {
+	float: left;
+	width: 382px;
+}
+#jsn-error-content_inner {
+	padding: 14px 12px;
+	margin: 20px 20px 30px 10px;
+	border: 1px solid #DDDDDD;
+	background-color: #F3F3F3;
+}
+#jsn-error-content h3 {
+	margin: 0;
+	padding-left: 3px;
+	font-weight: normal;
+}
+#jsn-error-content #mod-search-searchword {
+	padding: 5px;
+	width: 325px;
+	border: 1px solid #CCCCCC;
+}
+#jsn-error-content ul {
+	margin: 10px 0 15px 0;
+}
+#jsn-error-content ul li {
+	font-size: 15px;
+	line-height: 1.55em;
+	margin: 0 0 0 1.5em;
+}
+#jsn-error-content .link-button {
+	color: #333;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 21px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:-moz-linear-gradient(50% 0% -90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%); 
+	background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0, rgb(255,255,255)),color-stop(1, rgb(218,218,218)));
+	background-image:-webkit-linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+	background-image:-o-linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+	background-image:-ms-linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+	background-image:linear-gradient(-90deg,rgb(255,255,255) 0%,rgb(218,218,218) 100%);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffdadada,GradientType=0)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#ffdadada,GradientType=0);
+	-moz-transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+#jsn-error-content .link-button:hover {
+	box-shadow: 0px 0px 3px #999;
+	-moz-box-shadow: 0px 0px 3px #999;
+	-webkit-box-shadow: 0px 0px 3px #999;
+}
+#jsn-error-content #search-form {
+	margin: 0;
+} 
+#jsn-error-content #link-goback {
+	margin: 7px;
+}
+#system-message dd.error ul {
+	text-align: center;
+	font-size: 12px;
+}
+#form-login {
+	margin-bottom: 0;
+}
+#form-login fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 14px;
+}
+#form-login fieldset p {
+	margin: 12px 0;
+}
+#form-login fieldset p label {
+	padding-left: 5px;
+}
+#form-login fieldset input.inputbox {
+	padding: 5px;
+	width: 312px;
+	margin-top: 5px;
+	border: 1px solid #CCCCCC;
+}
+#form-login fieldset input#remember {
+	padding: 0;
+	width: auto;
+	background: #FFF;
+	vertical-align: sub;
+}
+#form-login fieldset #form-login-remember {
+	margin: 16px 0 0 0;
+	text-align: right;
+}
+#form-login fieldset #form-login-remember label {
+	float: left;
+	margin: 4px 0;
+}
+.link-action {
+	font-size: 14px;
+	padding: 1px 2px;
+	font-weight: bold;
+	text-decoration: none;
+	-moz-transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+.link-action:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+/* ============================== TEMPLATE COLOR ============================== */
+/* =============== TEMPLATE COLOR - ORANGE STYLES =============== */
+.jsn-color-orange #jsn-header {
+	border-bottom-color: #E05B14;
+	background: #ED7E34;
+}
+.jsn-color-orange h1,
+.jsn-color-orange .link-action {
+	color: #F5681B;
+}
+.jsn-color-orange .link-action {
+	border-bottom: 1px solid #F5681B;
+}
+.jsn-color-orange .link-action:hover {
+	color: #FFF;
+	background-color: #F5681B;
+}
+/* =============== TEMPLATE COLOR - RED STYLES =============== */
+.jsn-color-red #jsn-header {
+	border-bottom-color: #A8390F;
+	background: #D24A17;
+}
+.jsn-color-red h1,
+.jsn-color-red .link-action {
+	color: #D24A17;
+}
+.jsn-color-red .link-action {
+	border-bottom: 1px solid #D24A17;
+}
+.jsn-color-red .link-action:hover {
+	color: #FFF;
+	background-color: #D24A17;
+}
+/* =============== TEMPLATE COLOR - CYAN STYLES =============== */
+.jsn-color-cyan #jsn-header {
+	border-bottom-color: #578070;
+	background: #6C9987;
+}
+.jsn-color-cyan h1,
+.jsn-color-cyan .link-action {
+	color: #598473;
+}
+.jsn-color-cyan .link-action {
+	border-bottom: 1px solid #598473;
+}
+.jsn-color-cyan .link-action:hover {
+	color: #FFF;
+	background-color: #598473;
+}
+/* =============== TEMPLATE COLOR - GREEN STYLES =============== */
+.jsn-color-green #jsn-header {
+	border-bottom-color: #56671D;
+	background: #708726;
+}
+.jsn-color-green h1,
+.jsn-color-green .link-action {
+	color: #6C8125;
+}
+.jsn-color-green .link-action {
+	border-bottom: 1px solid #6C8125;
+}
+.jsn-color-green .link-action:hover {
+	color: #FFF;
+	background-color: #6C8125;
+}
+/* =============== TEMPLATE COLOR - YELLOW STYLES =============== */
+.jsn-color-yellow #jsn-header {
+	border-bottom-color: #BE7A1F;
+	background: #DD8F26;
+}
+.jsn-color-yellow h1,
+.jsn-color-yellow .link-action {
+	color: #C57F1F;
+}
+.jsn-color-yellow .link-action {
+	border-bottom: 1px solid #C57F1F;
+}
+.jsn-color-yellow .link-action:hover {
+	color: #FFF;
+	background-color: #C57F1F;
+}
+/* =============== TEMPLATE COLOR - PINK STYLES =============== */
+.jsn-color-pink #jsn-header {
+	border-bottom-color: #F03959;
+	background: #F36982;
+}
+.jsn-color-pink h1,
+.jsn-color-pink .link-action {
+	color: #F24D69;
+}
+.jsn-color-pink .link-action {
+	border-bottom: 1px solid #F24D69;
+}
+.jsn-color-pink .link-action:hover {
+	color: #FFF;
+	background-color: #F24D69;
+}

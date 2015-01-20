@@ -1,0 +1,42 @@
+h1 { font-size:20px; margin:0px; margin-bottom:15px; padding:0px; font-weight:bold; color:#01bbe5 !important; } 
+h2 { font-size:12px; font-weight:bold; color:#565656 !important; text-transform:uppercase; margin:10px 0px; padding:0px; padding-bottom:5px; border-bottom:1px solid #ddd; } 
+h3 { color:#565656 !important; font-weight:bold; font-size:12px; margin:0px; margin-bottom:10px; padding:0px; } 
+body{background-color:#575757} 
+a { cursor:pointer;color:#01bbe5;text-decoration:none;border:none; } 
+.acymailing_online {color:#d2d1d1 !important; cursor:pointer;} 
+.acymailing_unsub {color:#d2d1d1 !important; cursor:pointer;} 
+.acymailing_readmore {cursor:pointer; font-weight:bold; color:#fff; background-color:#01bbe5; padding:2px 5px;} 
+a img{ border:0px; text-decoration:none;} 
+table, div, p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+p{margin:0px; padding:0px}
+
+.special h2{font-size:18px;
+	margin:0px;
+	margin-bottom:15px;
+	padding:0px;
+	font-weight:bold;
+	color:#01bbe5 !important;
+	text-transform:none;
+	border:none}
+
+.links a{color:#ababab}
+
+@media (max-width:450px){
+	table[class=w600], td[class=w600], table[class=w540], td[class=w540], img[class="w600"], img[class="w540"]{ width:100% !important;}
+	td[class=w30] { width:20px !important;}
+	.pict img {max-width:260px}
+}
+
+@media (min-width: 450px) and (max-width: 600px){
+	table[class=w600], td[class=w600], table[class=w540], td[class=w540], img[class="w600"], img[class="w540"]{ width:100% !important;}
+	td[class=w30] { width:20px !important;}
+	.pict img {max-width:460px}
+}
+
+@media (min-width:600px){
+	body {width:600px !important; margin:auto !important;}
+	.pict img {max-width:540px !important;  height:auto !important;}
+}

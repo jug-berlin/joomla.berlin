@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de  
+ *
+ * (en) Vertical list navigation "vlist" additional for RTL direction
+ * (de) Vertikale Navigationsliste "vlist" zurätzlich für RTL Leserichtung
+ *
+ * @version         $Id: nav_vlist-rtl.css 467 2008-07-27 16:52:23Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 467 $
+ * @lastmodified    $Date: 2008-07-27 18:52:23 +0200 (So, 27. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  #submenu li { float:right }
+
+  #submenu a,
+  #submenu strong {
+    padding: 3px 10% 3px 0;
+  }
+
+  /* Menu Title */
+  #submenu li#title {
+    padding: 3px 10% 3px 0;
+  }
+
+  #submenu li span {
+    padding: 3px 10% 3px 0;
+  }
+
+  /* Level 1 */
+  #submenu li#active,
+  #submenu li strong {
+    padding: 3px 10% 3px 0;
+  }
+
+  #submenu li a { 
+    padding-left:0; 
+    padding-right: 10%; 
+  }
+
+  /* Level 2 */
+  #submenu li ul li a,
+  #submenu li ul li#active,
+  #submenu li ul li strong,
+  #submenu li ul li span {
+    padding-left: 0;
+    padding-right: 20%;
+  }
+
+  /* Level 3 */
+  #submenu li ul li ul li a,
+  #submenu li ul li ul li#active,
+  #submenu li ul li ul li strong,
+  #submenu li ul li ul li span {
+    padding-left: 0;
+    padding-right: 30%;
+  }
+
+  /* Level 4 */
+  #submenu li ul li ul li ul li a,
+  #submenu li ul li ul li ul li#active,
+  #submenu li ul li ul li ul li strong,
+  #submenu li ul li ul li ul li span {
+    padding-left: 0;
+    padding-right: 40%;
+  }
+
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Adjustments for Offline Mode Login
+ * (de) Anpassungen für den Offline Modus Login
+ *
+ * @version         $Id: offline.css 461 2008-07-22 00:27:33Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 461 $
+ * @lastmodified    $Date: 2008-07-22 02:27:33 +0200 (Di, 22. Jul 2008) $
+*/
+
+@media all
+{
+
+  #frame {
+    margin: 20px auto;
+    width: 450px;
+    padding: 20px;
+  }
+  
+  #frame form {
+    text-align: left;
+  }
+  
+  .outline {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    padding: 2px;
+  }
+	
+	.offline_message { margin:2em 0; border-bottom:3px solid #eee; border-top:3px solid #eee; padding:1em 0; }
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+        cssfiles="media://com_admintools/css/backend.css"
+        type="browse"
+        show_header="1"
+        show_filters="1"
+        show_pagination="1"
+        norows_placeholder="COM_ADMINTOOLS_MSG_COMMON_NOITEMS"
+        >
+    <headerset>
+        <header name="admintools_waftemplates_id" type="rowselect" tdwidth="30"/>
+
+        <header name="reason" type="fieldsearchable" label="ATOOLS_LBL_REASON_SELECT" tdwidth="130"/>
+
+        <header name="subject" type="fieldsearchable" sortable="true"
+                label="COM_ADMINTOOLS_WAFTEMPLATES_FIELD_SUBJECT_LBL"/>
+
+        <header name="enabled" type="published" sortable="true" tdwidth="8%"/>
+
+        <header name="language" type="language" sortable="true" tdwidth="20%"/>
+    </headerset>
+
+    <fieldset name="items">
+        <field name="admintools_waftemplates_id" type="selectrow"/>
+
+        <field name="reason" type="text"
+               show_link="true"
+               url="index.php?option=com_admintools&amp;view=waftemplate&amp;id=[ITEM:ID]"
+                />
+
+        <field name="subject" type="text"
+               show_link="true"
+               url="index.php?option=com_admintools&amp;view=waftemplate&amp;id=[ITEM:ID]"
+                />
+
+        <field name="enabled" type="published"/>
+
+        <field name="language" type="language" none="JALL"/>
+    </fieldset>
+</form>

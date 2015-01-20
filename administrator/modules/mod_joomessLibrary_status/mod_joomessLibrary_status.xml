@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD module 1.0//EN" "http://joomla.org/xml/dtd/1.5/module-install.dtd">
+<install type="module" version="1.5" method="upgrade" client="administrator">
+  <name>joomessLibrary - Status</name>
+  <creationDate>04-June-2012</creationDate>
+  <author>Johannes Meßmer</author>
+  <authorEmail>service@joomess.de</authorEmail>
+  <authorUrl>http://www.joomess.de</authorUrl>
+  <copyright>Copyright (C) 2012 - Johannes Meßmer</copyright>
+  <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+  <version>1.01</version>
+  <description></description>
+  <files>
+    <filename>index.html</filename>
+    <filename module="mod_joomessLibrary_status">mod_joomessLibrary_status.php</filename>
+	<folder>assets</folder>
+  </files>
+  <languages>
+	<language tag="en-GB">en-GB.mod_joomessLibrary_status.ini</language>
+	<language tag="de-DE">de-DE.mod_joomessLibrary_status.ini</language>
+  </languages>
+</install>

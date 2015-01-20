@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Basic screen layout additional for RTL direction
+ * (de) Basis Bildschirmlayout zusätzlich für RTL Leserichtung
+ *
+ * @version         $Id: basemod-rtl.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  /*------------------------------------------------------------------------------------------------------*/
+  
+  /**
+  * (en) Formatting YAML's  basic layout elements
+  * (de) Gestaltung des YAML Basis-Layouts
+  **/
+
+  /* (en) Centering layout in old IE-versions */
+  /* (de) Zentrierung des Layouts in alten IE-versionen */
+  #page_margins { text-align:right }
+  
+  /* (en) Standard für Popup .contentpane */
+  /* (de) Default for Popup .contentpane */
+  body.contentpane {
+    text-align:right;
+  }
+
+  /* (en) Designing main layout elements */
+  /* (de) Gestaltung der Hauptelemente des Layouts */
+  #header {padding-right: 20px; padding-left:2em; }
+  
+  /* (en) Using item seperator with create seperator in menu direktly (e.g. |) */
+  /* (en) Benutzen Sie Platzhalter (z.B. |), indem Sie direkt im Menü einen Seperator einfügen */
+  #topnav ul li { float:right; margin:0 .5em 0 0; }
+  
+  #breadcrumbs { padding-right:20px; padding-left:0; }
+
+  /* (en) adjustment of main navigation */
+  /* (de) Anpassung der Hauptnavigation */
+  #nav ul {
+    margin-left: 0px; /* Reset LTR */
+    margin-right: 20px;
+  }
+  
+  /**
+  * (en) Formatting of Joomla! sezific elements
+  * (de) Gestaltung von Joomla! Spezifischen Elementen
+  */
+  ul.pagination { float:right; }
+  ul.pagination li { float:right; margin:0 0 0 1em; }
+  
+  .contenttoc { margin:0 1em 1em 0; }
+  
+  .tool-tip .tool-text { text-align:right; }
+
+}

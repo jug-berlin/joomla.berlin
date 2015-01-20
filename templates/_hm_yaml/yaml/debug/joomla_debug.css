@@ -1,0 +1,122 @@
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de  
+ *
+ * (en) JYAML debugging stylesheet
+ * (de) JYAML Stylesheet zur Fehlersuche
+ *
+ * @version         $Id: joomla_debug.css 467 2008-07-27 16:52:23Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 467 $
+ * @lastmodified    $Date: 2008-07-27 18:52:23 +0200 (So, 27. Jul 2008) $
+*/
+
+@media all
+{
+
+  /* Adding debugging background */
+  body { background-image:url(images/yaml_debug.gif) !important; background-repeat:repeat !important; }
+
+  .mod-preview {
+    clear:both;
+    padding-top:1.5em;
+    margin-bottom:1em;
+    position:relative;
+  }
+  .mod-preview-info {
+    position:absolute;
+    line-height:1em;
+    font-size:1em;
+    left:0;
+    top:3px;
+    z-index:1000;
+  }
+  
+  #system-debug {
+    background:#fff;
+    opacity:0.9;
+    text-align:left;
+    padding:10px;
+  }
+  
+  #page_margins { position:relative; }
+  
+  #view_grid {
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    height:606px;
+    width:1026px;
+    z-index:90000;
+    opacity:0.6;
+    cursor:move;
+  }
+  
+  .yaml-debug a { color:#aaa;}
+  .yaml-debug a:focus, .yaml-debug a:hover, .yaml-debug a:active { color:#fff; text-decoration:underline; }
+  
+  .col1_content_preview,
+  .col2_content_preview,
+  .col3_content_preview {
+    padding:.5em;
+    padding-top:1em;
+    font-weight:bold;
+    color:#333;
+    background:url(images/jyaml_debug_preview.gif) no-repeat right top;
+  }
+  .col1_content_preview {
+    background-color:#edd;
+    border-top:5px solid #fee;
+    border-bottom:5px solid #fee;
+  }
+  .col2_content_preview {
+    background-color:#ded;
+    border-top:5px solid #efe;
+    border-bottom:5px solid #efe;
+  }
+  .col3_content_preview {
+    background-color:#dde;
+    border-top:5px solid #eef;
+    border-bottom:5px solid #eef;
+  }
+  
+  .preview_positions {
+    background:#ff9 url(images/jyaml_debug_preview.gif) no-repeat right top;
+    border-top:5px solid #ffc;
+    border-bottom:5px solid #ffc; 
+    color:#333;
+    font-weight:bold;
+    padding:.5em;
+    padding-top:1em;
+    margin-top:1em;
+  
+    /* Show hidden Content */
+    position:relative;
+    z-index:99000;
+  }
+  
+  /* IE 5+6 */
+  * html .preview_positions,
+  * html .col1_content_preview,
+  * html .col2_content_preview,
+  * html .col3_content_preview
+   {
+    background-position:right 4px;
+  }
+  
+  /* Disable YAML Debug Features for debug fields */
+  #system-debug:before, #system-debug *:before,
+  #system-debug:after, #system-debug *:after,
+  .yaml-debug:before, .yaml-debug *:before,
+  .yaml-debug:after, .yaml-debug *:after ,
+  #view_grid:before, #view_grid:after { content:"" !important; background:transparent !important; }
+  
+  /* Disable Link-Hover and img Debug - it flicker */
+  a:hover:before, a:hover:after,
+  img:before, img:after { content:"" !important; background:transparent !important; }
+
+}

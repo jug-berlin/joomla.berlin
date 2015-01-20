@@ -1,0 +1,274 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* Based on extension */
+a[href^="aim:"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right 0;
+}
+body.jsn-direction-rtl a[href^="aim:"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left 0;
+}
+a[href$='.zip'],
+a[href$='.rar'],
+a[href$='.gzip'],
+a[href$='.bzip'],
+a[href$='.ace'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -86px;
+}
+body.jsn-direction-rtl a[href$='.zip'],
+body.jsn-direction-rtl a[href$='.rar'],
+body.jsn-direction-rtl a[href$='.gzip'],
+body.jsn-direction-rtl a[href$='.bzip'],
+body.jsn-direction-rtl a[href$='.ace'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -86px;
+}
+a[href^="callto:"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -172px;
+}
+body.jsn-direction-rtl a[href^="callto:"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -172px;
+}
+a[href$='.css'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -258px;
+}
+body.jsn-direction-rtl a[href$='.css'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -258px;
+}
+a[href$='.dmg'],
+a[href$='.app'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -344px;
+}
+body.jsn-direction-rtl a[href$='.dmg'],
+body.jsn-direction-rtl a[href$='.app'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -344px;
+}
+a[href$='.doc'],
+a[href$='.rtf'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -430px;
+}
+body.jsn-direction-rtl a[href$='.doc'],
+body.jsn-direction-rtl a[href$='.rtf'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -430px;
+}
+a[href$='.rss'],
+a[href$='.atom'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -516px;
+}
+body.jsn-direction-rtl a[href$='.rss'],
+body.jsn-direction-rtl a[href$='.atom'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -516px;
+}
+a[href$='.mp4'],
+a[href$='.avi'],
+a[href$='.mpg'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -602px;
+}
+body.jsn-direction-rtl a[href$='.mp4'],
+body.jsn-direction-rtl a[href$='.avi'],
+body.jsn-direction-rtl a[href$='.mpg'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -602px;
+}
+a[href$='.fla'],
+a[href$='.swf'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -688px;
+}
+body.jsn-direction-rtl a[href$='.fla'],
+body.jsn-direction-rtl a[href$='.swf'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -688px;
+}
+a[href$='.ical'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -774px;
+}
+body.jsn-direction-rtl a[href$='.ical'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -774px;
+}
+a[href^="mailto:"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -860px;
+}
+body.jsn-direction-rtl a[href^="mailto:"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -860px;
+}
+a[href$=".mov"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -946px;
+}
+body.jsn-direction-rtl a[href$=".mov"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -946px;
+}
+a[href^="msnim:"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1032px;
+}
+body.jsn-direction-rtl a[href^="msnim:"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1032px;
+}
+a[href$='.mp3'],
+a[href$='.wav'],
+a[href$='.ogg'],
+a[href$='.wma'],
+a[href$='.m4a'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1118px;
+}
+body.jsn-direction-rtl a[href$='.mp3'],
+body.jsn-direction-rtl a[href$='.wav'],
+body.jsn-direction-rtl a[href$='.ogg'],
+body.jsn-direction-rtl a[href$='.wma'],
+body.jsn-direction-rtl a[href$='.m4a'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1118px;
+}
+a[href$='.pdf'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1204px;
+}
+body.jsn-direction-rtl a[href$='.pdf'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1204px;
+}
+a[href$='.pps'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1290px;
+}
+body.jsn-direction-rtl a[href$='.pps'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1290px;
+}
+a[href^="skype:"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1376px;
+}
+body.jsn-direction-rtl a[href^="skype:"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1376px;
+}
+a[href$='.torrent'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1462px;
+}
+body.jsn-direction-rtl a[href$='.torrent'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1462px;
+}
+a[href$='.ttf'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1548px;
+}
+body.jsn-direction-rtl a[href$='.ttf'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1548px;
+}
+a[href$='.txt'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1634px;
+}
+body.jsn-direction-rtl a[href$='.txt'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1634px;
+}
+a[href$='.vcard'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1720px;
+}
+body.jsn-direction-rtl a[href$='.vcard'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1720px;
+}
+a[href$=".wmv"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1806px;
+}
+body.jsn-direction-rtl a[href$=".wmv"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1806px;
+}
+a[href$='.xls'] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1892px;
+}
+body.jsn-direction-rtl a[href$='.xls'] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1892px;
+}
+a[href*="ymsgr:sendIM"] {
+	padding-right: 20px;
+	padding-bottom: 1px;
+	background: url(../images/icons/icons-ext.png) no-repeat right -1978px;
+}
+body.jsn-direction-rtl a[href*="ymsgr:sendIM"] {
+	padding-right: 0;
+	padding-left: 20px;
+	background-position: left -1978px;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Basic screen layout (col1=0, col2=1, col3=1)
+ * (de) Basis Bildschirmlayout (col1=0, col2=1, col3=1)
+ *
+ * @version         $Id: basemod_2col_32.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  /* Disable left column | Linke Spalte abschalten */
+  #col1, #col1_content { display:none }
+  #col3 { margin-left:0; border-left:0; }
+} 

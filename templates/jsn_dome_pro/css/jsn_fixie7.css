@@ -1,0 +1,107 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	height: 1%;
+}
+#jsn-logo a img {
+	display: block;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu {
+	height: 1%;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content,
+#jsn-maincontent_inner,
+#jsn-maincontent_inner1,
+#jsn-maincontent_inner2,
+#jsn-maincontent_inner3,
+#jsn-maincontent_inner4,
+#jsn-maincontent,
+#jsn-centercol,
+#jsn-pos-innerleft,
+#jsn-pos-innerright,
+#jsn-leftsidecontent,
+#jsn-rightsidecontent {
+	height: 1%;
+}
+#jsn-content,
+#jsn-maincontent_inner1,
+#jsn-maincontent_inner2,
+#jsn-maincontent_inner3,
+#jsn-maincontent_inner4 {
+	width: 100%;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - CONTENT COLUMMNS =============== */
+div.grid-layout2 div.grid-lastcol {
+	float: left;
+	width: 49.85%;
+}
+div.grid-layout3 div.grid-lastcol {
+	float: left;
+	width: 33.2%;
+}
+div.grid-layout4 div.grid-lastcol {
+	float: left;
+	width: 24.86%;
+}
+div.grid-layout5 div.grid-lastcol {
+	float: left;
+	width: 19.88%;
+}
+div.grid-layout6 div.grid-lastcol {
+	float: left;
+	width: 16.55%;
+}
+/* =============== TYPOGRAPHY - LIST STYLES =============== */
+/* ----- BULLET NUMBER LIST ----- */
+ul.list-number-bullet li {
+	height: 1%;
+}
+/* ----- DIGIT NUMBER LIST ----- */
+ul.list-number-digit li {
+	height: 1%;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li {
+	position: relative;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul {
+	margin-right: -100%;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-treemenu li {
+	height: 1%;
+}
+/* =============== MENU - SIDE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-sidemenu {
+	float: left;
+	width: 100%;
+}
+div.jsn-modulecontainer ul.menu-sidemenu li {
+	height: 1%;
+	float: left;
+	width: 100%;
+}
+body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-sidemenu li {
+	float: right;
+}
+/* =============== MENU - TOP MENU =============== */
+/* ----- GENERAL ----- */
+ul.menu-topmenu li {
+	display: inline;
+}
+/* ============================== MODULE STYLES ============================== */
+#jsn-pos-top div.search {
+	float: none;
+}

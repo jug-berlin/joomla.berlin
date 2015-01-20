@@ -1,0 +1,589 @@
+/************************************************************************************
+ mobile layout (240 - 1023): common settings for both smartphone and tablet
+*************************************************************************************/
+@media only screen and (max-width: 960px),
+(max-device-width: 960px) {
+	body {
+		font-size: 14px !important;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		width: auto\9; /* ie8 */
+	}
+	#jsn-master #jsn-page {
+		width: auto;
+		padding: 5px;
+	}
+	div.jsn-modulecontainer {
+		margin-top: 10px;
+	}
+	#jsn-pos-mainbody-top,
+	#jsn-pos-mainbody-bottom {
+		padding: 0;
+	}
+	#jsn-pos-content-top,
+	#jsn-content-bottom,
+	#jsn-usermodules1,
+	#jsn-usermodules2,
+	#jsn-pos-user-top,
+	#jsn-pos-user-bottom {
+		padding: 1px 0;
+	}
+	#jsn-mainbody {
+		padding: 10px;
+	}
+	/* =============== MAIN MENU =============== */
+	#jsn-menu.jsn-menu-sticky {
+		position: fixed;
+		top: 0;
+		-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+		-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+	}
+	#jsn-pos-mainmenu,
+	body.jsn-direction-rtl #jsn-pos-mainmenu {
+		float: none;
+	}
+	body.jsn-direction-rtl #jsn-headerright {
+		padding-left: 10px;
+	}
+	/* ----- MAIN TOGGLE ----- */
+	#jsn-pos-mainmenu .jsn-menu-toggle {
+		cursor: pointer;
+		display: inline-block;
+	}
+	#jsn-pos-mainmenu .jsn-modulecontent > .jsn-menu-toggle {
+		color: #666;
+		padding: 6px 10px;
+		font-size: 1.1em;
+	}
+	body.jsn-textstyle-personal.jsn-specialfont #jsn-pos-mainmenu .jsn-menu-toggle {
+		font-size: 1.8em;
+		line-height: 1em;
+	}
+	#jsn-pos-mainmenu .jsn-menu-toggle.active {
+		color: #fff;
+	}
+	body.jsn-color-cyan #jsn-pos-mainmenu .jsn-menu-toggle.active {
+		background-color: #598473;
+	}
+	body.jsn-color-green #jsn-pos-mainmenu .jsn-menu-toggle.active {
+		background-color: #6C8125;
+	}
+	body.jsn-color-red #jsn-pos-mainmenu .jsn-menu-toggle.active {
+		background-color: #D24A17;
+	}
+	body.jsn-color-pink #jsn-pos-mainmenu .jsn-menu-toggle.active {
+		background-color: #F24D69;
+	}
+	body.jsn-color-orange #jsn-pos-mainmenu .jsn-menu-toggle.active {
+		background-color: #F5681B;
+	}
+	body.jsn-color-yellow #jsn-pos-mainmenu .jsn-menu-toggle.active {
+		background-color: #C57F1F;
+	}
+	#jsn-pos-mainmenu .jsn-menu-toggle + ul {
+		display: none;
+	}
+	#jsn-pos-mainmenu .jsn-menu-toggle + ul.jsn-menu-mobile {
+		display: block;
+	}
+
+	/* ----- LEVEL 1 ----- */
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li {
+		float: none;
+		width: auto;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li {
+		border-top: 1px solid #444;
+		border-bottom: 1px solid #111;
+		border-right: none;
+		border-left: none;
+		margin: 0;
+	}
+	div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-image: none;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li > a,
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li > a:hover {
+		border: none;
+		background: #333;
+		color: #ddd;
+		font-size: 1.1em;
+		font-weight: normal;
+		text-decoration: none;
+		padding: 10px;
+	}
+	body.jsn-textstyle-personal.jsn-specialfont #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li > a {
+		font-size: 1.6em;
+		line-height: 1em;
+	}
+
+	/* ----- ACTIVE STATE COLOR ----- */
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active > a {
+		color: #FFF;
+	}
+	body.jsn-color-cyan #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-color: #598473;
+	}
+	body.jsn-color-green #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-color: #6C8125;
+	}
+	body.jsn-color-red #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-color: #D24A17;
+	}
+	body.jsn-color-pink #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-color: #F24D69;
+	}
+	body.jsn-color-orange #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-color: #F5681B;
+	}
+	body.jsn-color-yellow  #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li.active > a {
+		background-color: #C57F1F;
+	}
+
+	/* ----- LEVEL 2 ----- */
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu.jsn-menu-mobile ul {
+		width: auto;
+		position: static !important;
+		background-color: #444;
+		border: none;
+		visibility: visible;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		margin: 0;
+		padding: 0;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu > li > .jsn-menu-mobile {
+		padding: 5px 15px;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li {
+		border: none;
+		background: none;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+		border: none;
+		background: none;
+		color: #ccc;
+		padding: 8px 0 8px 20px;
+		background: url(../images/icons/icons-base.png) left -332px no-repeat;
+	}
+	body.jsn-direction-rtl #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li a,
+	body.jsn-direction-rtl #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li.parent > a {
+		padding-left: 0;
+		padding-right: 20px;
+		background-position: right -336px;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li span.jsn-menu-toggle {
+		top: 0;
+		right: 0;
+		padding: 0;
+		margin: 0;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+		position: absolute;
+		background: rgba(0,0,0,0.3) url(../images/icons/icon-toggle-expand.png) center center no-repeat;
+		filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#4c000000', EndColorStr='#4c000000');
+	}
+	body.jsn-direction-rtl #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li span.jsn-menu-toggle {
+		left: 0;
+		right: auto;
+	}
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li span.jsn-menu-toggle.active {
+		background-image: url(../images/icons/icon-toggle-collapse.png);
+	}
+
+	/* ----- LEVEL 3 ----- */
+	#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul ul li {
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+	body.jsn-direction-rtl #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul ul li {
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+
+
+	/* =============== MOBILE SIDE MENU =============== */
+	body div.jsn-modulecontainer ul.menu-sidemenu ul {
+		display: none;
+	}
+	body div.jsn-modulecontainer ul.menu-sidemenu li.parent > a {
+		padding-right: 8px;
+		background-image: none;
+	}
+	/* ===============  SITETOOLS =============== */
+	#jsn-sitetoolspanel {
+		position: absolute;
+		right: 8px;
+		top: 8px;
+	}
+	ul#jsn-sitetools-menu > li {
+		position: absolute;
+		right: 0;
+	}
+	ul#jsn-sitetools-menu li ul {
+		margin-left: -185px;
+	}
+	ul#jsn-sitetools-inline li ul {
+		margin-left: -115px;
+	}
+	ul#jsn-sitetools-menu li ul {
+		right: 0;
+	}
+	ul#jsn-sitetools-inline {
+		padding: 0;
+	}
+	ul#jsn-sitetools-inline li {
+		padding: 0;
+		margin: 0;
+		background: url("../images/icons/icons-uni.png") no-repeat scroll center -1500px;
+	}
+	ul#jsn-sitetools-menu > li,
+	ul#jsn-sitetools-inline > li {
+		background-color: transparent;
+	}
+	ul#jsn-sitetools-menu > li > a,
+	ul#jsn-sitetools-inline > li > a {
+		margin: 0;
+		padding: 0;
+		width: 32px;
+		height: 34px;
+		display: block;
+	}
+	ul#jsn-sitetools-menu li ul {
+		top: 34px;
+		display: none;
+		right: 0;
+	}
+	ul#jsn-sitetools-inline li ul {
+		z-index: 90;
+		right: 0;
+		top: 29px;
+		position: absolute;
+		display: none;
+	}
+	ul#jsn-sitetools-inline li.active ul,
+	ul#jsn-sitetools-menu li.active ul {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	ul#jsn-sitetools-inline ul li {
+		padding: 3px 6px;
+		background: none;
+	}
+	ul#jsn-sitetools-inline ul li a {
+		float: left;
+		width: 22px;
+		height: 22px;
+		display: inline-block;
+	}
+	body.jsn-css3 ul#jsn-sitetools-inline li {
+		transition: background 0.3s ease-out;
+		-moz-transition: background 0.3s ease-out;
+		-webkit-transition: background 0.3s ease-out;
+	}
+	#jsn-sitetoolspanel li.active,
+	ul#jsn-sitetools-inline li ul {
+		background-color:rgba(75, 75, 75, 0.9);
+	}
+	/* -----  RTL Layout ----- */
+	body.jsn-direction-rtl #jsn-sitetoolspanel {
+		left: 8px;
+		right: auto;
+	}
+	body.jsn-direction-rtl ul#jsn-sitetools-menu > li {
+		position: inherit;
+	}
+	body.jsn-direction-rtl ul#jsn-sitetools-menu li ul {
+		margin-right: -140px;
+		margin-left: 0;
+		left: 0;
+	}
+	body.jsn-direction-rtl ul#jsn-sitetools-inline li ul {
+		margin-right: -115px;
+		margin-left: 0;
+		left: 0;
+	}
+	/* ===============  OTHER POSITIONS =============== */
+	div[id*="jsn-pos-stick-left"],
+	div[id*="jsn-pos-stick-right"] {
+		display: none;
+		height: 0;
+	}
+	#jsn-promo #jsn-pos-promo {
+		float: none;
+		left: auto;
+		width: 100%;
+	}
+	#jsn-promo #jsn-pos-promo-left {
+		left: auto;
+		width: 100%;
+	}
+	#jsn-promo #jsn-pos-promo-right {
+		width: 100%;
+	}
+	#jsn-content #jsn-maincontent {
+		float: none;
+		left: auto;
+		width: 100%;
+		background-color: #fff;
+		margin-bottom: 10px;
+	}
+	#jsn-content #jsn-leftsidecontent {
+		float: none;
+		left: auto;
+		width: 100%;
+	}
+	#jsn-content #jsn-rightsidecontent {
+		float: none;
+		width: 100%;
+	}
+	#jsn-content #jsn-centercol,
+	#jsn-content #jsn-pos-innerleft,
+	#jsn-content #jsn-pos-innerright {
+		width: 100%;
+		left: auto;
+	}
+	div.jsn-modulecontainer.display-mobile {
+		display: block;
+	}
+	div.jsn-modulecontainer.display-desktop {
+		display: none;
+	}
+	div.jsn-hasleft #jsn-maincontent_inner {
+		margin-left: 0;
+		border-left: none;
+	}
+	div.jsn-hasright #jsn-maincontent_inner {
+		margin-right: 0;
+		border-right: none;
+	}
+	div.jsn-hasinnerright #jsn-maincontent_inner3 {
+		border-left: none;
+	}
+	div.jsn-hasinnerleft #jsn-maincontent_inner1 {
+		border-right: none;
+	}
+	/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+	/* =============== JOOMLA! EXTENSIONS - COM_CONTACT =============== */
+	/* ----- STANDARD CONTACT LAYOUT - CONTACT FORM INPUT BOXES ----- */
+	.jsn-mailling-form {
+		text-align: center;
+	}
+	.jsn-mailling-form p {
+		text-align: left;
+	}
+	.jsn-mailling-form #contact_name,
+	.jsn-mailling-form #contact_email,
+	.jsn-mailling-form #contact_subject,
+	.jsn-mailling-form #contact_text {
+		width: 100%;
+		padding: 3px 0;
+	}
+	/* =============== JOOMLA! EXTENSIONS - COM_SEARCH =============== */
+	div.com-search #searchForm .search-phrase {
+		margin-left: 0;
+	}
+	div.com-search #searchForm .search-keyword label,
+	div.com-search #searchForm .search-ordering label,
+	div.com-search #searchForm .search-field-title {
+		float: none;
+		display: inline;
+		text-align: left;
+		padding-bottom: 3px;
+	}
+	div.com-search #searchForm .search-keyword-result .search-field-title {
+		display: inline;
+	}
+	div.com-search #searchForm .search-range label,
+	div.com-search #searchForm  .search-range .search-field-title {
+		float: left;
+	}
+	body.jsn-direction-rtl div.com-search #searchForm .search-range label,
+	body.jsn-direction-rtl div.com-search #searchForm .search-range .search-field-title {
+		float: right;
+	}
+}
+
+/************************************************************************************
+smartphone layout (320 - 480): everything is layout in single column
+*************************************************************************************/
+@media only screen and (max-width: 480px), (max-device-width: 480px) {
+	#jsn-logo #jsn-logo-mobile {
+		display: block;
+	}
+	#jsn-logo #jsn-logo-mobile + #jsn-logo-desktop {
+		display: none;
+	}
+	#jsn-logo {
+		float: none;
+	}
+	#jsn-headerright {
+		float: none;
+		padding: 0;
+	}
+	#jsn-headerright #jsn-pos-top {
+		float: none;
+	}
+	ul.menu-topmenu li:first-child {
+		margin: 0;
+	}
+	#jsn-headerright #jsn-pos-top div.jsn-modulecontainer {
+		float: none;
+		margin: 0 0 15px 0;
+	}
+	#jsn-pos-promo-left_inner,
+	#jsn-pos-promo-right_inner {
+		padding: 10px;
+	}
+	div.jsn-modulescontainer div[class*="solid-"],
+	div.jsn-modulescontainer div[class*="richbox-"],
+	div.jsn-modulescontainer div[class*="lightbox-"],
+	div.jsn-modulescontainer2 div.jsn-modulecontainer {
+		width: 100%;
+	}
+	div#jsn-content.jsn-hasright #jsn-content_inner2 {
+		background: none;
+	}
+	div#jsn-content.jsn-hasleft #jsn-content_inner {
+		background: none;
+	}
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-rightsidecontent {
+		margin-top: 10px;
+	}
+	div.jsn-modulescontainer2 div.jsn-modulecontainer,
+	div.jsn-modulescontainer3 div.jsn-modulecontainer,
+	#jsn-pos-user1,
+	#jsn-pos-user2,
+	#jsn-pos-user3,
+	#jsn-pos-user4,
+	#jsn-pos-user5,
+	#jsn-pos-user6,
+	#jsn-pos-user7,
+	#jsn-pos-footer,
+	#jsn-pos-bottom {
+		float: none !important;
+		width: 100% !important;
+	}
+	#jsn-pos-bottom {
+		text-align: left;
+	}
+	div[class*="grid-layout"] div.grid-col {
+		width: 100%;
+	}
+	div.grid-layout div.grid-col div.grid-col_inner {
+		margin-right: 0;
+	}
+	body.jsn-direction-rtl div.grid-layout div.grid-col div.grid-col_inner {
+		margin-left: 0;
+	}
+	/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+	/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+	/* ----- ARTICLE DETAILS ----- */
+	p, pre, blockquote, form, dl, ul, ol, fieldset, address, table {
+		word-wrap: break-word;
+	}
+	/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+	/* ARTICLE COLUMN CONTAINER */
+	.jsn-articlecols {
+		float: none;
+		width: 100% !important;
+	}
+	.jsn-articlecols .jsn-article {
+		padding: 0;
+	}
+	/* =============== JOOMLA! EXTENSIONS - COM_NEWSFEED =============== */
+	.com-newsfeed table.jsn-infotable td.jsn-table-column-links {
+		display: none;
+	}
+	/* =============== JOOMLA! EXTENSIONS - COM_CONTACT =============== */
+	.com-contact table.jsn-infotable td.jsn-table-column-country,
+	.com-contact table.jsn-infotable td.jsn-table-column-state,
+	.com-contact table.jsn-infotable td.jsn-table-column-suburb, 
+	.com-contact table.jsn-infotable td.jsn-table-column-position {
+		display: none;
+	}
+	/* =============== JOOMLA! EXTENSIONS - COM_USER =============== */
+	/* ----- USER FORM LAYOUT ----- */
+	div.com-user div.default-login {
+		width: 90%;
+	}
+	div.com-user div.default-login .login-fields input {
+		display: block;
+		width: 95%;
+	}
+}
+
+/************************************************************************************
+ tablet layout (481 - 1023): arrange modules in 2 columns and 1 side bar 
+*************************************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 960px),
+(min-device-width: 481px) and (max-device-width: 960px) {
+	#jsn-content-top.jsn-haspromoleft.jsn-haspromoright #jsn-promo #jsn-pos-promo-left {
+		left: auto;
+		width: 49.5%;
+	}
+	#jsn-content-top.jsn-haspromoleft.jsn-haspromoright #jsn-promo #jsn-pos-promo-right {
+		width: 49.5%;
+	}
+	div.jsn-modulescontainer4 div.jsn-modulecontainer {
+		width: 49%;
+	}
+	div.grid-layout4 div.grid-col,
+	div.grid-layout5 div.grid-col,
+	div.grid-layout6 div.grid-col	{
+		width: 33.3%;
+	}
+	#jsn-content #jsn-content_inner,
+	#jsn-content #jsn-content_inner3 {
+		right: auto;
+	}
+	#jsn-content #jsn-content_inner1,
+	#jsn-content #jsn-content_inner2 {
+		left: auto;
+	}
+	#jsn-content #jsn-centercol {
+		width: 100%;
+		left: auto;
+	}
+	#jsn-content.jsn-hasinnerleft.jsn-hasinnerright #jsn-pos-innerleft {
+		float: left;
+		width: 49.5%;
+	}
+	#jsn-content.jsn-hasinnerleft.jsn-hasinnerright #jsn-pos-innerright {
+		float: right;
+		width: 49.5%;
+	}
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-leftsidecontent {
+		float: left;
+		width: 49.5%;
+	}
+	#jsn-content.jsn-hasleft.jsn-hasright #jsn-rightsidecontent {
+		float: right;
+		width: 49.5%;
+	}
+	div#jsn-content.jsn-hasright #jsn-content_inner2 {
+		background: transparent;
+	}
+	div#jsn-content.jsn-hasleft #jsn-content_inner {
+		background: transparent;
+	}
+	div.jsn-modulescontainer3 div.jsn-modulecontainer,
+	div.jsn-modulescontainer3 #jsn-pos-user5,
+	div.jsn-modulescontainer3 #jsn-pos-user6,
+	div.jsn-modulescontainer3 #jsn-pos-user7 {
+		width: 49.9%;
+	}
+	div.jsn-modulescontainer3 #jsn-pos-user5 div.jsn-modulecontainer,
+	div.jsn-modulescontainer3 #jsn-pos-user6 div.jsn-modulecontainer,
+	div.jsn-modulescontainer3 #jsn-pos-user7 div.jsn-modulecontainer {
+		width: 100%;
+	}
+}

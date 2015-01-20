@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?><Production_Data Version="5.00"><HTMLTemplateFile>Template.htm</HTMLTemplateFile>
+<HTMLTemplateBodyFile>expressShow\SSWFTemplate-body.htm</HTMLTemplateBodyFile>
+<HTMLTemplateHeaderFile>expressShow\SSWFTemplate-header.htm</HTMLTemplateHeaderFile>
+<VideoFilenameWithPath>C:\Dokumente und Einstellungen\Administrator\Desktop\joomla\joomla99\joomla99.swf</VideoFilenameWithPath>
+<AddIPodFileSize>0 Byte</AddIPodFileSize>
+<AddMP3FileSize>0 Byte</AddMP3FileSize>
+<AddPPTFileSize>0 Byte</AddPPTFileSize>
+<ProjectName>joomla99</ProjectName>
+<MediaDir></MediaDir>
+<ShouldCreateMediaDir>0</ShouldCreateMediaDir>
+<MaxTimelineWidth>876</MaxTimelineWidth>
+<MaxTimelineHeight>728</MaxTimelineHeight>
+<MaxTimelineFPS>15.00</MaxTimelineFPS>
+<MaxVideoWidth>876</MaxVideoWidth>
+<MaxVideoHeight>728</MaxVideoHeight>
+<MaxVideoFPS>15.00</MaxVideoFPS>
+<MaxPIPWidth>0</MaxPIPWidth>
+<MaxPIPHeight>0</MaxPIPHeight>
+<MaxPIPFPS>0.00</MaxPIPFPS>
+<VideoDuration>367.77</VideoDuration>
+<PIPVideoDuration>344.47</PIPVideoDuration>
+<VideoFPS>30.00</VideoFPS>
+<PIPVideoFPS>30.00</PIPVideoFPS>
+<VideoWidth>819</VideoWidth>
+<VideoHeight>699</VideoHeight>
+<ActualVideoWidth>819</ActualVideoWidth>
+<ActualVideoHeight>681</ActualVideoHeight>
+<PIPVideoWidth>180</PIPVideoWidth>
+<PIPVideoHeight>135</PIPVideoHeight>
+<TOCWidth>-1</TOCWidth>
+<MinTOCWidth>160</MinTOCWidth>
+<TOCDividerHeight>18</TOCDividerHeight>
+<TimelineHasAudio>1</TimelineHasAudio>
+<TimelineDuration>3677666667</TimelineDuration>
+<SWFControllerTotalHeight>18</SWFControllerTotalHeight>
+<SWFMinWidth>320</SWFMinWidth>
+<SWFTOCXPos>0</SWFTOCXPos>
+<SWFTOCYPos>0</SWFTOCYPos>
+<SWFTOCWidth>180</SWFTOCWidth>
+<SWFTOCHeight>681</SWFTOCHeight>
+<SWFHasPIPOverlay>0</SWFHasPIPOverlay>
+<SWFControllerColor></SWFControllerColor>
+<SWFTimeDispFontColor>0x000000</SWFTimeDispFontColor>
+<SWFPlaybackConfigFileName>joomla99_config.xml</SWFPlaybackConfigFileName>
+<SWFPlaybackControllerFileName>joomla99_controller.swf</SWFPlaybackControllerFileName>
+<SWFPreloaderFileName></SWFPreloaderFileName>
+<StripWhitespace>0</StripWhitespace>
+<WritingImages>0</WritingImages>
+<WritePreviewXML>0</WritePreviewXML>
+<DisableTOC>0</DisableTOC>
+<AutoPlay>0</AutoPlay>
+<CancelledProduction>0</CancelledProduction>
+<CancelledProdLength>3677333333</CancelledProdLength>
+<Hotspot_Array>
+<Hotspot_Array_Object>
+               <array>
+               <hotspot>
+               </hotspot>
+               <hotspot>
+               </hotspot>
+               <hotspot>
+               </hotspot>
+               <hotspot>
+                  <start type="Number">0.00</start>
+                  <end type="Number">5.00</end>
+                  <x0 type="Number">0</x0>
+                  <y0 type="Number">643</y0>
+                  <x1 type="Number">262</x1>
+                  <y1 type="Number">676</y1>
+                  <pause type="Boolean">0</pause>
+                  <url>http://www.filmanleitungen.de</url>
+                  <newWindow type="Number">1</newWindow>
+               </hotspot>
+               <hotspot>
+                  <start type="Number">30.83</start>
+                  <end type="Number">367.77</end>
+                  <x0 type="Number">0</x0>
+                  <y0 type="Number">643</y0>
+                  <x1 type="Number">262</x1>
+                  <y1 type="Number">676</y1>
+                  <pause type="Boolean">0</pause>
+                  <url>http://www.filmanleitungen.de</url>
+                  <newWindow type="Number">1</newWindow>
+               </hotspot>
+               <hotspot>
+                  <start type="Number">5.00</start>
+                  <end type="Number">30.83</end>
+                  <x0 type="Number">0</x0>
+                  <y0 type="Number">643</y0>
+                  <x1 type="Number">262</x1>
+                  <y1 type="Number">676</y1>
+                  <pause type="Boolean">0</pause>
+                  <url>http://www.filmanleitungen.de</url>
+                  <newWindow type="Number">1</newWindow>
+               </hotspot>
+               </array>
+</Hotspot_Array_Object>
+</Hotspot_Array>
+<AdjGlobalRenderRangeStart>-1</AdjGlobalRenderRangeStart>
+<AdjGlobalRenderRangeStop>-1</AdjGlobalRenderRangeStop>
+<AdjRenderRange_Array>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>0</AdjRenderRangeStart>
+<AdjRenderRangeStop>318666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>318666667</AdjRenderRangeStart>
+<AdjRenderRangeStop>481666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>481666667</AdjRenderRangeStart>
+<AdjRenderRangeStop>690666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>690666667</AdjRenderRangeStart>
+<AdjRenderRangeStop>840666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>840666667</AdjRenderRangeStart>
+<AdjRenderRangeStop>1405000000</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>1405000000</AdjRenderRangeStart>
+<AdjRenderRangeStop>1477333333</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>1477333333</AdjRenderRangeStart>
+<AdjRenderRangeStop>2034000000</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>2034000000</AdjRenderRangeStart>
+<AdjRenderRangeStop>2123333333</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>2123333333</AdjRenderRangeStart>
+<AdjRenderRangeStop>2374666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>2374666667</AdjRenderRangeStart>
+<AdjRenderRangeStop>2775666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+<AdjRenderRange_Obj>
+<AdjRenderRangeStart>2775666667</AdjRenderRangeStart>
+<AdjRenderRangeStop>3677666667</AdjRenderRangeStop>
+</AdjRenderRange_Obj>
+</AdjRenderRange_Array>
+<AdjMarkerDuration_Array>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>318666667</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>163000000</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>209000000</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>150000000</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>564333333</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>72333333</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>556666667</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>89333333</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>251333333</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>401000000</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+<AdjMarkerDuration_Obj>
+<AdjMarkerDuration>902000000</AdjMarkerDuration>
+</AdjMarkerDuration_Obj>
+</AdjMarkerDuration_Array>
+<AdjMarkerTimes_Array>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>0</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>318666667</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>481666667</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>690666667</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>840666667</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>1405000000</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>1477333333</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>2034000000</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>2123333333</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>2374666667</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+<AdjMarkerTime_Obj>
+<AdjMarkerTime>2775666667</AdjMarkerTime>
+</AdjMarkerTime_Obj>
+</AdjMarkerTimes_Array>
+<HasQuizQuestions>0</HasQuizQuestions>
+<m_strQuizQuestionOfString>Frage @ von @</m_strQuizQuestionOfString>
+<m_strQuizPrevString>Zurück</m_strQuizPrevString>
+<m_strQuizSubmitString>Abschicken</m_strQuizSubmitString>
+<m_strQuizNextString>Weiter</m_strQuizNextString>
+<m_strQuizDoneString>Fertig</m_strQuizDoneString>
+<m_strQuizPreviewString>Vorschau</m_strQuizPreviewString>
+<m_strQuizSendString>Senden</m_strQuizSendString>
+<m_strQuizMainMessageString>Sie haben das Ende der Fragen und dieses Videos erreicht. Ihre Antworten können jetzt übermittelt werden.</m_strQuizMainMessageString>
+<m_strQuizEmailContentsString>E-Mail-Inhalt</m_strQuizEmailContentsString>
+<m_strQuizEmailToString>E-Mail senden an </m_strQuizEmailToString>
+<m_strQuizAnswersSentString>Ihre Antworten wurden gesendet.</m_strQuizAnswersSentString>
+<m_strQuizSummaryString>Sie haben @ von @ Fragen abgeschlossen.</m_strQuizSummaryString>
+<m_strQuizScoreString>Punktzahl = @/@</m_strQuizScoreString>
+<m_strQuizSummaryTitleString>Zusammenfassung der Antworten</m_strQuizSummaryTitleString>
+<Quiz_Array>
+</Quiz_Array>
+<Markers_Array>
+<Marker_Object>
+<MarkerName>Intro</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>0</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>1. Sprachauswahl</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>318666667</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>2. Installationsprüfung</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>481666667</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>3. Lizenz</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>690666667</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>4. Datenbank</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>840666667</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>5. FTP-Konfiguration</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>1405000000</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>6. Konfiguration</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>1477333333</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>7. Abschluss</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>2034000000</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>Webseite</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>2123333333</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>Administrator</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>2374666667</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+<Marker_Object>
+<MarkerName>Systeminformationen</MarkerName>
+<MarkerImage></MarkerImage>
+<MarkerTime>2775666667</MarkerTime>
+<IndentLevel>0</IndentLevel>
+<ShouldIgnore>0</ShouldIgnore>
+</Marker_Object>
+</Markers_Array>
+<CaptionPlayerXML_Array>
+</CaptionPlayerXML_Array>
+<CaptionFontHeight>23</CaptionFontHeight>
+<MaxCaptionsCharsPerLine>32</MaxCaptionsCharsPerLine>
+<TimelineCaptionCount>0</TimelineCaptionCount>
+<CaptionHeight>0</CaptionHeight>
+<CloseCaptions_Array>
+</CloseCaptions_Array>
+<NumMetaDataTypes>82</NumMetaDataTypes>
+<MetaData_Array>
+<MetaData_Object>
+<MetaDataType>Date</MetaDataType>
+<MetaDataValue>Mittwoch, Mai 21, 2008</MetaDataValue>
+<MetaDataEmbedName>DC.date</MetaDataEmbedName>
+</MetaData_Object>
+<MetaData_Object>
+<MetaDataType>Title</MetaDataType>
+<MetaDataValue>joomla</MetaDataValue>
+<MetaDataEmbedName>DC.title</MetaDataEmbedName>
+</MetaData_Object>
+</MetaData_Array>
+<NumFileTypesUsedByProduction>4</NumFileTypesUsedByProduction>
+<FileTypesUsed_Array>
+<FileTypeUsed_Object>
+<FileTypeName>Video</FileTypeName>
+</FileTypeUsed_Object>
+<FileTypeUsed_Object>
+<FileTypeName>HTMLFile</FileTypeName>
+</FileTypeUsed_Object>
+<FileTypeUsed_Object>
+<FileTypeName>EmbededPlayerJS</FileTypeName>
+</FileTypeUsed_Object>
+<FileTypeUsed_Object>
+<FileTypeName>ProductionInfoXML</FileTypeName>
+</FileTypeUsed_Object>
+</FileTypesUsed_Array>
+<NumFilesTotal>4</NumFilesTotal>
+<ProducedFiles_Array>
+<ProducedFile_Object>
+<FileName>C:\Dokumente und Einstellungen\Administrator\Desktop\joomla\joomla99\joomla99.swf</FileName>
+<FileSize>12335462</FileSize>
+<FileType>Video</FileType>
+<WhichFilesOfCurType>0</WhichFilesOfCurType>
+<TotalFilesOfCurType>1</TotalFilesOfCurType>
+</ProducedFile_Object>
+<ProducedFile_Object>
+<FileName>C:\Dokumente und Einstellungen\Administrator\Desktop\joomla\joomla99\joomla99.html</FileName>
+<FileSize>0</FileSize>
+<FileType>HTMLFile</FileType>
+<WhichFilesOfCurType>0</WhichFilesOfCurType>
+<TotalFilesOfCurType>1</TotalFilesOfCurType>
+</ProducedFile_Object>
+<ProducedFile_Object>
+<FileName>C:\Dokumente und Einstellungen\Administrator\Desktop\joomla\joomla99\swfobject.js</FileName>
+<FileSize>0</FileSize>
+<FileType>EmbededPlayerJS</FileType>
+<WhichFilesOfCurType>0</WhichFilesOfCurType>
+<TotalFilesOfCurType>1</TotalFilesOfCurType>
+</ProducedFile_Object>
+<ProducedFile_Object>
+<FileName>C:\Dokumente und Einstellungen\Administrator\Desktop\joomla\joomla99\ProductionInfo.xml</FileName>
+<FileSize>0</FileSize>
+<FileType>ProductionInfoXML</FileType>
+<WhichFilesOfCurType>0</WhichFilesOfCurType>
+<TotalFilesOfCurType>1</TotalFilesOfCurType>
+</ProducedFile_Object>
+</ProducedFiles_Array>
+<OutputBasePath>C:\Dokumente und Einstellungen\Administrator\Desktop\joomla\joomla99\</OutputBasePath>
+<ProductionFormat>SWF</ProductionFormat>
+<NumVideoSegments>1</NumVideoSegments>
+<NumHTMLFiles>1</NumHTMLFiles>
+<TotalProductionSize>12335462</TotalProductionSize>
+<m_cf_rtRenderRangeStart>-1</m_cf_rtRenderRangeStart>
+<m_cf_rtRenderRangeStop>-1</m_cf_rtRenderRangeStop>
+<m_cf_strTempDir>C:\DOKUME~1\ADMINI~1\LOKALE~1\Temp\</m_cf_strTempDir>
+<m_cf_bWritePIPFile>0</m_cf_bWritePIPFile>
+<m_cf_bDisablePIPVideo>1</m_cf_bDisablePIPVideo>
+<m_cf_bWriteIndex>1</m_cf_bWriteIndex>
+<m_cf_bWriteMultipleFiles>0</m_cf_bWriteMultipleFiles>
+<m_cf_strHTMLTemplateName>Template.htm</m_cf_strHTMLTemplateName>
+<m_cf_HTMLAlignment>1</m_cf_HTMLAlignment>
+<m_cf_bSCORMOutput>0</m_cf_bSCORMOutput>
+<m_cf_bController>1</m_cf_bController>
+<m_cf_bAutoPlay>1</m_cf_bAutoPlay>
+<m_cf_bNumberIndexMarkers>0</m_cf_bNumberIndexMarkers>
+<m_cf_bShortenIndexNames>1</m_cf_bShortenIndexNames>
+<m_cf_nShortenedIndexLength>17</m_cf_nShortenedIndexLength>
+<m_cf_bQuizShowFeedback>1</m_cf_bQuizShowFeedback>
+<m_cf_bEMailQuizResults>0</m_cf_bEMailQuizResults>
+<m_cf_bEMailIncludeScore>0</m_cf_bEMailIncludeScore>
+<m_cf_bJavaScriptQuizResults>0</m_cf_bJavaScriptQuizResults>
+<m_cf_bHTMLOutput>1</m_cf_bHTMLOutput>
+<m_cf_SCORMVersion>0</m_cf_SCORMVersion>
+<m_cf_strManifestID>ID-0FEE5F74-87BA-4329-9064-2B22A6D871A3</m_cf_strManifestID>
+<m_cf_strManifestTitle></m_cf_strManifestTitle>
+<m_cf_strDuration>0:06:07.23</m_cf_strDuration>
+<m_cf_strSubject></m_cf_strSubject>
+<m_cf_strManifestDescription></m_cf_strManifestDescription>
+<m_cf_strLanguage>en</m_cf_strLanguage>
+<m_cf_SCORMPackage>2</m_cf_SCORMPackage>
+<m_cf_strSCOTitle></m_cf_strSCOTitle>
+<m_cf_ProductionFormat>8</m_cf_ProductionFormat>
+<m_cf_strTitle></m_cf_strTitle>
+<m_cf_strAuthor></m_cf_strAuthor>
+<m_cf_strCopyright></m_cf_strCopyright>
+<m_cf_strDescription></m_cf_strDescription>
+<m_cf_MultiFileOutputStyle>0</m_cf_MultiFileOutputStyle>
+<m_cf_strVideoCompressor>Techsmith Screen Capture Codec</m_cf_strVideoCompressor>
+<m_cf_bAddCaption>1</m_cf_bAddCaption>
+<m_cf_bWriteCCInfo>0</m_cf_bWriteCCInfo>
+<m_cf_bOverlayCaption>0</m_cf_bOverlayCaption>
+<m_cf_strCaptionFontFamily>Microsoft Sans Serif</m_cf_strCaptionFontFamily>
+<m_cf_bAddIPODFileToProduction>0</m_cf_bAddIPODFileToProduction>
+<m_cf_bAddMP3FileToProduction>0</m_cf_bAddMP3FileToProduction>
+<m_cf_bAddPPTFileToProduction>0</m_cf_bAddPPTFileToProduction>
+<m_cf_strPPTFileToAddToProduction></m_cf_strPPTFileToAddToProduction>
+<m_cf_bAviEncodeAudio>1</m_cf_bAviEncodeAudio>
+<m_cf_AVIFrameRate>0</m_cf_AVIFrameRate>
+<m_cf_nKeyFrameRate>450</m_cf_nKeyFrameRate>
+<m_cf_PIP_nKeyFrameRate>30</m_cf_PIP_nKeyFrameRate>
+<m_cf_PIP_AVIFrameRate>0</m_cf_PIP_AVIFrameRate>
+<m_cf_SwfPlaybackControls>0</m_cf_SwfPlaybackControls>
+<m_cf_strControllerSkinName>onyx</m_cf_strControllerSkinName>
+<m_cf_nSwfTargetVersion>7</m_cf_nSwfTargetVersion>
+<m_cf_bSwfMatchPreloadMovieSize>0</m_cf_bSwfMatchPreloadMovieSize>
+<m_cf_bSwfPauseAtStart>0</m_cf_bSwfPauseAtStart>
+<m_cf_bSwfPreloadAdvanced>0</m_cf_bSwfPreloadAdvanced>
+<m_cf_bSwfSingleSWF>1</m_cf_bSwfSingleSWF>
+<m_cf_nSwfMainMovieLoadPercent>10</m_cf_nSwfMainMovieLoadPercent>
+<m_cf_nSwfPreloadMinDisplayTime>3</m_cf_nSwfPreloadMinDisplayTime>
+<m_cf_clrSwfControlColor>0x00C0C0C0</m_cf_clrSwfControlColor>
+<m_cf_bSwfShowAboutBtn>0</m_cf_bSwfShowAboutBtn>
+<m_cf_strSwfAboutBoxTxt>ghjgfhjhj</m_cf_strSwfAboutBoxTxt>
+<m_cf_strSwfAboutBoxInfoTxt></m_cf_strSwfAboutBoxInfoTxt>
+<m_cf_strSwfAboutTitle>ghghjhg</m_cf_strSwfAboutTitle>
+<m_cf_strSwfStartTxt>www.filmanleitungen.de</m_cf_strSwfStartTxt>
+<m_cf_SwfAboutBoxWidth>336</m_cf_SwfAboutBoxWidth>
+<m_cf_SwfAboutBoxHeight>270</m_cf_SwfAboutBoxHeight>
+<m_cf_bSwfAboutBoxTabSelected>1</m_cf_bSwfAboutBoxTabSelected>
+<m_cf_strSwfTimeDisplayFormat>MM:SS</m_cf_strSwfTimeDisplayFormat>
+<m_cf_bSwfCCInitiallyVisible>0</m_cf_bSwfCCInitiallyVisible>
+<m_cf_bSwfFullScreen>1</m_cf_bSwfFullScreen>
+<m_cf_bSwfAllowResizing>1</m_cf_bSwfAllowResizing>
+<m_cf_nSwfVolueme>100</m_cf_nSwfVolueme>
+<m_cf_bSwfBrandContextMenu>0</m_cf_bSwfBrandContextMenu>
+<m_cf_SwfTOCType>2</m_cf_SwfTOCType>
+<m_cf_SwfTOCTitle>CMS Joomla!</m_cf_SwfTOCTitle>
+<m_cf_bSwfShowMovieDuration>1</m_cf_bSwfShowMovieDuration>
+<m_cf_bSwfShowTimeElapsed>1</m_cf_bSwfShowTimeElapsed>
+<m_cf_strSwfTimeFont>Arial</m_cf_strSwfTimeFont>
+<m_cf_clrSwfTimeFontColor>0x00000000</m_cf_clrSwfTimeFontColor>
+<m_cf_SwfEndAction>1</m_cf_SwfEndAction>
+<m_cf_strSwfEndActionUrl>http://</m_cf_strSwfEndActionUrl>
+<m_cf_nSwfEndActionTarget>0</m_cf_nSwfEndActionTarget>
+<m_cf_bPauseAfterJump>0</m_cf_bPauseAfterJump>
+<m_cf_rtJumpPoint>0</m_cf_rtJumpPoint>
+<m_cf_strSwfStartLogo></m_cf_strSwfStartLogo>
+<m_cf_strSwfEndLogo></m_cf_strSwfEndLogo>
+<m_cf_strSwfAboutLogo></m_cf_strSwfAboutLogo>
+<m_cf_strSwfAboutTitleLogo></m_cf_strSwfAboutTitleLogo>
+<m_cf_strSwfTocLogo></m_cf_strSwfTocLogo>
+</Production_Data>

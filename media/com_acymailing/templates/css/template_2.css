@@ -1,0 +1,18 @@
+h1 { color:#454545 !important; font-size:24px; font-weight:bold; margin:0px; } 
+h2 { color:#b20000 !important; font-size:18px; font-weight:bold; margin:0px; margin-bottom:10px; padding-bottom:4px; border-bottom: 1px solid #d6d6d6; } 
+h3 { color:#b20101 !important; font-weight:bold; font-size:18px; margin:10px 0px; } 
+h4 { color:#e52323 !important; font-weight:bold; margin:0px; padding:0px } 
+a { cursor:pointer; color:#9d0000; text-decoration:none; border:none; } 
+.acymailing_readmore {cursor:pointer; color:#ffffff; background-color:#9d0000; border-top:1px solid #9d0000; border-bottom:1px solid #9d0000; border-right:4px solid #9d0000; border-left:4px solid #9d0000; font-size:13px;} 
+.acymailing_online {color:#dddddd; text-decoration:none; font-size:13px; margin:10px; text-align:center; font-family:Times New Roman, Times, serif;} 
+body{background-color:#454545} 
+.acymailing_unsub {color:#dddddd; text-decoration:none; font-size:13px; text-align:center;} 
+a img{ border:0px; text-decoration:none;} 
+footer a{
+	color:#454545;
+}
+.dark{
+	color:#454545;
+	font-weight:bold;
+}
+div,table,p{font-family:"Times New Roman", Times, serif;font-size:13px;color:#575757;}

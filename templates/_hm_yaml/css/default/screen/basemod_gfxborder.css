@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Variation of screen layout (basemod.css) - graphic layout border "3col_gfxborder"
+ * (de) Variation des Screenlayouts (basemod.css) - Grafische Layoutumrandung "3col_gfxborder"
+ *
+ * @version         $Id: basemod_gfxborder.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  #page_margins {
+    border: 0 none;
+    background-image:  url(../../../images/default/gfxborder/border_left.gif);
+    background-repeat:repeat-y;
+    background-position:left;
+  }
+
+  #page {
+    border: 0 none;
+    margin: 0 0 0 5px; padding: 0 5px 0 0;
+    background-image:  url(../../../images/default/gfxborder/border_right.gif);
+    background-repeat:repeat-y;
+    background-position:right;
+  }
+
+
+  #border-top {
+    overflow:hidden;
+    width: auto;
+    height: 20px;
+    font-size:0;
+    margin-bottom: -15px;
+    background-image:  url(../../../images/default/gfxborder/border_top.gif);
+    background-repeat:repeat-x;
+    background-position:top left;
+  }
+
+  #border-bottom {
+    overflow:hidden;
+    width: auto;
+    height: 20px;
+    margin-top: -15px;
+    font-size:0;
+    background-image:  url(../../../images/default/gfxborder/border_bottom.gif);
+    background-repeat:repeat-x;
+    background-position:bottom left;
+  }
+
+  #edge-tl {
+    float:left;
+    width: 20px;
+    height: 20px;
+    font-size:0;
+    background-image:  url(../../../images/default/gfxborder/corner_tl.gif);
+    background-position: top left;
+  }
+
+  #edge-tr {
+    position:relative; /* IE Fix | z-index */
+    float:right;
+    width: 20px;
+    height: 20px;
+    font-size:0;
+    background-image:  url(../../../images/default/gfxborder/corner_tr.gif);
+    background-position: top right;
+  }
+
+  #edge-bl {
+    float:left;
+    width: 20px;
+    height: 20px;
+    background-image:  url(../../../images/default/gfxborder/corner_bl.gif);
+    background-position: bottom left;
+  }
+
+  #edge-br {
+    position:relative; /* IE Fix | z-index */
+    float:right;
+    width: 20px;
+    height: 20px;
+    background-image:  url(../../../images/default/gfxborder/corner_br.gif);
+    background-position: bottom right;
+  }
+
+}

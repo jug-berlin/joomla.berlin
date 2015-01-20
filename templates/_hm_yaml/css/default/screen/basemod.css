@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Basic screen layout
+ * (de) Basis Bildschirmlayout
+ *
+ * @version         $Id: basemod.css 454 2008-07-21 17:02:08Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 454 $
+ * @lastmodified    $Date: 2008-07-21 19:02:08 +0200 (Mo, 21. Jul 2008) $
+*/
+
+@media all 
+{
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+  * (en) Formatting YAML's  basic layout elements
+  * (de) Gestaltung des YAML Basis-Layouts
+  */
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body { background: #3b69ad; padding: 10px 0; }
+ 
+  /* (en) Centering layout in old IE-versions */
+  /* (de) Zentrierung des Layouts in alten IE-versionen */
+  body { text-align: center }
+  #page_margins { text-align:left; }
+ 
+  /* (en) Standard für Popup .contentpane */
+  /* (de) Default for Popup .contentpane */
+  body.contentpane {
+   background:#fff;
+   max-width:none;
+   min-width:inherit;
+   width: auto;
+   text-align:left;
+   padding:1em;
+  }
+
+  /* (en) Layout: width, background, borders */
+  /* (de) Layout: Breite, Hintergrund, Rahmen */
+  #page_margins { min-width: 740px; max-width: 80em; margin: 0 auto; border: 0px #889 solid; }
+  #page{ background: #fff; border: 10px #fff solid; position:relative; }
+ 
+  /* (en) adjustment of skip links using tab navigation */
+  /* (de) Anpassung der Skip-Links für Tab-Navigation */
+ .skip:focus, .skip:active { 
+   position: absolute;
+   left:2px;
+   top:2px; 
+   background:#eee;
+   padding: 3px 6px;
+   border: 1px solid #ccc; 
+   outline: none;  
+   z-index: 20;
+   font-size:1.16em;
+   font-weight:bold;
+ }
+
+  /* (en) Designing main layout elements */
+  /* (de) Gestaltung der Hauptelemente des Layouts */
+  #header {
+    color: #000;
+    background: #fff repeat-x top left;
+    padding: 20px 2em 1em 20px; 
+  }
+
+  #header #topnav { color: #aaa; background: transparent; top:5px; right:5px; }
+  #header #topnav ul { margin:0; padding:0; overflow:hidden; list-style:none; list-style-type:none; }
+  
+  /* (en) Using item seperator with create seperator in menu direktly (e.g. |) */
+  /* (en) Benutzen Sie Platzhalter (z.B. |), indem Sie direkt im Menü einen Seperator einfügen */
+  #header #topnav ul li { float:left; padding:0 6px; margin:0; border-left:1px solid #ccc; }
+  #header #topnav ul li.first_item { border:0; }
+  #header #topnav ul li#current a { color:#222; }
+  
+  #breadcrumbs { margin-bottom:10px; padding-left:20px; border-top:1px solid #efefef; border-bottom:1px solid #efefef; }
+
+  #main { background: #fff;padding:10px 0; }
+
+  #footer { 
+    color:#666; 
+    background: #f9f9f9;
+    padding: 15px;
+    border-top: 5px #efefef solid;
+  }
+
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+  * (en) Formatting content container
+  * (de) Formatierung der Inhalts-Container
+  *
+  * |-------------------------------|
+  * | #header                       |
+  * |-------------------------------|
+  * | #col1   | #col3     | #col2   |
+  * | 25%     | flexible  | 25%     |
+  * |-------------------------------|
+  * | #footer                       |
+  * |-------------------------------|
+  */
+
+
+  #col1 { width: 25% }
+  #col1_content { padding: 10px 10px 10px 20px; }
+
+  #col2 { width: 25% }
+  #col2_content { padding: 10px 20px 10px 10px; }
+
+  #col3 { margin: 0 25% }
+  #col3_content { padding:10px 20px; }
+
+  /*------------------------------------------------------------------------------------------------------*/
+  
+  /**
+  * (en) Formatting of Joomla! sezific elements
+  * (de) Gestaltung von Joomla! Spezifischen Elementen
+  */
+  .moduletable, .moduletable_text, .moduletable_menu,
+  .module, .module_text, .module_menu { margin-bottom:2em; }
+ 
+  .leading_separator, .row_separator, .article_separator, .column_separator { 
+    display:block; 
+    width:100%; 
+    clear:both; 
+    line-height:0; 
+    height:0; 
+    overflow:hidden; 
+  
+    margin:1em 0; 
+    border-top:1px solid #efefef; 
+  }
+  .article_separator { display:none; } 
+  .row_separator { border:0; }
+ 
+  .article_column {  }
+  .article_column_content { }
+  .article_column_inner { /* background:#f5f5f5; border:1px solid #e5e5e5; padding:5px; */ }
+ 
+  /**
+  * (en) Joomla! System messages (Output for type: Message)
+  * (de) Joomla! System Nachrichten (Ausgabe für Type:Message)
+  */
+  #system-message { }
+  #system-message dt { }
+  #system-message dd { }
+  #system-message dd ul { }  
+  /* System standard messages */
+  #system-message dd.message ul { }  
+  /* System error messages */
+  #system-message dd.error ul { }  
+  /* System notice messages */
+  #system-message dd.notice ul { }
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yaml>
+  <name>default.xml</name>
+  <description>Design Template Settings</description>
+
+  <lastModification>Tuesday, 05 February 2008 20:15</lastModification>
+
+  <config>
+    <col1_content clear="__all__" />
+    <col2_content clear="__all__" />
+
+  </config>
+</yaml>

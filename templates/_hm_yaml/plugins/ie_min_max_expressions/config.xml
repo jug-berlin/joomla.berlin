@@ -1,0 +1,5 @@
+published=1
+selector=#page_margins
+width_fallback=80em
+min_width=740px
+max_width=80em

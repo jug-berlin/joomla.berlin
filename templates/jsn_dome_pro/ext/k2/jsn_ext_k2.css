@@ -1,0 +1,781 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+#k2Container ul li.odd,
+#k2Container ul li.even {
+	border: none;
+	background: none;
+}
+#k2Container div.tagItemView {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#k2Container div.itemRatingBlock {
+	padding: 0;
+	float: left;
+}
+#k2Container div.itemRatingBlock > span {
+	padding: 3px 5px 3px 0;
+}
+#k2Container div.catItemIsFeatured,
+#k2Container div.userItemIsFeatured {
+	padding: 0;
+	margin: 4px 0;
+	background: url(icon-featured.png) right 2px no-repeat;
+}
+#k2Container div.itemBody {
+	padding-bottom: 0;
+}
+#k2Container div.catItemBody,
+#k2Container div.catItemIntroText,
+#k2Container div.tagItemBody,
+#k2Container div.tagItemIntroText,
+#k2Container div.userItemBody,
+#k2Container div.userItemIntroText {
+	padding: 0;
+}
+#k2Container h2.itemTitle,
+#k2Container h2.latestItemTitle,
+#k2Container h2.tagItemTitle,
+#k2Container h3.catItemTitle,
+#k2Container h3.userItemTitle {
+	font-size: 1.4em;
+	line-height: 1.5;
+	padding: 0;
+	margin-bottom: 1em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#k2Container .jsn-article-toolbar {
+	float: left;
+	width: 99.6%;
+	margin-bottom: 0;
+}
+#k2Container div.itemToolbar,
+#k2Container div.catItemToolbar,
+#k2Container div.userItemToolbar {
+	margin: 0;
+	padding: 5px;
+	float: right;
+	border: none;
+	background: none;
+}
+#k2Container div.catItemToolbar div.k2FeedIcon,
+#k2Container div.userItemToolbar div.k2FeedIcon {
+	padding: 0;
+}
+#k2Container div.itemToolbar ul.jsn-article-tools {
+	margin: 0;
+}
+#k2Container div.itemToolbar ul.jsn-article-tools li {
+	float: none;
+}
+#k2Container div.itemToolbar ul.jsn-article-tools li a {
+	float: none;
+	width: auto;
+	height: auto;
+	display: inline;
+	background: none;
+}
+#k2Container div.jsn-article-info span.itemDateCreated {
+	color: inherit;
+}
+#k2Container div.itemContentFooter {
+	margin: 0;
+	padding: 8px 0;
+	text-align: left;
+}
+#k2Container div.catItemContentFooter,
+#k2Container div.tagItemContentFooter,
+#k2Container div.userItemContentFooter {
+	padding-bottom: 8px;
+	margin-top: 15px;
+}
+#k2Container div.itemContentFooter a.itemCommentsLink {
+	padding: 4px 0;
+	display: block;
+}
+#k2Container div.itemContentFooter div.itemSocialSharing {
+	padding: 0;
+}
+#k2Container div.itemContentFooter div.itemTwitterButton,
+#k2Container div.itemContentFooter div.itemFacebookButton,
+#k2Container div.itemContentFooter div.itemGooglePlusOneButton {
+	margin: 0;
+	float: left;
+}
+#k2Container div.itemContentFooter div.itemTwitterButton {
+	width: 90px;
+}
+#k2Container div.itemContentFooter div.itemFacebookButton {
+	width: 220px;
+}
+#k2Container div.itemContentFooter div.itemGooglePlusOneButton {
+	width: 40px;
+}
+#k2Container div.itemAttachmentsBlock {
+	padding: 8px;
+	border-bottom: none;
+	border-top: 1px solid #DDDDDD;
+}
+#k2Container div.itemLinks,
+#k2Container div.catItemLinks,
+#k2Container div.tagItemLinks,
+#k2Container div.userItemLinks,
+#k2Container div.latestItemLinks {
+	margin: 0 0 15px 0;
+	background: #FFFFF0;
+	border-top: 1px dotted #CCC;
+	border-bottom: 1px dotted #CCC;
+}
+#k2Container div.itemLinks div.itemTagsBlock,
+#k2Container div.catItemLinks div.catItemTagsBlock,
+#k2Container div.userItemLinks div.userItemTagsBlock,
+#k2Container div.latestItemLinks div.latestItemTagsBlock,
+#k2Container div.latestItemLinks div.latestItemCategory {
+	padding: 0;
+	margin: 3px 8px;
+	border-bottom: none;
+}
+#k2Container div.itemLinks div.itemCategory,
+#k2Container div.catItemLinks div.catItemCategory,
+#k2Container div.tagItemLinks div.tagItemCategory,
+#k2Container div.userItemLinks div.userItemCategory,
+#k2Container div.itemLinks div.itemHits {
+	padding: 0;
+	margin: 3px 8px;
+	border: none;
+	display: block;
+}
+#k2Container div.itemLinks div.itemAttachmentsBlock {
+	padding: 0;
+	margin: 8px;
+	border-bottom: none;
+}
+#k2Container div.itemNavigation {
+	background: none;
+	border-bottom: none;
+	padding: 0;
+}
+#k2Container div.itemNavigation span.itemNavigationTitle {
+	color: #555555;
+	font-weight: bold;
+}
+#k2Container div.itemAuthorLatest {
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+#k2Container div.itemRelated,
+#k2Container div.itemNavigation {
+	border-top: 1px dotted #CCC;
+}
+#k2Container div.itemAuthorDetails h3.itemAuthorName {
+	margin-top: 0;
+}
+#k2Container div.itemComments {
+	padding: 0;
+	border: none;
+	background: none;
+	border-top: 1px dotted #CCC;
+}
+#k2Container div.itemComments ul.itemCommentsList {
+	margin: 0;
+	border-bottom: 1px dotted #CCC;
+}
+#k2Container div.itemComments ul.itemCommentsList li {
+	padding: 10px 0 0;
+	border-top: 1px solid #CCC;
+}
+#k2Container div.itemComments ul.itemCommentsList li.even {
+}
+#k2Container div.itemComments ul.itemCommentsList .commentDate,
+#k2Container div.itemComments ul.itemCommentsList .commentAuthorName {
+	padding: 0 0 0 20px;
+}
+#k2Container div.itemComments ul.itemCommentsList div.itemCommentsWrapper {
+	padding-left: 20px;
+}
+#k2Container div.itemComments ul.itemCommentsList p.commentLink {
+	padding-top: 0;
+	margin-top: 0;
+}
+div.itemComments ul.itemCommentsList li p {
+	margin: 5px 0;
+}
+#k2Container div.itemComments div.itemCommentsForm h3 {
+	padding: 0;
+	margin: 10px 0 5px;
+}
+#k2Container div.itemComments p.itemCommentsFormNotes {
+	border: none;
+}
+#k2Container div.itemComments .inputbox {
+	color: #666;
+	padding: 5px;
+	background: #F7FAFE;
+	border: 1px solid #CCC;
+}
+#k2Container div.itemComments #submitCommentButton {
+	font-size: 13px;
+	cursor: pointer;
+	text-shadow: none;
+	color: #111;
+}
+#k2Container div.itemComments #submitCommentButton.button:hover {
+	color: #555;
+}
+#k2Container #itemListLinks {
+	margin: 0;
+}
+#k2Container #itemListLinks h3 {
+	margin-top: 0;
+}
+#k2Container #itemListLinks div.itemContainer a {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#k2Container div.k2Pagination {
+	margin-top: 10px;
+}
+#k2Container div.itemBackToTop {
+	padding-top: 5px;
+}
+#k2Container div.itemBackToTop a {
+	text-decoration: none;
+}
+div.genericItemHeader h2.genericItemTitle {
+	font-size: 1.5em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+table.calendar tr td.calendarDateLinked a {
+	background: #fff;
+}
+div.k2FeedIcon {
+	float: right;
+}
+div.itemBody img,
+div.userItemList img,
+div.catItemBody img,
+div.tagItemBody img,
+div.latestItemBody img {
+	max-width: 96%;
+	max-width: inherit\9;
+	padding: 8px;
+	background: #f8f8f8;
+	border: 1px solid #ccc;
+}
+div.groupLeading div.itemBody img,
+div.groupLeading div.userItemList img,
+div.groupLeading div.catItemBody img,
+div.groupLeading div.tagItemBody img,
+div.groupPrimary div.itemBody img,
+div.groupPrimary div.userItemList img,
+div.groupPrimary div.catItemBody img,
+div.groupPrimary div.tagItemBody img,
+div.groupSecondary div.itemBody img,
+div.groupSecondary div.userItemList img,
+div.groupSecondary div.catItemBody img,
+div.groupSecondary div.tagItemBody img,
+div.latestItemBody img {
+	width: 92%;
+}
+div.k2Pagination ul li {
+	display: inline-block;
+	margin: 5px 1px;
+}
+*+html div.k2Pagination ul li {
+	display: inline;
+}
+div.latestItemsCategoryImage {
+	float: left;
+}
+.subCategoryContainer .subCategory {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+div.subCategoryContainer {
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+}
+div.subCategoryContainer h5 {
+	margin-top: 0;
+}
+div.subCategory a.subCategoryImage img {
+	width: 50px;
+}
+div.subCategoryContainer p {
+	margin-bottom: 5px;
+}
+div#itemListLinks span.catItemImage {
+	float: left;
+	margin-right: 5px;
+}
+div#itemListLinks span.catItemImage img {
+	padding:3px;
+}	
+/*---- User ----*/
+div.userBlock h2 {
+	margin: 0;
+}
+div.userBlock div.userAdditionalInfo,
+div.itemAuthorBlock div.userAdditionalInfo {
+	margin: 0 0 8px;
+	float: left;
+}
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl {
+	border-right: none;
+}
+/*---- List Article ----*/
+div.jsn-article-toolbar .jsn-article-info .author,
+div.jsn-article-toolbar .jsn-article-info .createdate {
+	margin: 5px;
+}
+div.itemContainer {
+	margin-bottom: 15px;
+}
+div.catItemCategory span,
+div.catItemTagsBlock span {
+	font-weight: normal;
+}
+/*---- Detail Article ----*/
+div.itemIntroText {
+	font-size: 1em !important; /* Overwrite compress */
+	font-weight: normal !important;
+	line-height: 1.5 !important;
+	padding: 2px 0 !important;
+}
+div.catItemImageBlock {
+	padding: 0;
+}
+span.itemImage img,
+span.catItemImage img {
+	max-width: 96%;
+	background: #f3f3f3;
+}
+.itemDateModified {
+	margin-top: 10px;
+	float: right;
+	font-style: italic;
+}
+div.jsn-article-info {
+	padding: 0.3em 0;
+	float: left;
+}
+div.jsn-article-info .author,
+div.jsn-article-info .createdate {
+	line-height: 16px;
+}
+div.itemComment {
+	float: left;
+	padding: 3px 8px;
+}
+div.hitCount {
+	margin: 15px 0 5px;
+	width: 100%;
+	float: left;
+}
+div.itemCategory span,
+div.itemTagsBlock span,
+#k2Container div.itemNavigation span.itemNavigationTitle {
+	font-weight: normal;
+}
+div.itemNavigation a.itemPrevious,
+div.itemNavigation a.itemNext {
+	padding: 0 5px;
+}
+#k2Container .jsn-article-footer {
+	width: 100%;
+	margin: 20px 0 5px;
+}
+#k2Container .jsn-article-footer a.itemCommentsLink {
+	float: right;
+	padding-top: 3px;
+}
+#k2Container span.itemHits {
+	float: none;
+}
+/*---- Featured Article ----*/
+#k2Container.itemIsFeatured h2.itemTitle {
+	padding-right: 50px;
+	font-size: 1.2em;
+	min-height: 50px;
+	line-height: 1.8;
+}
+#k2Container div.catItemIsFeatured h3,
+#k2Container div.userItemIsFeatured h3 {
+	padding-right: 70px;
+}
+div.itemHeader h2.itemTitle span sup {
+	font-size: 11px;
+	color: #fff;
+	background: #CA1D04;
+	padding: 1px 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.k2Avatar img {
+	border: none;
+}
+/* ============================== MOD K2 CONTENT ============================== */
+div.k2ItemsBlock > ul {
+	margin: 0;
+	list-style-type: none;
+}
+div.k2ItemsBlock .moduleItemIntrotext img {
+	max-width: 95%;
+	padding: 5px;
+	background: #fff;
+}
+div.k2ItemsBlock > ul > li {
+	margin: 0;
+	padding: 5px 0;
+	background: none;
+	border-bottom: 1px dotted #CCC;
+}
+div.k2ItemsBlock ul.jsn-module-footer li {
+	list-style:disc;
+}
+div.k2ItemsBlock div.moduleItemTitle {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+div.k2ItemsBlock .moduleItemAuthorAvatar img {
+	margin: 5px 0 0 0;
+}
+div.k2ItemsBlock div.moduleItemAuthor {
+	margin: 5px 0;
+	color: #595959;
+	margin-left: 22px;
+}
+div.k2ItemsBlock ul li div.moduleItemIntrotext {
+	padding: 0;
+	clear: both;
+	line-height: 1.5;
+}
+div.k2ItemsBlock p.moduleItemCategory,
+div.k2ItemsBlock p.moduleAttachments {
+	margin: 0.35em 0;
+}
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+	max-width: 96%;
+	margin: 0 auto;
+	padding: 3px;
+	background: #f3f3f3;
+	border: 1px solid #ccc;
+}
+div.k2ItemsBlock ul li a.moduleItemReadMore {
+	font-weight: bold;
+	float: right;
+	margin: 5px 0 10px;
+}
+/* =============== CUSTOM MODULE STYLE =============== */
+div[class*="richbox-"] div.k2ItemsBlock .author,
+div[class*="richbox-"] div.k2ItemsBlock .createdate,
+div[class*="richbox-"] div.k2ItemsBlock div.moduleItemAuthor,
+div.box-grey div.k2ItemsBlock .author,
+div.box-grey div.k2ItemsBlock .createdate,
+div.box-grey div.k2ItemsBlock div.moduleItemAuthor {
+	color: #D4D4D4;
+}
+/* ============================== MOD K2 COMMENTS ============================== */
+div.k2LatestCommentsBlock > ul {
+	margin: 0;
+	list-style-type: none;
+}
+div.k2LatestCommentsBlock > ul > li {
+	margin: 0;
+	padding: 5px 0;
+	background: none;
+	border-bottom: 1px dotted #CCC;
+}
+div.k2LatestCommentsBlock .lcAvatar img {
+	margin: 0 5px 0 0;
+}
+div.k2LatestCommentsBlock div.lcUsername {
+	margin: 5px 0;
+	color: #595959;
+	margin-left: 22px;
+}
+div.k2LatestCommentsBlock div.k2FeedIcon {
+	padding: 0;
+	margin-top: 5px;
+	text-align: center;
+}
+div.k2LatestCommentsBlock div.k2FeedIcon a {
+	float: none;
+	width: auto;
+	height: auto;
+	background: none;
+}
+div.k2LatestCommentsBlock div.k2FeedIcon a span {
+	display: inline-block;
+}
+div.k2ItemsBlock ul li span.moduleItemHits {
+	padding: 0 2px 0 0;
+	margin: 0 5px 0 0;
+}
+div.k2ItemsBlock ul li a.moduleItemComments {
+	border-right: none;
+}
+div.k2LatestCommentsBlock .author,
+div.k2LatestCommentsBlock .createdate {
+	padding-left: 18px;
+}
+/* =============== CUSTOM MODULE STYLE =============== */
+div[class*="richbox-"] div.k2LatestCommentsBlock .author,
+div[class*="richbox-"] div.k2LatestCommentsBlock .createdate,
+div.box-grey div.k2LatestCommentsBlock .author,
+div.box-grey div.k2LatestCommentsBlock .createdate {
+	color: #D4D4D4;
+}
+/* ============================== MOD K2 USERS ============================== */
+div.k2UsersBlock > ul {
+	margin: 0;
+	list-style-type: none;
+}
+div.k2UsersBlock > ul > li {
+	margin: 0;
+	padding: 5px 0;
+	background: none;
+}
+div.k2UsersBlock a.ubUserName,
+div.k2UsersBlock a.ubUserFeedIcon {
+}
+div.k2UsersBlock a.ubUserFeedIcon {
+	margin: 1px 0 0 4px;
+}
+div.k2AccountPage input {
+	margin: 3px;
+}
+.k2AccountPage table.admintable td.key,
+.k2AccountPage table.admintable td.paramlist_key {
+	padding-right: 5px;
+}
+div.k2AccountPage table tr td select,
+div.k2AccountPage table tr td input {
+	margin: 3px;
+}
+.button2-left {
+	margin-top: 5px;
+}
+div.k2UserBlock form {
+	text-align: center;
+}
+p#form-login-remember input.inputbox {
+	float: left;
+	margin-right: 10px;
+	line-height: 12px;
+}
+div.k2LoginBlock fieldset.input p#form-login-remember label {
+	float: left;
+	margin-top: 5px;
+}
+.itemRatingList {
+	margin: 0 !important;
+}
+div.tagItemImageBlock,
+div.userItemImageBlock,
+div.latestItemImageBlock {
+	float: none;
+}
+/* ============================== RTL LAYOUT ============================== */
+/* ----- General -----*/
+body.jsn-direction-rtl div.userItemCategory span,
+body.jsn-direction-rtl div.userItemTagsBlock span,
+body.jsn-direction-rtl div.catItemCategory span,
+body.jsn-direction-rtl div.catItemTagsBlock span,
+body.jsn-direction-rtl div.tagItemCategory span,
+body.jsn-direction-rtl div.tagItemTagsBlock span,
+body.jsn-direction-rtl div.latestItemCategory span,
+body.jsn-direction-rtl div.latestItemTagsBlock span,
+body.jsn-direction-rtl div.itemCategory span,
+body.jsn-direction-rtl div.itemItemTagsBlock span {
+	float: right;
+	padding: 0 0 0 4px;
+}
+body.jsn-direction-rtl #k2Container div.itemToolbar, 
+body.jsn-direction-rtl #k2Container div.catItemToolbar, 
+body.jsn-direction-rtl #k2Container div.userItemToolbar {
+	float: left;
+}
+body.jsn-direction-rtl div.jsn-article-info {
+	float: right;
+}
+/* ----- UserPage -----*/
+body.jsn-direction-rtl div.userBlock div.userAdditionalInfo, 
+body.jsn-direction-rtl div.itemAuthorBlock div.userAdditionalInfo,
+body.jsn-direction-rtl div.userBlock img {
+	float: right;
+}
+body.jsn-direction-rtl div.userBlock img {
+	margin: 0 0 0 10px;
+}
+body.jsn-direction-rtl div.userItemCommentsLink,
+body.jsn-direction-rtl div.catItemCommentsLink {
+	border-right: none;
+	border-left: 1px solid #ccc;
+	margin: 0 0 0 8px;
+	padding: 0 0 0 8px;
+}
+/* ----- Categories Page -----*/
+body.jsn-direction-rtl #k2Container #itemListLinks div.itemContainer a,
+body.jsn-direction-rtl div#itemListLinks span.catItemImage {
+	float: right;
+	margin-right: 0;
+}
+body.jsn-direction-rtl div.itemListCategory img {
+	float: right;
+	margin: 0 0 0 8px;
+}
+/* ----- LatestItem Page -----*/
+body.jsn-direction-rtl div.latestItemsCategoryImage {
+	float: right;
+	margin-left: 8px;
+}
+body.jsn-direction-rtl div.latestItemsCategoryImage img {
+	margin-right: 0;
+}
+body.jsn-direction-rtl div.k2FeedIcon {
+	float: left;
+}
+/* ----- Item Page -----*/
+body.jsn-direction-rtl div.itemToolbar ul li {
+	border-left: none;
+	border-right: 1px solid #ccc;
+	padding: 0 8px 0 4px;
+}
+body.jsn-direction-rtl #k2Container div.itemContentFooter div.itemTwitterButton,
+body.jsn-direction-rtl #k2Container div.itemContentFooter div.itemFacebookButton,
+body.jsn-direction-rtl #k2Container div.itemContentFooter div.itemGooglePlusOneButton {
+	float: right;
+	margin-left: 10px;
+}
+body.jsn-direction-rtl div.itemAuthorBlock img.itemAuthorAvatar {
+	float: right;
+	margin: 0 0 0 8px;
+}
+/* ----- K2 Comments -----*/
+body.jsn-direction-rtl div.k2LatestCommentsBlock .lcAvatar img {
+	float: right;
+	margin: 0 0 0 5px;
+}
+/* ----- K2 Tool -----*/
+body.jsn-direction-rtl div.k2ItemsBlock .moduleItemAuthorAvatar img {
+	float: right;
+	margin: 5px 0 0 3px;
+}
+body.jsn-direction-rtl div.k2ItemsBlock ul li span.moduleItemHits {
+	border-left: 1px solid #ccc;
+	margin: 0 0 0 -5px;
+	padding: 0 0 0 5px;
+	border-right: none;
+	float: right;
+}
+/* ----- Featured -----*/
+body.jsn-direction-rtl #k2Container div.catItemIsFeatured,
+body.jsn-direction-rtl #k2Container div.userItemIsFeatured {
+	background-position: 0 8px;
+}
+body.jsn-direction-rtl #k2Container div.catItemIsFeatured h3,
+body.jsn-direction-rtl #k2Container div.userItemIsFeatured h3 {
+	padding-left: 70px;
+	padding-right: 0;
+}
+body.jsn-direction-rtl div.itemIsFeatured,
+body.jsn-direction-rtl div.catItemIsFeatured,
+body.jsn-direction-rtl div.userItemIsFeatured {
+	background: none;
+}
+body.jsn-direction-rtl #k2Container.itemIsFeatured h2.itemTitle {
+	padding-right: 0;
+}
+body.jsn-direction-rtl div.itemHeader h2.itemTitle span {
+	float: left;
+}
+body.jsn-direction-rtl #k2Container div.itemComments ul.itemCommentsList .commentDate, 
+body.jsn-direction-rtl #k2Container div.itemComments ul.itemCommentsList .commentAuthorName {
+	padding: 0 20px 0 0;
+}
+body.jsn-direction-rtl div.itemComments ul.itemCommentsList li img {
+	float: right;
+	margin-left: 5px;
+}
+body.jsn-direction-rtl #k2Container div.itemComments ul.itemCommentsList div.itemCommentsWrapper {
+	float: right;
+	margin-left: 0 !important;
+}
+body.jsn-direction-rtl #k2Container .jsn-article-footer a.itemCommentsLink {
+	float: left;
+}
+body.jsn-direction-rtl #k2Container div.itemRatingBlock {
+	float: right;
+}
+body.jsn-direction-rtl div.k2ItemsBlock ul li a.moduleItemReadMore {
+	float: left;
+}
+body.jsn-direction-rtl div.itemCategory span, 
+body.jsn-direction-rtl div.itemTagsBlock span, 
+body.jsn-direction-rtl #k2Container div.itemNavigation span.itemNavigationTitle {
+	float: right;
+	padding: 0 0 0 4px;
+}
+div.itemIsFeatured,
+div.catItemIsFeatured,
+div.userItemIsFeatured {
+	background: none;
+}
+/* ============================== MOBILE LAYOUT ============================== */
+@media only screen and (max-width: 960px) {
+	div.itemBody img,
+	div.userItemList img,
+	div.catItemBody img,
+	div.tagItemBody img {
+		width: 96.2%;
+	}
+	div.groupLeading div.itemBody img,
+	div.groupLeading div.userItemList img,
+	div.groupLeading div.catItemBody img,
+	div.groupLeading div.tagItemBody img,
+	div.groupLeading div.latestItemBody img,
+	div.groupPrimary div.itemBody img,
+	div.groupPrimary div.userItemList img,
+	div.groupPrimary div.catItemBody img,
+	div.groupPrimary div.tagItemBody img,
+	div.groupPrimary div.latestItemBody img,
+	div.groupSecondary div.itemBody img,
+	div.groupSecondary div.userItemList img,
+	div.groupSecondary div.catItemBody img,
+	div.groupSecondary div.tagItemBody img,
+	div.latestItemBody img {
+		width: 90.2%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#k2Container div.itemComments .inputbox {
+		width: 270px;
+	}
+	.recaptchatable #recaptcha_image {
+		width: 160px !important;
+	}
+	.recaptchatable .recaptcha_image_cell {
+		width: 160px !important;
+	}
+	#recaptcha_table tbody tr td {
+		padding: 10px 4px !important;
+	}
+	.recaptcha_input_area input#recaptcha_response_field {
+		width: 160px !important;
+	}	
+	#k2Container div.itemContentFooter div.itemTwitterButton {
+		margin-bottom: 10px;
+	}
+	div.itemContainer,
+	div.latestItemsContainer {
+		width: 100% !important;
+	}
+}

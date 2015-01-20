@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de
+ *
+ * (en) Adjustments for mod_newsflash
+ * (de) Anpassungen für mod_newsflash
+ *
+ * @version         $Id: mod_newsflash.css 423 2008-07-01 11:44:05Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 423 $
+ * @lastmodified    $Date: 2008-07-01 13:44:05 +0200 (Di, 01. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  /** 
+   * Horinzontal Style 
+  **/
+  ul.newsflash_horiz { width:100%; overflow:hidden; list-style:none; list-style-image:none; list-style-type:none; padding:0; margin:0; }
+  
+  /* for 5 columns */
+  ul.newsflash_horiz li { float:left; width:15%; overflow:hidden; list-style:none; list-style-image:none; list-style-type:none; padding:0; margin:0 5% 0 0; }
+  ul.newsflash_horiz li.last_item { margin:0;}
+  
+  /** 
+   * Vertical Style 
+  **/
+  ul.newsflash_vert { width:100%; overflow:hidden; list-style:none; list-style-image:none; list-style-type:none; padding:0; margin:0; }
+  ul.newsflash_vert li { overflow:hidden; list-style:none; list-style-image:none; list-style-type:none; padding:0; margin:0 0 1em 0; }
+  ul.newsflash_vert li.last_item { margin:0;}
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * "YAML for Joomla Template" - http://www.jyaml.de  
+ *
+ * (en) Horizontal list navigation "Shiny Buttons" additional for RTL direction
+ * (de) Horizontale Navigationsliste "Shiny Buttons" zurätzlich für RTL Leserichtung
+ *
+ * @version         $Id: nav_shinybuttons-rtl.css 467 2008-07-27 16:52:23Z hieblmedia $
+ * @copyright       Copyright 2005-2008, Reinhard Hiebl
+ * @license         CC-A 2.0/JYAML-C(all media,html,css,js,...) and GNU/GPL(php), 
+                    - see http://www.jyaml.de/en/license-conditions.html
+ * @link            http://www.jyaml.de
+ * @package         yamljoomla
+ * @revision        $Revision: 467 $
+ * @lastmodified    $Date: 2008-07-27 18:52:23 +0200 (So, 27. Jul 2008) $
+*/
+
+@media screen, projection
+{
+  #nav_main {
+    /* (en) containing floats in all other browsers */
+    /* (de) Einfassen der Floats in allen anderen Browsern */
+    /* float: right; */
+  }
+
+  #nav_main ul {
+    float: right;
+    /* (en) Left margin of the first button  */
+    /* (de) Abstand des ersten Buttons vom linken Rand  */
+    margin-right: 50px;
+  }
+
+  #nav_main ul li {
+    float: right;
+  }
+
+  * html #nav_main ul li {
+    /* float: left; /* Fix Bug in IE ??? */
+  }
+  
+}
