@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 
-<extension version="2.5" type="template" client="site" method="upgrade">
+<extension version="3.3" type="template" client="site" method="upgrade">
 	
-	<name>JUG-Berlin - Blank Template</name><!-- name the template -->
-	<creationDate>2015 - 02 - 02</creationDate><!-- the date your are beginn to code -->
-	<author>G. Schwidrowski</author><!-- your name (oops, I repeat myself) -->
-	<copyright>gs@go-lux.de</copyright><!-- for who you are coding -->
+	<name>JUG-Berlin - Blank Bootstrap</name><!-- name the template -->
+	<creationDate>2015-02-02</creationDate><!-- the date your are beginn to code -->
+	<author>Gerno</author><!-- your name (oops, I repeat myself) -->
+	<copyright>http://www.jug-berlin.de</copyright><!-- for who you are coding -->
 	<authorEmail>gs@go-lux.de</authorEmail><!-- your email address -->
 	<authorUrl>http://www.go-lux.de</authorUrl><!-- your url -->
 	<version>1.0.0</version><!-- give your template a number -->
 	<description><![CDATA[ 
-		<h1>Blank Template für JUG-Berlin</h1>
-		]]></description><!-- change the description as you like -->
+		<h1>Blank Bootstrap</h1>
+		<p>Created by <a href="http://www.jug-berlin.de" target="_blank">JUG Berlin</a>.</p>
+	]]></description><!-- change the description as you like -->
 	
 	<files><!-- no need to change -->
 		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
 		<filename>component.php</filename>
@@ -23,6 +26,7 @@
 		<filename>index.php</filename>
 		<filename>logic.php</filename>
 		<filename>offline.php</filename>
+		<filename>runless.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>favicon.ico</filename>
@@ -30,7 +34,22 @@
 	</files>
 	
 	<positions><!-- define the positions for modules here -->
+		<position>navbar</position>
+		<position>breadcrumbs</position>
+		<position>largebar</position>
+		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
 	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="runless" type="radio" default="1" label="Run Less Compiler" description="">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
 </extension>

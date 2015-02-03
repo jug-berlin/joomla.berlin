@@ -1,39 +1,65 @@
-/* FRONTEND CSS
+/* FRONTEND LESS
 *********************************************/
 
+// Bootstrap
+@import "bootstrap/bootstrap.less";
+
+// Font Awesome
+@import "font-awesome/font-awesome.less";
+@fa-font-path: "../templates/frontend/fonts"; // path correction
+
+
+
 html {
-	/* scrollbar fix (prevent ugly left pull for lower content sites) */
-	overflow-y: scroll;
+	overflow-y: scroll; /* scrollbar fix (prevent ugly left pull for lower content sites) */
 }
 
 body {
-	
+	padding-top: 80px; 
+	padding-bottom: 30px;
 }
 
 
 
-/* MEDIA QUERIES
-*********************************************/
+/* YOUR CSS HERE */
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query -> mobile first strategy */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1170px) {}
+
+
+
+/* bootstrap search form fixes */
+
+#insidebar ul.unstyled {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+#insidebar .form-control {
+	width: 100% !important;
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
+.navbar div.search {
+	@media (max-width: 767px) {
+		padding: 0 0 20px 0;
+		width: 100%;
+	}
 }
 
-/* for higher resolutions (android and retina) */
-@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (max--moz-device-pixel-ratio: 1.5) {
-  
+#mod-search-searchword {
+	@media (min-width: 768px) {
+		margin-top: 7px;
+	}
+}
+
+.form-group {
+	@media (min-width: 768px) {
+		padding: 5px 0;
+	}
 }
