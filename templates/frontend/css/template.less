@@ -17,15 +17,25 @@ html {
 body {
 	padding-top: 80px; 
 	padding-bottom: 30px;
+	.wrapper {overflow-x:hidden;}
 }
 
 
 
 /* YOUR CSS HERE */
 
-
-
-@media (min-width: 768px) {}
+@media (max-width: 767px) {
+.navbar-nav .dropdown-menu {display:block;position:relative;float:none;box-shadow:none;border:none;background:none;padding:0;
+							li {display:block;padding-left:15px;
+								a {padding:10px 15px;position:relative;display:block;color:#777;box-sizing:border-box;}
+								}
+							}	
+}
+@media (min-width: 768px) {
+	.navbar-nav li {
+		&.dropdown:hover .dropdown-menu {display: block;}
+			}
+	}
 
 @media (min-width: 992px) {}
 

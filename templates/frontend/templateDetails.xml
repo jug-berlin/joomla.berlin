@@ -34,7 +34,13 @@
 	</files>
 	
 	<positions><!-- define the positions for modules here -->
-		<position>navbar</position>
+		<position>menu</position>
+		<position>left</position>
+		<position>logo</position>
+		<position>search</position>
+		<position>right</position>
+		<position>above-content</position>
+		<position>below-content</position>
 		<position>breadcrumbs</position>
 		<position>largebar</position>
 		<position>sidebar</position>

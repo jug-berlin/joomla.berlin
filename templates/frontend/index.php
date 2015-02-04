@@ -21,14 +21,97 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 </head>
   
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
+     <div class="wrapper" id="page">
+     	<?php if ($this->countModules('mainmenu')): ?>
+        <div class="row">
+            <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand visible-xs" href="<?php echo $this->baseurl; ?>"><?php echo $app->getCfg('sitename'); ?></a> 
+                         </div>
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                             <jdoc:include type="modules" name="mainmenu" style="none" />
+                        </div>
+	            </div>
+                </nav>
+        </div>
+	<?php endif; ?>
+         <div class="row">
+            <header class="main-header">
+                <?php if ($this->countModules('header')): ?>
+                    <div id="header" class="clearfix">
+                        <div class="container">
+                            <jdoc:include type="modules" name="header" style="standard" />
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <div class="container">
+                    <div id="top-toolbar" class="pull-right">
+                        <div class="pull-right">
+                            <?php if ($this->countModules('search')) : ?>
+                                <jdoc:include type="modules" name="search" style="standard" />
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                        <?php if ($this->countModules('logo')) : ?>
+                            
+                            <div class="logo pull-left hidden-xs"><a href="<?php echo $this->baseurl; ?>">
+                                <jdoc:include type="modules" name="logo" style="standard" />
+                                </a>
+                            </div>
+                        <?php endif; ?>
+                    
+                </div>
+            </header>
+            </div>
 
-	<?php require_once 'html/bootstrap.test.php'; // test only - delete this line ?>
+			<!-- Mainbody -->
+		<div id="mainbody" class="clearfix"> 
+      		<div class="row">
+				<div class="container">
+					<!-- Content Block -->
+					<div id="content" class="col-md-9 col-md-push-3">
+						<div id="message-component">
+							<jdoc:include type="message" />
+						</div>
+					<?php if ($this->countModules('above-content')): ?>
+						<div id="above-content">
+							<jdoc:include type="modules" name="above-content" style="standard" />
+						</div>
+					<?php endif; ?>
+							<div id="content-area">
+								<jdoc:include type="component" />
+							</div>
+					<?php if ($this->countModules('below-content')): ?>
+						<div id="below-content">
+							<jdoc:include type="modules" name="below-content" style="standard" />
+						</div>
+					<?php endif; ?>
+					</div>
+                    <?php if ($this->countModules('left')): ?>
+					<div class="sidebar-left col-md-3 col-md-pull-9">
+						<div class="sidebar-nav">
+							<jdoc:include type="modules" name="left" style="standard" />
+						</div>
+					</div>
+				<?php endif; ?>
+					<?php if ($this->countModules('right')) : ?>
+					<aside class="sidebar-right col-md-3">
+						<jdoc:include type="modules" name="right" style="standard" />
+					</aside>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+</div>
 
-	<!-- 
-		YOUR CODE HERE
-	-->
-
-	<jdoc:include type="modules" name="debug" />
+<jdoc:include type="modules" name="debug" />
 </body>
 
 </html>
