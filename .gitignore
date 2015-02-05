@@ -1,6 +1,7 @@
 
 # Entwicklungsumgebung
 /.idea
+atlassian-ide-plugin.xml
 
 # Joomla
 /.htaccess
