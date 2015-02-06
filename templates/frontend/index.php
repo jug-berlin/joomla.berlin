@@ -44,33 +44,32 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 	<?php endif; ?>
          <div class="row">
             <header class="main-header">
-                <?php if ($this->countModules('header')): ?>
-                    <div id="header" class="clearfix">
-                        <div class="container">
-                            <jdoc:include type="modules" name="header" style="standard" />
-                        </div>
-                    </div>
-                <?php endif; ?>
                 <div class="container">
-                    <div id="top-toolbar" class="pull-right">
-                        <div class="pull-right">
-                            <?php if ($this->countModules('search')) : ?>
-                                <jdoc:include type="modules" name="search" style="standard" />
-                            <?php endif; ?>
-                        </div>
-                    </div>
+                        <div class="col-xs-3 col-sm-3">            
                         <?php if ($this->countModules('logo')) : ?>
-                            
-                            <div class="logo pull-left hidden-xs"><a href="<?php echo $this->baseurl; ?>">
+                            <div id="logo"><a href="<?php echo $this->baseurl; ?>">
                                 <jdoc:include type="modules" name="logo" style="standard" />
                                 </a>
                             </div>
                         <?php endif; ?>
-                    
-                </div>
+						</div>
+                        <div class="hidden-xs col-sm-9"> 
+                    	 <?php if ($this->countModules('header')): ?>
+                            <div id="header" class="clearfix">
+                             <jdoc:include type="modules" name="header" style="standard" />
+                            </div>
+                        <?php endif; ?>
+                        </div>
+                        <div class="col-xs-9 col-sm-9"> 
+						<?php if ($this->countModules('search')) : ?>
+                        <div id="search">
+                                <jdoc:include type="modules" name="search" style="standard" />
+                        </div>
+                        <?php endif; ?>
+                        </div>
+                 </div>   
             </header>
             </div>
-
 			<!-- Mainbody -->
 		<div id="mainbody" class="clearfix"> 
       		<div class="row">

@@ -42,7 +42,7 @@
 		<position>above-content</position>
 		<position>below-content</position>
 		<position>breadcrumbs</position>
-		<position>largebar</position>
+		<position>header</position>
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
