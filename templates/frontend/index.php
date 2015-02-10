@@ -23,7 +23,6 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
      <div class="wrapper" id="page">
      	<?php if ($this->countModules('mainmenu')): ?>
-        <div class="row">
             <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                         <div class="navbar-header">
@@ -40,11 +39,10 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </div>
 	            </div>
                 </nav>
-        </div>
 	<?php endif; ?>
-         <div class="row">
             <header class="main-header">
                 <div class="container">
+                <div class="row">
                         <div class="col-xs-3 col-sm-3">            
                         <?php if ($this->countModules('logo')) : ?>
                             <div id="logo"><a href="<?php echo $this->baseurl; ?>">
@@ -67,13 +65,13 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                         </div>
                         <?php endif; ?>
                         </div>
+                        </div>
                  </div>   
             </header>
-            </div>
 			<!-- Mainbody -->
 		<div id="mainbody" class="clearfix"> 
-      		<div class="row">
 				<div class="container">
+                <div class="row">
 					<!-- Content Block -->
 					<div id="content" class="col-md-9 col-md-push-3">
 						<div id="message-component">
@@ -100,14 +98,23 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 						</div>
 					</div>
 				<?php endif; ?>
-					<?php if ($this->countModules('right')) : ?>
-					<aside class="sidebar-right col-md-3">
-						<jdoc:include type="modules" name="right" style="standard" />
-					</aside>
-					<?php endif; ?>
+                </div>
 				</div>
 			</div>
-		</div>
+            		<footer id="footer" class="clearfix">
+			<?php if ($this->countModules('footer')): ?>
+				
+					<div class="container">
+                    <div class="row">
+                    <div class="col-xs-12">
+						<jdoc:include type="modules" name="footer" style="standard" />
+                    </div>    
+					</div>
+                    </div>
+				
+			<?php endif; ?>
+		</footer>
+
 </div>
 
 <jdoc:include type="modules" name="debug" />
