@@ -1,5 +1,9 @@
-jQuery(document).ready(function($) {
+;(function($)
+{
+	$(window).bind('load resize', function(e) {
 
-	// YOUR SCRIPT HERE
+	var footerHeight = $('#footer').height();
+	$('.wrapper').css('padding-bottom', footerHeight);
 	
 });
+})(jQuery);
