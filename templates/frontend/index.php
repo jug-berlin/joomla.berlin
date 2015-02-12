@@ -73,7 +73,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 				<div class="container">
                 <div class="row">
 					<!-- Content Block -->
-					<div id="content" class="col-md-9 col-md-push-3">
+					<div id="content" class="<?php if ($this->countModules('left')): echo "col-md-9 col-md-push-3"; else: echo "col-xs-12"; ;endif?>">
 						<div id="message-component">
 							<jdoc:include type="message" />
 						</div>
@@ -98,7 +98,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 						</div>
 					</div>
 				<?php endif; ?>
-                </div>
+                   </div>
 				</div>
 			</div>
             		<footer id="footer" class="clearfix">
