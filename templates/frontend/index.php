@@ -1,7 +1,6 @@
 <?php defined( '_JEXEC' ) or die; 
 
 include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
-
 ?><!doctype html>
 
 <html lang="<?php echo $this->language; ?>">
@@ -18,14 +17,14 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script type="text/javascript" src="<?php echo $tpath; ?>/js/respond.min.js"></script>
 	<![endif]-->
-</head>
-  
+  </head>
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
      <div class="wrapper" id="page">
      	<?php if ($this->countModules('mainmenu')): ?>
             <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                         <div class="navbar-header">
+  							 <button type="button" data-toggle="modal" href="#searchModal" class="btn btn-default search-toggle visible-xs"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
@@ -34,9 +33,22 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                             </button>
                         <a class="navbar-brand visible-xs" href="<?php echo $this->baseurl; ?>"><?php echo $app->getCfg('sitename'); ?></a> 
                          </div>
+                        
                         <div id="navbarCollapse" class="collapse navbar-collapse">
                              <jdoc:include type="modules" name="mainmenu" style="none" />
-                        </div>
+							<?php if ($this->countModules('menubar-search')) : ?>
+                            <div id="menubar-search">
+                             <!-- Button trigger modal -->
+ 							 <button type="button" data-toggle="modal" href="#searchModal" class="btn btn-default visible-sm-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                            <div class="hidden-sm hidden-xs">
+                            <jdoc:include type="modules" name="menubar-search" style="standard" />
+                            </div>
+                            </div>
+                            <?php endif; ?>
+
+
+
+
 	            </div>
                 </nav>
 	<?php endif; ?>
@@ -117,7 +129,24 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 
 </div>
 
-<jdoc:include type="modules" name="debug" />
+</div><jdoc:include type="modules" name="debug" />
+  <!-- Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">JUG Berlin durchsuchen</h4>
+        </div>
+        <div class="modal-body">
+           <jdoc:include type="modules" name="menubar-search" style="standard" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 </body>
 
 </html>
