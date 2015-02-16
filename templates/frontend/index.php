@@ -25,58 +25,46 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
             <div class="container">
                         <div class="navbar-header">
   							 <button type="button" data-toggle="modal" href="#searchModal" class="btn btn-default search-toggle visible-xs"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="btn btn-default offcanvas-toggle  visible-xs">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
                             </button>
                         <a class="navbar-brand visible-xs" href="<?php echo $this->baseurl; ?>"><?php echo $app->getCfg('sitename'); ?></a> 
                          </div>
-                        
                         <div id="navbarCollapse" class="collapse navbar-collapse">
                              <jdoc:include type="modules" name="mainmenu" style="none" />
 							<?php if ($this->countModules('menubar-search')) : ?>
                             <div id="menubar-search">
                              <!-- Button trigger modal -->
- 							 <button type="button" data-toggle="modal" href="#searchModal" class="btn btn-default visible-sm-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+ 							 <button type="button" data-toggle="modal" href="#searchModal" class="btn btn-default visible-sm-block search-toggle"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                             <div class="hidden-sm hidden-xs">
                             <jdoc:include type="modules" name="menubar-search" style="standard" />
                             </div>
                             </div>
                             <?php endif; ?>
-
-
-
-
 	            </div>
                 </nav>
 	<?php endif; ?>
             <header class="main-header">
                 <div class="container">
                 <div class="row">
-                        <div class="col-xs-3 col-sm-3">            
+                        <div class="col-xs-5 col-sm-5">            
                         <?php if ($this->countModules('logo')) : ?>
-                            <div id="logo"><a href="<?php echo $this->baseurl; ?>">
+                            <div id="logo"><div><a href="<?php echo $this->baseurl; ?>">
                                 <jdoc:include type="modules" name="logo" style="standard" />
-                                </a>
+                                </a></div>
                             </div>
                         <?php endif; ?>
 						</div>
-                        <div class="hidden-xs col-sm-9"> 
+							<div class="hidden-xs col-sm-7"> 
                     	 <?php if ($this->countModules('header')): ?>
                             <div id="header" class="clearfix">
-                             <jdoc:include type="modules" name="header" style="standard" />
+                            <div>
+                             <jdoc:include type="modules" name="header" style="well" />
+                             </div>
                             </div>
                         <?php endif; ?>
-                        </div>
-                        <div class="col-xs-9 col-sm-9"> 
-						<?php if ($this->countModules('search')) : ?>
-                        <div id="search">
-                                <jdoc:include type="modules" name="search" style="standard" />
-                        </div>
-                        <?php endif; ?>
-                        </div>
+                        </div>                        
                         </div>
                  </div>   
             </header>
@@ -106,7 +94,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                     <?php if ($this->countModules('left')): ?>
 					<div class="sidebar-left col-md-3 col-md-pull-9">
 						<div class="sidebar-nav">
-							<jdoc:include type="modules" name="left" style="standard" />
+							<jdoc:include type="modules" name="left" style="well" />
 						</div>
 					</div>
 				<?php endif; ?>
