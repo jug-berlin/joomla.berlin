@@ -45,28 +45,23 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 	            </div>
                 </nav>
 	<?php endif; ?>
-            <header class="main-header">
-                <div class="container">
+                <header class="container main-header">
                 <div class="row">
-                        <div class="col-xs-5 col-sm-5">            
+                        <div  id="logo" class="col-xs-12 col-sm-5">            
                         <?php if ($this->countModules('logo')) : ?>
-                            <div id="logo"><div><a href="<?php echo $this->baseurl; ?>">
-                                <jdoc:include type="modules" name="logo" style="standard" />
-                                </a></div>
-                            </div>
-                        <?php endif; ?>
+                        <div class="vertbottom">
+                                <jdoc:include type="modules" name="logo" style="well" />
+                         </div>
+                         <?php endif; ?>
 						</div>
-							<div class="hidden-xs col-sm-7"> 
+						<div id="slogan" class="col-xs-12 col-sm-7"> 
                     	 <?php if ($this->countModules('header')): ?>
-                            <div id="header" class="clearfix">
-                            <div>
+                        <div class="vertbottom">                        
                              <jdoc:include type="modules" name="header" style="well" />
                              </div>
-                            </div>
                         <?php endif; ?>
                         </div>                        
                         </div>
-                 </div>   
             </header>
 			<!-- Mainbody -->
 		<div id="mainbody" class="clearfix"> 

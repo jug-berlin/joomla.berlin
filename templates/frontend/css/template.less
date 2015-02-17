@@ -35,10 +35,13 @@ body {height:100%; padding-top: 50px; padding-right:0px !important;
 					.search-toggle {float:right;background:@lightgrey;}
 					.offcanvas-toggle {float:left;background:@lightgrey;}
 					}
-			.main-header {
-					#header, #logo {display:table;
-						> div {display:table-cell;vertical-align:bottom;
-							 h1 {color:@blue;font-family: 'Roboto Condensed'}
+			.main-header {background:@white;
+					.row > div{
+						 .vertbottom {width:100%;display:table-cell; vertical-align:bottom;
+						 			div {width:100%;}
+									.well {}
+								img {width:100%;}
+							 	h1 {color:@blue;font-family: 'Roboto Condensed'}
 						}
 					}
 					#search {text-align:right;}
@@ -61,6 +64,7 @@ body {height:100%; padding-top: 50px; padding-right:0px !important;
 
 
 @media (max-width: 767px) {
+	#logo .well {text-align:center;}
 .navbar-nav .dropdown-menu {display:block;position:relative;float:none;box-shadow:none;border:none;background:none;padding:0;
 							li {display:block;padding-left:15px;
 								a {padding:10px 15px;position:relative;display:block;color:#777;box-sizing:border-box;}
@@ -104,7 +108,10 @@ body {height:100%; padding-top: 50px; padding-right:0px !important;
 				}
 	}
 }
-
+@media (max-width: 768px) {
+	.hidden-xxs {display:none;}
+	body .wrapper .main-header .row > div .vertbottom img {width:50%;}
+}
 @media (min-width: 992px) {
 		body .wrapper {
 			#header h1 {font-size:48px;}
